@@ -1,0 +1,56 @@
+@keyframes toTop {
+  
+  0% {
+    opacity: 0%;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+.projects {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 20px;
+  transition: 1s;
+}
+
+.project-link {
+  align-items: center;
+  box-shadow: 2px 2px 5px rgb(128, 128, 128);
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  margin: 20px;
+  overflow: hidden;
+  width: 250px;
+}
+
+.project-link img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.project-card {
+  align-items: flex-start;
+  animation: toTop 1s;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card h4 {
+  align-items: center;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  padding: 0 30px;
+  transition: 1s;
+}

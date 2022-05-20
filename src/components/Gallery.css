@@ -1,0 +1,54 @@
+.about .slider {
+  height: 60vh;
+  width: 80vw;
+}
+
+.about .slider div {
+  height: 100%;
+  text-align: center;
+}
+
+.about .slider img {
+  border-radius: 1em;
+  height: 90%;
+  object-fit: cover;
+  width: 90%;
+}
+
+.about .img-2 {
+  object-position: 0 0;
+}
+
+.about .bg-dark .slick-prev::before {
+  color: white;
+}
+
+.about .bg-dark .slick-next::before {
+  color: white;
+}
+
+.bg .slick-prev::before {
+  color: black;
+}
+
+.bg .slick-next::before {
+  color: black;
+}
+
+.about .slick-track {
+  display: flex;
+  justify-content: center;
+}
+
+.about .slick-slide div div {
+  display: flex !important;
+  justify-content: center;
+}
+
+.bg-dark .slick-dots li button::before {
+  color: white;
+}
+
+.bg .slick-dots li button::before {
+  color: black;
+}

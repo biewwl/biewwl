@@ -1,0 +1,99 @@
+@keyframes toTop {  
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+   }
+
+@keyframes toRight {  
+  0% {
+    opacity: 0%;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+.home-main {
+  display: flex;
+  height: 95%;
+  width: 95%;
+  transition: 1s;
+}
+
+.home-left-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 55%;
+}
+
+.home-container-left {
+  align-items: flex-start;
+  animation: toRight 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: default;
+}
+
+.i-am {
+  font-size: 2em;
+  font-weight: 100;
+  transition: 1s;
+}
+
+.name {
+  font-size: 4em;
+  font-weight: 500;
+  transition: 1s;
+}
+
+.web-developer {
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 100;
+  transition: 1s;
+}
+
+.home-right-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 45%;
+}
+
+.div-image {
+  animation: toTop 1s;
+  border-radius: 76% 24% 38% 62% / 53% 24% 76% 47% ;
+  background-image: url('https://i.ibb.co/GQhN8B6/Pics-Art-05-08-04-29-10.png');
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  transition: 1.5s;
+}
+
+.bb-3px-bottom {
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.bb-3px-dark-bottom {
+  border-bottom: 3px solid rgb(36, 36, 36);
+  border-right: 3px solid rgb(36, 36, 36);
+}
+
+.projects-button {
+  padding: 10px 15px;
+  border-radius: 25px;
+  margin: 10px 0;
+  transition: 1s;
+}
+
+.home {
+  transition: 1s;
+}

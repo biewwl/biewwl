@@ -1,0 +1,253 @@
+:root {
+  --light: white;
+  --dark: rgb(36, 36, 36);
+  --blue: rgb(66, 135, 245);
+  --yellow: rgb(244, 180, 0);
+  --green: rgb(15, 157, 88);
+  --purple: rgb(136, 65, 218);
+  --pink: rgb(240, 70, 169);
+  --red: rgb(219, 68, 55);
+  --orange: rgb(240, 118, 70);
+}
+
+/*
+Light
+*/
+
+.bg {
+  background-color: var(--light);
+}
+
+.bg2 {
+  background-color: rgba(255, 255, 255, 0.678);
+}
+
+.bb {
+  border: 1px solid var(--light);
+}
+
+.bbT {
+  border-top: 1px solid var(--light);
+}
+
+.c {
+  color: var(--light);
+}
+
+.selected-light {
+  color: var(--light);
+  border-bottom: 2px solid var(--light);
+  padding-bottom: 5px;
+}
+
+/*
+Dark
+*/
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg2-dark {
+  background-color: rgba(36, 36, 36, 0.678);
+}
+
+.bb-dark {
+  border: 1px solid var(--dark);
+}
+
+.bbT-dark {
+  border-top: 1px solid var(--dark);
+}
+
+.c-dark {
+  color: var(--dark);
+}
+
+.selected-dark {
+  color: var(--dark);
+  border-bottom: 2px solid var(--dark);
+  padding-bottom: 5px;
+}
+
+/* 
+Blue
+*/
+
+.bb-blue {
+  border: 1px solid var(--blue);
+}
+
+.bbT-blue {
+  border-top: 1px solid var(--blue);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.c-blue {
+  color: var(--blue);
+}
+
+.selected-blue {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 5px;
+}
+
+/* 
+Yellow
+*/
+
+.bb-yellow {
+  border: 1px solid var(--yellow);
+}
+
+.bbT-yellow {
+  border-top: 1px solid var(--yellow);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.c-yellow {
+  color: var(--yellow);
+}
+
+.selected-yellow {
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 5px;
+}
+
+/* 
+Green
+*/
+
+.bb-green {
+  border: 1px solid var(--green);
+}
+
+.bbT-green {
+  border-top: 1px solid var(--green);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.c-green {
+  color: var(--green);
+}
+
+.selected-green {
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+  padding-bottom: 5px;
+}
+
+/* 
+Purple
+*/
+
+.bb-purple {
+  border: 1px solid var(--purple);
+}
+
+.bbT-purple {
+  border-top: 1px solid var(--purple);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.c-purple {
+  color: var(--purple);
+}
+
+.selected-purple {
+  color: var(--purple);
+  border-bottom: 2px solid var(--purple);
+  padding-bottom: 5px;
+}
+
+/* 
+Pink
+*/
+
+.bb-pink {
+  border: 1px solid var(--pink);
+}
+
+.bbT-pink {
+  border-top: 1px solid var(--pink);
+}
+
+.bg-pink {
+  background-color: var(--pink);
+}
+
+.c-pink {
+  color: var(--pink);
+}
+
+.selected-pink {
+  color: var(--pink);
+  border-bottom: 2px solid var(--pink);
+  padding-bottom: 5px;
+}
+
+/* 
+Red
+*/
+
+.bb-red {
+  border: 1px solid var(--red);
+}
+
+.bbT-red {
+  border-top: 1px solid var(--red);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.c-red {
+  color: var(--red);
+}
+
+.selected-red {
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 5px;
+}
+
+/* 
+Orange
+*/
+
+.bb-orange {
+  border: 1px solid var(--orange);
+}
+
+.bbT-orange {
+  border-top: 1px solid var(--orange);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.c-orange {
+  color: var(--orange);
+}
+
+.selected-orange {
+  color: var(--orange);
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 5px;
+}

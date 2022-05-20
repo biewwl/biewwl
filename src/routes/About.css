@@ -1,0 +1,102 @@
+@keyframes jump {
+  
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes toTop {
+  
+  0% {
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toRight {
+  
+  0% {
+    opacity: 0%;
+    transform: translateX(-80px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+.about {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slick-slider {
+  animation: toTop 1s;
+}
+
+.link-about-me {
+  animation: jump 1s infinite alternate;
+  bottom: 0;
+  cursor: pointer;
+  font-size: 2em;
+  position: absolute;
+}
+
+.container-about-me {
+  align-items: center;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+
+.about-me {
+  animation: toRight 1s;
+  cursor: default;
+  padding: 20px;
+  width: 75%;
+}
+
+.about-me h3 {
+  letter-spacing: 0.1em;
+  padding: 20px 0;
+}
+
+.about-me p {
+  line-height: 1.6em;
+  text-align: justify;
+}
+
+.skills {
+  align-items: center;
+  cursor: default;
+  display: flex;
+  font-size: 0.8em;
+  height: 30vh;
+  justify-content: center;
+  list-style: none;
+}
+
+.skills li {
+  align-items: center;
+  animation: toTop 1s;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.skills svg {
+  font-size: 2.5em;
+  padding: 5px;
+}
