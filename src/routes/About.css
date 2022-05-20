@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 1s;
 }
 
 .slick-slider {
@@ -52,6 +53,7 @@
   cursor: pointer;
   font-size: 2em;
   position: absolute;
+  transition: 1s;
 }
 
 .container-about-me {
@@ -59,6 +61,7 @@
   display: flex;
   height: 50vh;
   justify-content: center;
+  transition: 1s;
 }
 
 .about-me {
@@ -71,11 +74,17 @@
 .about-me h3 {
   letter-spacing: 0.1em;
   padding: 20px 0;
+  transition: 1s;
 }
 
 .about-me p {
   line-height: 1.6em;
   text-align: justify;
+  transition: 1s;
+}
+
+.skills-container {
+  transition: 1s;
 }
 
 .skills {
@@ -94,6 +103,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
+  transition: 1s;
 }
 
 .skills svg {
