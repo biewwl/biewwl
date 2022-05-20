@@ -13,7 +13,7 @@ class Projects extends Component {
         <Navegation selectedPage="projects" />
         <main className={`bg${color} projects`}>
           {data.map((e) => (
-            <section className="project-card">
+            <section className="project-card" key={e.name}>
               <a
                 rel="noreferrer"
                 target="_blank"

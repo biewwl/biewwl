@@ -6,7 +6,7 @@ const INITIAL_STATE = {
 };
 
 const initialState = () => {
-  const theme = lS('g', 'theme');
+  const theme = lS('g', 'biewwl_theme');
   if (theme) return {
     ...theme,
   };
@@ -21,7 +21,7 @@ const changeTheme = (theme, color) => {
     theme,
     color,
   }
-  lS('s', 'theme', newTheme);
+  lS('s', 'biewwl_theme', newTheme);
   return newTheme;
 };
 
