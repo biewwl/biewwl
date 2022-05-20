@@ -2,6 +2,7 @@
   .top-bar {
     bottom: 0;
     height: 70px;
+    padding: 0;
   }
 
   .top-bar-right {
