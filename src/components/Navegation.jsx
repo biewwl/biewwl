@@ -54,28 +54,31 @@ class Navegation extends Component {
     return (
       <header className={`top-bar bg${theme} bbT${color}`}>
         <span className={`logo c${color}`}>biewwl</span>
-        <label
-          htmlFor="sociais"
-          className={`round-button bg${color} c${theme} sociais-label bb${theme}`}
-        >
-          {sociais ? (
-            <i className="ri-close-line" />
-          ) : (
-            <i className="ri-link" />
-          )}
-          <input
-            type="checkbox"
-            name="sociais"
-            id="sociais"
-            className="sociais"
-            checked={sociais}
-            onChange={this.checkClick}
-          />
-          <SocialMenu />
-        </label>
+
         <ul className={`top-bar-right`}>
           <nav>
             <ul className={`top-bar-right`}>
+              <li>
+                <label
+                  htmlFor="sociais"
+                  className={`round-button bg${color} c${theme} sociais-label bb${theme}`}
+                >
+                  {sociais ? (
+                    <i className="ri-close-line" />
+                  ) : (
+                    <i className="ri-link" />
+                  )}
+                  <input
+                    type="checkbox"
+                    name="sociais"
+                    id="sociais"
+                    className="sociais"
+                    checked={sociais}
+                    onChange={this.checkClick}
+                  />
+                  <SocialMenu />
+                </label>
+              </li>
               <li>
                 <Link
                   to="/"
@@ -105,9 +108,9 @@ class Navegation extends Component {
                 </Link>
                 <Link
                   to="/about"
-                  className={`nav-icon-mobile c${invert(theme)} ${`${this.selected(
-                    "about"
-                  )}${color}`}`}
+                  className={`nav-icon-mobile c${invert(
+                    theme
+                  )} ${`${this.selected("about")}${color}`}`}
                 >
                   <i className="ri-user-line"></i>
                 </Link>
@@ -123,46 +126,50 @@ class Navegation extends Component {
                 </Link>
                 <Link
                   to="/projects"
-                  className={`nav-icon-mobile c${invert(theme)}  ${`${this.selected(
-                    "projects"
-                  )}${color}`}`}
+                  className={`nav-icon-mobile c${invert(
+                    theme
+                  )}  ${`${this.selected("projects")}${color}`}`}
                 >
                   <i className="ri-code-s-slash-line"></i>
                 </Link>
               </li>
+              <li>
+                {theme === "" && (
+                  <i
+                    className={`ri-moon-fill c${invert(theme)}`}
+                    onClick={() => this.changeInvertTheme()}
+                  />
+                )}
+                {theme === "-dark" && (
+                  <i
+                    className={`ri-sun-fill c${invert(theme)}`}
+                    onClick={() => this.changeInvertTheme()}
+                  />
+                )}
+              </li>
+              <li>
+                <label
+                  htmlFor="colors"
+                  className={`round-button bg${color} c${theme}`}
+                >
+                  {colors ? (
+                    <i className="ri-close-line" />
+                  ) : (
+                    <i className="ri-palette-line" />
+                  )}
+                  <input
+                    type="checkbox"
+                    name="colors"
+                    id="colors"
+                    className="colors"
+                    checked={colors}
+                    onChange={this.checkColor}
+                  />
+                  <ColorsMenu />
+                </label>
+              </li>
             </ul>
           </nav>
-          {theme === "" && (
-            <i
-              className={`ri-moon-fill c${invert(theme)}`}
-              onClick={() => this.changeInvertTheme()}
-            />
-          )}
-          {theme === "-dark" && (
-            <i
-              className={`ri-sun-fill c${invert(theme)}`}
-              onClick={() => this.changeInvertTheme()}
-            />
-          )}
-          <label
-            htmlFor="colors"
-            className={`round-button bg${color} c${theme}`}
-          >
-            {colors ? (
-              <i className="ri-close-line" />
-            ) : (
-              <i className="ri-palette-line" />
-            )}
-            <input
-              type="checkbox"
-              name="colors"
-              id="colors"
-              className="colors"
-              checked={colors}
-              onChange={this.checkColor}
-            />
-            <ColorsMenu />
-          </label>
         </ul>
       </header>
     );

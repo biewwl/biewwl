@@ -120,6 +120,7 @@
 .sociais-label {
   position: fixed;
   bottom: 10px;
+  left: 20px;
 }
 
 .ri-moon-fill, .ri-sun-fill {

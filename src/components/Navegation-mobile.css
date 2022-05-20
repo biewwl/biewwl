@@ -1,8 +1,12 @@
 @media screen and (max-width: 768px) {
   .top-bar {
     bottom: 0;
-    height: 50px;
-    justify-content: center;
+    height: 70px;
+  }
+
+  .top-bar-right {
+    justify-content: space-around;
+    width: 100vw;
   }
 
   .logo {
@@ -20,7 +24,8 @@
   }
 
   .sociais-label {
-    position: initial;
+    position: static;
+  
   }
 
   .selected-light {
