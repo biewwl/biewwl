@@ -50,12 +50,13 @@
 .about .slick-track {
   align-items: center;
 }
+
 .link-about-me {
   animation: jump 1s infinite alternate;
   bottom: 0;
   cursor: pointer;
   font-size: 2em;
-  position: absolute;
+  margin-top: 40px;
 }
 
 .link-about-me i {
@@ -65,7 +66,7 @@
 .container-about-me {
   align-items: center;
   display: flex;
-  height: 50vh;
+  min-height: 50vh;
   justify-content: center;
   transition: 1s;
 }
@@ -98,7 +99,7 @@
   cursor: default;
   display: flex;
   font-size: 0.8em;
-  height: 30vh;
+  min-height: 30vh;
   justify-content: center;
   list-style: none;
 }

@@ -25,6 +25,8 @@
 .home {
   transition: 1s;
   display: flex;
+  min-height: 100vh;
+  padding: 80px 20px 20px 20px;
 }
 
 .home-introduction-container {
@@ -73,6 +75,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  min-height: 350px;
   width: 45%;
 }
 

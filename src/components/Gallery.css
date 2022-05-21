@@ -1,6 +1,7 @@
 .about .slider {
-  height: 60vh;
+  min-height: 60vh;
   width: 80vw;
+  padding: 20px;
 }
 
 .about .slider div {
@@ -10,7 +11,7 @@
 
 .about .slider img {
   border-radius: 1em;
-  height: 90%;
+  height: 300px;
   object-fit: cover;
   width: 90%;
 }
