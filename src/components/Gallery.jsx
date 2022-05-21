@@ -10,6 +10,7 @@ export default function Gallery() {
     slidesToShow: 2,
     slidesToScroll: 1,
   };
+
   return (
     <Slider {...settings} className="slider">
       <div>
