@@ -15,30 +15,22 @@
   margin: 0;
 }
 
-.about .img-2 {
-  object-position: 0 0;
-}
-
 .about .bg-dark .slick-prev::before {
   color: white;
+  transition: 1s;
 }
 
 .about .bg-dark .slick-next::before {
   color: white;
+  transition: 1s;
 }
 
 .bg .slick-prev::before {
   color: black;
+  transition: 1s;
 }
 
 .bg .slick-next::before {
   color: black;
-}
-
-.bg-dark .slick-dots li button::before {
-  color: white;
-}
-
-.bg .slick-dots li button::before {
-  color: black;
+  transition: 1s;
 }

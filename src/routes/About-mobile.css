@@ -10,20 +10,12 @@
   }
 
   .about {
-    padding-top: 0;
+    padding: 20px;
     min-height: 50vh;
     display: flex;
     align-items: center;
-    animation: height 2s;
+    animation: height ease-out 1s;
   }
-
-  .about .slick-track {
-    align-items: center;
-  }
-
-  .about .slider img {
-    height: 80% !important;
-  } 
 
   .container-about-me {
     height: auto;

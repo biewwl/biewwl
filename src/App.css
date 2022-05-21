@@ -57,6 +57,12 @@ body::-webkit-scrollbar {
 main {
   min-height: 100vh;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 70px;
   min-width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 0;
+  }
 }

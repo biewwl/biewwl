@@ -1,7 +1,6 @@
 .nav-bar {
   align-items: center;
   display: flex;
-  min-height: 10vh;
   justify-content: space-between;
   padding: 10px;
   position: fixed;
