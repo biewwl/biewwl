@@ -11,7 +11,7 @@ class Projects extends Component {
     return (
       <>
         <Header selectedPage="projects" />
-        <main className={`bg${color} projects`}>
+        <main className={`bg${theme} projects`}>
           {data.map((e) => (
             <section className="project-card" key={e.name}>
               <a
@@ -22,7 +22,7 @@ class Projects extends Component {
               >
                 <img src={e.image} alt={e.name}/>
               </a>
-              <h4 className={`c${theme}`}>{e.name}</h4>
+              <h4 className={`c${color}`}>{e.name}</h4>
             </section>
           ))}
         </main>
