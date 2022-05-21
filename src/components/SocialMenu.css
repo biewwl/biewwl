@@ -11,8 +11,7 @@
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  transition: 0.5s;
-  transition: height 0.2s linear, opacity 0.2s linear;
+  transition: 0.2s;
   width: 50px;
 }
 

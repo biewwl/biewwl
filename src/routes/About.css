@@ -53,6 +53,9 @@
   cursor: pointer;
   font-size: 2em;
   position: absolute;
+}
+
+.link-about-me i {
   transition: 1s;
 }
 
