@@ -13,8 +13,8 @@ class Home extends Component {
       <>
         <Header selectedPage="home" />
         <main className={`bg${theme} home`}>
-            <section className="home-introdution-container">
-              <section className={`home-introdution-content c${invert(theme)}`}>
+            <section className="home-introduction-container">
+              <section className={`home-introduction-content c${invert(theme)}`}>
                 <span className="i-am">I am</span>
                 <h1 className={`name c${color}`}>Gabriel Dias</h1>
                 <span className="web-developer">Web Developer</span>
