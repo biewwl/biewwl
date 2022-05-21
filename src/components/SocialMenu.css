@@ -1,0 +1,46 @@
+.social-menu {
+  align-items: center;
+  border-radius: 0.5em;
+  bottom: 50px;
+  cursor: auto;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  justify-content: space-evenly;
+  list-style: none;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: 0.5s;
+  transition: height 0.2s linear, opacity 0.2s linear;
+  width: 50px;
+}
+
+.social:checked ~ .social-menu {
+  height: 236px;
+  opacity: 1;
+}
+
+.social-menu .ri-github-line {
+  color: #ff642c;
+}
+
+.social-menu .ri-linkedin-line {
+  color: #0e76a8;
+}
+
+.social-menu .ri-twitter-line {
+  color: #00acee;
+}
+
+.social-menu .ri-instagram-line {
+  color: #e73c61;
+}
+
+@media screen and (max-width: 768px) {
+
+  .social-menu {
+    bottom: 60px;
+  }
+
+}

@@ -36,8 +36,7 @@ Light
 
 .selected-light {
   color: var(--light);
-  border-bottom: 2px solid var(--light);
-  padding-bottom: 5px;
+  text-decoration: underline 2px;
 }
 
 /*
@@ -66,8 +65,7 @@ Dark
 
 .selected-dark {
   color: var(--dark);
-  border-bottom: 2px solid var(--dark);
-  padding-bottom: 5px;
+  text-decoration: underline 2px;
 }
 
 /* 
@@ -92,8 +90,7 @@ Blue
 
 .selected-blue {
   color: var(--blue);
-  border-bottom: 2px solid var(--blue);
-  padding-bottom: 5px;
+  text-decoration: underline 2px;
 }
 
 /* 
@@ -118,8 +115,7 @@ Yellow
 
 .selected-yellow {
   color: var(--yellow);
-  border-bottom: 2px solid var(--yellow);
-  padding-bottom: 5px;
+  text-decoration: underline 2px;
 }
 
 /* 
@@ -144,8 +140,7 @@ Green
 
 .selected-green {
   color: var(--green);
-  border-bottom: 2px solid var(--green);
-  padding-bottom: 5px;
+  text-decoration: underline 2px;
 }
 
 /* 
@@ -170,8 +165,7 @@ Purple
 
 .selected-purple {
   color: var(--purple);
-  border-bottom: 2px solid var(--purple);
-  padding-bottom: 5px;
+  text-decoration: underline 2px;
 }
 
 /* 
@@ -196,8 +190,7 @@ Pink
 
 .selected-pink {
   color: var(--pink);
-  border-bottom: 2px solid var(--pink);
-  padding-bottom: 5px;
+  text-decoration: underline 2px;
 }
 
 /* 
@@ -222,8 +215,7 @@ Red
 
 .selected-red {
   color: var(--red);
-  border-bottom: 2px solid var(--red);
-  padding-bottom: 5px;
+  text-decoration: underline 2px;
 }
 
 /* 
@@ -248,6 +240,5 @@ Orange
 
 .selected-orange {
   color: var(--orange);
-  border-bottom: 2px solid var(--orange);
-  padding-bottom: 5px;
+  text-decoration: underline 2px;
 }

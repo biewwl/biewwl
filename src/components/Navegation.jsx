@@ -6,33 +6,26 @@ import SocialMenu from "./SocialMenu";
 import { changeColor, changeTheme } from "../redux/actions/themeAction";
 import invert from "../helpers/invertTheme";
 import "./Navegation.css";
-import "./Navegation-mobile.css";
 
 class Navegation extends Component {
   constructor() {
     super();
     this.state = {
-      sociais: false,
-      colors: false,
+      socialMenu: false,
+      colorsMenu: false,
     };
   }
 
   checkClick = ({ target }) => {
-    this.setState({ sociais: target.checked });
-  };
-
-  checkColor = ({ target }) => {
-    this.setState({ colors: target.checked });
+    this.setState({ [target.name]: target.checked });
   };
 
   changeInvertTheme = () => {
     const { theme, color, dispatch } = this.props;
     if (theme === "" && color === "-dark") {
-      console.log("theme white, color dark");
       dispatch(changeTheme("-dark"));
       dispatch(changeColor(""));
     } else if (theme === "-dark" && color === "") {
-      console.log("theme dark, color white");
       dispatch(changeTheme(""));
       dispatch(changeColor("-dark"));
     } else if (theme === "") {
@@ -42,134 +35,134 @@ class Navegation extends Component {
     }
   };
 
-  selected = (button) => {
+  selected = (button, color) => {
     const { selectedPage } = this.props;
-    if (button === selectedPage) return "selected";
+    if (button === selectedPage) return `selected${color}`;
     return "";
   };
 
   render() {
     const { color, theme } = this.props;
-    const { sociais, colors } = this.state;
+    const { socialMenu, colorsMenu } = this.state;
+    const { checkClick, changeInvertTheme, selected } = this;
     return (
-      <header className={`top-bar bg${theme} bbT${color}`}>
+      <header className={`nav-bar bg${theme} bbT${color}`}>
         <span className={`logo c${color}`}>biewwl</span>
-
-        <ul className={`top-bar-right`}>
-          <nav>
-            <ul className={`top-bar-right`}>
-              <li>
-                <label
-                  htmlFor="sociais"
-                  className={`round-button bg${color} c${theme} sociais-label bb${theme}`}
-                >
-                  {sociais ? (
-                    <i className="ri-close-line" />
-                  ) : (
-                    <i className="ri-link" />
-                  )}
-                  <input
-                    type="checkbox"
-                    name="sociais"
-                    id="sociais"
-                    className="sociais"
-                    checked={sociais}
-                    onChange={this.checkClick}
-                  />
-                  <SocialMenu />
-                </label>
-              </li>
-              <li>
-                <Link
-                  to="/"
-                  className={`nav-icon c${invert(theme)} ${`${this.selected(
-                    "home"
-                  )}${color}`}`}
-                >
-                  Home
-                </Link>
-                <Link
-                  to="/"
-                  className={`nav-icon-mobile c${invert(
-                    theme
-                  )} ${`${this.selected("home")}${color}`}`}
-                >
-                  <i className="ri-home-2-line"></i>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className={`nav-icon c${invert(theme)} ${`${this.selected(
-                    "about"
-                  )}${color}`}`}
-                >
-                  About
-                </Link>
-                <Link
-                  to="/about"
-                  className={`nav-icon-mobile c${invert(
-                    theme
-                  )} ${`${this.selected("about")}${color}`}`}
-                >
-                  <i className="ri-user-line"></i>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/projects"
-                  className={`nav-icon c${invert(theme)}  ${`${this.selected(
-                    "projects"
-                  )}${color}`}`}
-                >
-                  Projects
-                </Link>
-                <Link
-                  to="/projects"
-                  className={`nav-icon-mobile c${invert(
-                    theme
-                  )}  ${`${this.selected("projects")}${color}`}`}
-                >
-                  <i className="ri-code-s-slash-line"></i>
-                </Link>
-              </li>
-              <li>
-                {theme === "" && (
-                  <i
-                    className={`ri-moon-fill c${invert(theme)}`}
-                    onClick={() => this.changeInvertTheme()}
-                  />
-                )}
-                {theme === "-dark" && (
-                  <i
-                    className={`ri-sun-fill c${invert(theme)}`}
-                    onClick={() => this.changeInvertTheme()}
-                  />
-                )}
-              </li>
-              <li>
-                <label
-                  htmlFor="colors"
-                  className={`round-button bg${color} c${theme}`}
-                >
-                  {colors ? (
-                    <i className="ri-close-line" />
-                  ) : (
-                    <i className="ri-palette-line" />
-                  )}
-                  <input
-                    type="checkbox"
-                    name="colors"
-                    id="colors"
-                    className="colors"
-                    checked={colors}
-                    onChange={this.checkColor}
-                  />
-                  <ColorsMenu />
-                </label>
-              </li>
-            </ul>
-          </nav>
+        <ul>
+          <li>
+            <label
+              htmlFor="social"
+              className={`social-label bg${color} c${theme} bb${theme}`}
+            >
+              {socialMenu ? (
+                <i className="ri-close-line" />
+              ) : (
+                <i className="ri-link" />
+              )}
+              <input
+                type="checkbox"
+                name="socialMenu"
+                id="social"
+                className="social"
+                checked={socialMenu}
+                onChange={checkClick}
+              />
+              <SocialMenu />
+            </label>
+          </li>
+          <li>
+            <Link
+              to="/"
+              className={`nav-icon c${invert(theme)} ${selected(
+                "home",
+                color
+              )}`}
+            >
+              Home
+            </Link>
+            <Link
+              to="/"
+              className={`nav-icon-mobile c${invert(theme)} ${selected(
+                "home",
+                color
+              )}`}
+            >
+              <i className="ri-home-2-line" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className={`nav-icon c${invert(theme)} ${selected(
+                "about",
+                color
+              )}`}
+            >
+              About
+            </Link>
+            <Link
+              to="/about"
+              className={`nav-icon-mobile c${invert(theme)} ${selected(
+                "about",
+                color
+              )}`}
+            >
+              <i className="ri-user-line" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/projects"
+              className={`nav-icon c${invert(theme)} ${selected(
+                "projects",
+                color
+              )}`}
+            >
+              Projects
+            </Link>
+            <Link
+              to="/projects"
+              className={`nav-icon-mobile c${invert(theme)} ${selected(
+                "projects",
+                color
+              )}`}
+            >
+              <i className="ri-code-s-slash-line" />
+            </Link>
+          </li>
+          {theme === "" && (
+            <li
+              className={`ri-moon-fill c${invert(theme)}`}
+              onClick={changeInvertTheme}
+            />
+          )}
+          {theme === "-dark" && (
+            <li
+              className={`ri-sun-fill c${invert(theme)}`}
+              onClick={changeInvertTheme}
+            />
+          )}
+          <li>
+            <label
+              htmlFor="colors"
+              className={`colors-label bg${color} c${theme}`}
+            >
+              {colorsMenu ? (
+                <i className="ri-close-line" />
+              ) : (
+                <i className="ri-palette-line" />
+              )}
+              <input
+                type="checkbox"
+                name="colorsMenu"
+                id="colors"
+                className="colors"
+                checked={colorsMenu}
+                onChange={checkClick}
+              />
+              <ColorsMenu />
+            </label>
+          </li>
         </ul>
       </header>
     );

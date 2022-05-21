@@ -1,0 +1,39 @@
+.colors-menu {
+  align-items: center;
+  border-radius: 0.5em;
+  bottom: 50px;
+  cursor: auto;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  justify-content: space-evenly;
+  list-style: none;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 60px;
+  transition: 0.5s;
+  transition: height 0.2s linear, opacity 0.2s linear;
+  width: 50px;
+}
+
+.colors:checked ~ .colors-menu {
+  height: 315px;
+  opacity: 1;
+}
+
+.ex-color {
+  border-radius: 50%;
+  cursor: pointer;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .colors-menu {
+    bottom: 60px;
+    top: auto;
+  }
+  
+}

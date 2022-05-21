@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import './SocialMenu.css';
 
 class SocialMenu extends Component {
   render() {

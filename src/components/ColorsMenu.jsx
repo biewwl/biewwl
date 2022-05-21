@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { changeColor } from "../redux/actions/themeAction";
+import './ColorsMenu.css';
 
 class ColorsMenu extends Component {
   render() {
