@@ -13,19 +13,17 @@ class Home extends Component {
       <>
         <Header selectedPage="home" />
         <main className={`bg${theme} home`}>
-          <section className="home-main">
-            <section className="home-left-content">
-              <section className={`home-container-left c${invert(theme)}`}>
+            <section className="home-introdution-container">
+              <section className={`home-introdution-content c${invert(theme)}`}>
                 <span className="i-am">I am</span>
                 <h1 className={`name c${color}`}>Gabriel Dias</h1>
                 <span className="web-developer">Web Developer</span>
                 <Link to="/projects" className={`projects-button bg${color} c${theme}`}>Projects</Link>
               </section>
             </section>
-            <section className="home-right-content">
-              <div className={`bg${color} div-image`}></div>
+            <section className="home-image-container">
+              <div className={`bg${color} home-image`}></div>
             </section>
-          </section>
         </main>
       </>
     );

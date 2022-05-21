@@ -1,38 +1,40 @@
-@keyframes toTop {  
+@keyframes toTop {
+
   0% {
     transform: translateY(100px);
   }
+
   100% {
     transform: translateY(0);
   }
-   }
+}
 
-@keyframes toRight {  
+@keyframes toRight {
+
   0% {
     opacity: 0%;
     transform: translateX(-50px);
   }
+
   100% {
     opacity: 100%;
     transform: translateX(0);
   }
 }
 
-.home-main {
-  display: flex;
-  height: 100%;
-  width: 100%;
+.home {
   transition: 1s;
+  display: flex;
 }
 
-.home-left-content {
+.home-introdution-container {
   align-items: center;
   display: flex;
   justify-content: center;
   width: 55%;
 }
 
-.home-container-left {
+.home-introdution-content {
   align-items: flex-start;
   animation: toRight 1s;
   display: flex;
@@ -60,33 +62,6 @@
   transition: 1s;
 }
 
-.home-right-content {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 45%;
-}
-
-.div-image {
-  animation: toTop 1s;
-  border-radius: 76% 24% 38% 62% / 53% 24% 76% 47% ;
-  background-image: url('https://i.ibb.co/GQhN8B6/Pics-Art-05-08-04-29-10.png');
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  transition: 1.5s;
-}
-
-.bb-3px-bottom {
-  border-bottom: 3px solid white;
-  border-right: 3px solid white;
-}
-
-.bb-3px-dark-bottom {
-  border-bottom: 3px solid rgb(36, 36, 36);
-  border-right: 3px solid rgb(36, 36, 36);
-}
-
 .projects-button {
   padding: 10px 15px;
   border-radius: 25px;
@@ -94,6 +69,19 @@
   transition: 1s;
 }
 
-.home {
-  transition: 1s;
+.home-image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 45%;
+}
+
+.home-image {
+  animation: toTop 1s;
+  border-radius: 76% 24% 38% 62% / 53% 24% 76% 47% ;
+  background-image: url('https://i.ibb.co/GQhN8B6/Pics-Art-05-08-04-29-10.png');
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  transition: 1.5s;
 }
