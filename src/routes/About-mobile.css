@@ -1,14 +1,15 @@
 @media screen and (max-width: 768px) {
   .about {
     padding-top: 0;
-    min-height: 30vh;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
   }
 
   .about .slider {
-    height: 70%;
-    display: flex;
-    align-items: center;
     padding: 40px 0;
+    vertical-align: middle;
+    min-height: auto;
   }
 
   .about .slick-track {
@@ -17,8 +18,6 @@
 
   .about .slider img {
     height: 80% !important;
-    display: flex;
-    align-items: center;
   } 
 
   .container-about-me {
