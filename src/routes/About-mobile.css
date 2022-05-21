@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
   .about {
     padding-top: 0;
-    height: 50vh;
+    min-height: 50vh;
   }
 
   .about .slider {
@@ -11,6 +11,10 @@
   .about .slider div {
     height: 100%;
     text-align: center;
+  }
+
+  .about .slick-track {
+    align-items: center;
   }
 
   .container-about-me {
