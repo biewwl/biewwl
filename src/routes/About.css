@@ -43,14 +43,6 @@
   transition: 1s;
 }
 
-.slick-slider {
-  animation: toTop 1s;
-}
-
-.about .slick-track {
-  align-items: center;
-}
-
 .link-about-me {
   animation: jump 1s infinite alternate;
   bottom: 0;

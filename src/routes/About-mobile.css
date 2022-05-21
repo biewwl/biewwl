@@ -1,15 +1,10 @@
 @media screen and (max-width: 768px) {
+
   .about {
     padding-top: 0;
     min-height: 50vh;
     display: flex;
     align-items: center;
-  }
-
-  .about .slider {
-    padding: 40px 0;
-    vertical-align: middle;
-    min-height: auto;
   }
 
   .about .slick-track {

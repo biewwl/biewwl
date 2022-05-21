@@ -6,43 +6,31 @@ export default function Gallery() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 900,
+    speed: 1200,
     slidesToShow: 2,
     slidesToScroll: 1,
-  };
+    autoplaySpeed: 3000,
+    autoplay: true,
+    pauseOnFocus: true,
+    };
 
   return (
     <Slider {...settings} className="slider">
       <div>
         <img
-          src="https://i.ibb.co/rF77Zc7/IMG-20220122-115457-636.webp"
+          src="https://i.ibb.co/pJ4t651/oie-c-PDZk-R2-IU0y3.jpg"
           alt="img-1"
         />
       </div>
       <div>
         <img
-          src="https://i.ibb.co/2jLKvn2/oie-n6ok-ZYoa-TXUq.png"
+          src="https://i.ibb.co/72g3g9c/oie-QRUr-Oxvnl-Gu-O.jpg"
           alt="img-2"
           className="img-2"
         />
       </div>
       <div>
-        <img src="https://i.ibb.co/d583TXk/biewwl.jpg" alt="img-3" />
-      </div>
-      <div>
-        <img
-          src="https://i.ibb.co/j4DpRtF/2022-01-26-13-51-00-090-0300.jpg"
-          alt="img-4"
-        />
-      </div>
-      <div>
-        <img
-          src="https://i.ibb.co/NyLXcqp/IMG-20211226-000805-825.webp"
-          alt="img-5"
-        />
-      </div>
-      <div>
-        <img src="https://i.ibb.co/6DhcBTS/20211220-234332.png" alt="img-6" />
+        <img src="https://i.ibb.co/6JNDvbk/oie-n7t-JHWLAt-WQ8.png" alt="img-3" />
       </div>
     </Slider>
   );
