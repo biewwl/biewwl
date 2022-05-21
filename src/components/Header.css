@@ -8,6 +8,7 @@
   transition: 1s;
   width: 100vw;
   z-index: 2;
+  resize: vertical;
 }
 
 .logo {
@@ -22,10 +23,6 @@
   display: flex;
   list-style: none;
 }
-
-/* .nav-bar li {
-  display: block;
-} */
 
 .social-label, .colors-label {
   align-items: center;
