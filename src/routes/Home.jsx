@@ -16,7 +16,7 @@ class Home extends Component {
           <section className="home-main">
             <section className="home-left-content">
               <section className={`home-container-left c${invert(theme)}`}>
-                <span className="i-am">I am,</span>
+                <span className="i-am">I am</span>
                 <h1 className={`name c${color}`}>Gabriel Dias</h1>
                 <span className="web-developer">Web Developer</span>
                 <Link to="/projects" className={`projects-button bg${color} c${theme}`}>Projects</Link>

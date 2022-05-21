@@ -25,9 +25,9 @@ class About extends Component {
           id="about-me"
         >
           <section className={`about-me c${theme}`}>
-            <h3>A little about myself...</h3>
+            <h3>A little about me...</h3>
             <p>
-            I was born in 2001 in the city of Santa Inês, MA. I studied and graduated in Web Development at the wonderful Trybe school. After a few months studying something new for me, I can say today with certainty that this is really something I love to do. Every code, function, array... brings a challenge and arouses the desire to go further. So yes, I am a developer for love and I will be even better!
+            I was born in 2001 in Santa Inês, MA, Brazil. I have studied and graduated from Trybe, a wonderful school, in Web Development. After a few months studying something totally new for me, today, I can say with certainty that it is something I really love to do. Every code, every function, every array... bring me a challenge and arouse the desire to go further and further. So, yes, I love being a developer and I will get better and better!
             </p>
           </section>
         </article>
