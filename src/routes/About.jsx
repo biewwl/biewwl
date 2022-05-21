@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navegation from "../components/Navegation";
+import Header from "../components/Header";
 import { connect } from "react-redux";
 import Gallery from "../components/Gallery";
 import { HashLink as Link } from "react-router-hash-link";
@@ -13,7 +13,7 @@ class About extends Component {
     const { color, theme } = this.props;
     return (
       <>
-        <Navegation selectedPage="about" />
+        <Header selectedPage="about" />
         <main className={`bg${theme} about`}>
             <Gallery />
           <Link to="/about#about-me" className="link-about-me">

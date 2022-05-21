@@ -5,9 +5,9 @@ import ColorsMenu from "./ColorsMenu";
 import SocialMenu from "./SocialMenu";
 import { changeColor, changeTheme } from "../redux/actions/themeAction";
 import invert from "../helpers/invertTheme";
-import "./Navegation.css";
+import "./Header.css";
 
-class Navegation extends Component {
+class Header extends Component {
   constructor() {
     super();
     this.state = {
@@ -174,4 +174,4 @@ const mapStateToProps = (state) => ({
   color: state.theme.color,
 });
 
-export default connect(mapStateToProps)(Navegation);
+export default connect(mapStateToProps)(Header);

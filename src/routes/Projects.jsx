@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navegation from "../components/Navegation";
+import Header from "../components/Header";
 import { connect } from "react-redux";
 import "./Projects.css";
 import data from "../helpers/dataProjects";
@@ -10,7 +10,7 @@ class Projects extends Component {
     const { theme, color } = this.props;
     return (
       <>
-        <Navegation selectedPage="projects" />
+        <Header selectedPage="projects" />
         <main className={`bg${color} projects`}>
           {data.map((e) => (
             <section className="project-card" key={e.name}>

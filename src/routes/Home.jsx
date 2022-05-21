@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navegation from "../components/Navegation";
+import Header from "../components/Header";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import invert from '../helpers/invertTheme'
@@ -11,7 +11,7 @@ class Home extends Component {
     const { color, theme } = this.props;
     return (
       <>
-        <Navegation selectedPage="home" />
+        <Header selectedPage="home" />
         <main className={`bg${theme} home`}>
           <section className="home-main">
             <section className="home-left-content">
