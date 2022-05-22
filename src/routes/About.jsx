@@ -27,11 +27,11 @@ class About extends Component {
               <p>
                 I was born in 2001 in Santa Inês, MA, Brazil. I have studied and
                 graduated from Trybe, a wonderful school, in Web Development.
-                After a few months studying something totally new for me, today, I
-                can say with certainty that it is something I really love to do.
-                Every code, every function, every array... bring me a challenge
-                and arouse the desire to go further and further. So, yes, I love
-                being a developer and I will get better and better!
+                After a few months studying something totally new for me, today,
+                I can say with certainty that it is something I really love to
+                do. Every code, every function, every array... bring me a
+                challenge and arouse the desire to go further and further. So,
+                yes, I love being a developer and I will get better and better!
               </p>
             </section>
           </article>
@@ -70,7 +70,7 @@ class About extends Component {
                 Jest
               </li>
               <li>
-              <Icon icon="akar-icons:vscode-fill" />
+                <Icon icon="akar-icons:vscode-fill" />
                 VS Code
               </li>
             </ul>

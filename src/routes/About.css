@@ -1,5 +1,4 @@
 @keyframes jump {
-  
   0% {
     transform: translateY(-10px);
   }
@@ -10,7 +9,6 @@
 }
 
 @keyframes toTop {
-  
   0% {
     opacity: 0%;
     transform: translateY(20px);
@@ -22,8 +20,7 @@
   }
 }
 
-@keyframes toRight {
-  
+@keyframes toRight {  
   0% {
     opacity: 0%;
     transform: translateX(-80px);
@@ -41,13 +38,13 @@
 
 .images-about {
   align-items: center;
+  animation: toTop 1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 500px;
+  height: 100vh;
   transition: 1s;
-  min-height: 100vh;
-  padding-top: 64px;
-  animation: toTop 1s;
 }
 
 .link-about-me {
@@ -55,7 +52,7 @@
   bottom: 0;
   cursor: pointer;
   font-size: 2em;
-  margin-top: 40px;
+  position: absolute;
 }
 
 .link-about-me i {
@@ -65,8 +62,8 @@
 .container-about-me {
   align-items: center;
   display: flex;
-  min-height: 50vh;
   justify-content: center;
+  min-height: 50vh;
   transition: 1s;
 }
 
@@ -98,9 +95,9 @@
   cursor: default;
   display: flex;
   font-size: 0.8em;
-  min-height: 30vh;
   justify-content: space-evenly;
   list-style: none;
+  min-height: 30vh;
 }
 
 .skills li {
@@ -117,8 +114,14 @@
 }
 
 .certificates {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 20px;
+}
+
+@media screen and (max-height: 500px) {
+  .link-about-me {
+    display: none;
+  }
 }
