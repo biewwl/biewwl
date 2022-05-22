@@ -90,6 +90,10 @@
     height: 16px;
   }
 
+  .nav-icon-mobile i {
+    transition: 1s;
+  }
+
   .selected-light {
     text-decoration: none !important;
   }
