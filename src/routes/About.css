@@ -47,6 +47,7 @@
   transition: 1s;
   min-height: 100vh;
   padding-top: 64px;
+  animation: toTop 1s;
 }
 
 .link-about-me {
