@@ -85,9 +85,9 @@ class Header extends Component {
               className="nav-icon-mobile"
             >
               { selectedPage === 'home' ? (
-              <i class={`ri-home-2-fill c${color}`} />
+              <i className={`ri-home-2-fill c${color}`} />
               ) : (
-              <i class={`ri-home-2-line c${invert(theme)}`} />
+              <i className={`ri-home-2-line c${invert(theme)}`} />
               ) }
             </Link>
           </li>
@@ -106,9 +106,9 @@ class Header extends Component {
               className="nav-icon-mobile"
             >
               { selectedPage === 'about' ? (
-              <i class={`ri-user-fill c${color}`} />
+              <i className={`ri-user-fill c${color}`} />
               ) : (
-              <i class={`ri-user-line c${invert(theme)}`} />
+              <i className={`ri-user-line c${invert(theme)}`} />
               ) }
             </Link>
           </li>
@@ -127,9 +127,9 @@ class Header extends Component {
               className="nav-icon-mobile"
             >
               { selectedPage === 'projects' ? (
-              <i class={`ri-file-code-fill c${color}`} />
+              <i className={`ri-file-code-fill c${color}`} />
               ) : (
-              <i class={`ri-file-code-line c${invert(theme)}`} />
+              <i className={`ri-file-code-line c${invert(theme)}`} />
               ) }
             </Link>
           </li>
