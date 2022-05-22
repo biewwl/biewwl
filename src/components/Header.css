@@ -64,6 +64,7 @@
   .nav-bar {
     bottom: 0;
     height: 60px;
+    padding: 0;
   }
 
   .logo {
