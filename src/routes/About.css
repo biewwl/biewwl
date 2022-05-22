@@ -38,7 +38,7 @@
 
 .images-about {
   align-items: center;
-  animation: toTop 1s;
+  animation: toRight 1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,7 +97,8 @@
   font-size: 0.8em;
   justify-content: space-evenly;
   list-style: none;
-  min-height: 30vh;
+  height: 30vh;
+  min-height: 80px;
 }
 
 .skills li {

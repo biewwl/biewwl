@@ -11,7 +11,8 @@
 
   .images-about {
     padding: 20px;
-    min-height: 50vh;
+    height: 50vh;
+    min-height: 240px;
     display: flex;
     align-items: center;
     animation: height ease-out 1s;
@@ -36,6 +37,7 @@
   .skills {
     flex-wrap: wrap;
     font-size: 0.6em;
+    min-height: 170px;
   }
 
   .skills li {
