@@ -42,7 +42,7 @@ class Header extends Component {
   };
 
   render() {
-    const { color, theme } = this.props;
+    const { color, theme, selectedPage } = this.props;
     const { socialMenu, colorsMenu } = this.state;
     const { checkClick, changeInvertTheme, selected } = this;
     return (
@@ -82,12 +82,13 @@ class Header extends Component {
             </Link>
             <Link
               to="/"
-              className={`nav-icon-mobile c${invert(theme)} ${selected(
-                "home",
-                color
-              )}`}
+              className="nav-icon-mobile"
             >
-              <i className="ri-home-2-line" />
+              { selectedPage === 'home' ? (
+              <i class={`ri-home-2-fill c${color}`} />
+              ) : (
+              <i class={`ri-home-2-line c${invert(theme)}`} />
+              ) }
             </Link>
           </li>
           <li>
@@ -102,12 +103,13 @@ class Header extends Component {
             </Link>
             <Link
               to="/about"
-              className={`nav-icon-mobile c${invert(theme)} ${selected(
-                "about",
-                color
-              )}`}
+              className="nav-icon-mobile"
             >
-              <i className="ri-user-line" />
+              { selectedPage === 'about' ? (
+              <i class={`ri-user-fill c${color}`} />
+              ) : (
+              <i class={`ri-user-line c${invert(theme)}`} />
+              ) }
             </Link>
           </li>
           <li>
@@ -122,12 +124,13 @@ class Header extends Component {
             </Link>
             <Link
               to="/projects"
-              className={`nav-icon-mobile c${invert(theme)} ${selected(
-                "projects",
-                color
-              )}`}
+              className="nav-icon-mobile"
             >
-              <i className="ri-code-s-slash-line" />
+              { selectedPage === 'projects' ? (
+              <i class={`ri-file-code-fill c${color}`} />
+              ) : (
+              <i class={`ri-file-code-line c${invert(theme)}`} />
+              ) }
             </Link>
           </li>
           {theme === "" && (

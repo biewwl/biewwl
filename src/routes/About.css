@@ -36,11 +36,17 @@
 }
 
 .about {
+  transition: 1s;
+}
+
+.images-about {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   transition: 1s;
+  min-height: 100vh;
+  padding-top: 64px;
 }
 
 .link-about-me {
@@ -92,7 +98,7 @@
   display: flex;
   font-size: 0.8em;
   min-height: 30vh;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
 }
 
@@ -101,11 +107,17 @@
   animation: toTop 1s;
   display: flex;
   flex-direction: column;
-  padding: 20px 30px;
   transition: 1s;
 }
 
 .skills svg {
   font-size: 2.5em;
   padding: 5px;
+}
+
+.certificates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
