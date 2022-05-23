@@ -32,13 +32,24 @@
   }
 }
 
+@keyframes fade {
+  
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+
 .about {
   transition: 1s;
 }
 
 .images-about {
   align-items: center;
-  animation: toRight 1s;
+  animation: fade 2s;
   display: flex;
   flex-direction: column;
   justify-content: center;
