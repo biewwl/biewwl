@@ -66,6 +66,7 @@ class Header extends Component {
                 className="social"
                 checked={socialMenu}
                 onChange={checkClick}
+                data-testid="socialMenu"
               />
               <SocialMenu />
             </label>
@@ -137,12 +138,14 @@ class Header extends Component {
             <li
               className={`ri-moon-fill c${invert(theme)}`}
               onClick={changeInvertTheme}
+              data-testid="dark-theme"
             />
           )}
           {theme === "-dark" && (
             <li
               className={`ri-sun-fill c${invert(theme)}`}
               onClick={changeInvertTheme}
+              data-testid="light-theme"
             />
           )}
           <li>
@@ -162,6 +165,7 @@ class Header extends Component {
                 className="colors"
                 checked={colorsMenu}
                 onChange={checkClick}
+                data-testid="colorsMenu"
               />
               <ColorsMenu />
             </label>
