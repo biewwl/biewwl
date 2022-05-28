@@ -4,10 +4,11 @@ import { connect } from "react-redux";
 import "./Projects.css";
 import data from "../helpers/dataProjects";
 import './Projects-mobile.css';
+import invert from "../helpers/invertTheme";
 
 class Projects extends Component {
   render() {
-    const { theme, color } = this.props;
+    const { theme } = this.props;
     return (
       <>
         <Header selectedPage="projects" />
@@ -22,7 +23,7 @@ class Projects extends Component {
               >
                 <img src={e.image} alt={e.name}/>
               </a>
-              <h4 className={`c${color}`}>{e.name}</h4>
+              <h4 className={`c${invert(theme)}`}>{e.name}</h4>
             </section>
           ))}
         </main>
