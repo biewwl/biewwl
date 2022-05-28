@@ -33,8 +33,8 @@
 
 .project-link img {
   transition: 0.5s;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 0.3em;
   margin: 0px;
 }
@@ -49,7 +49,7 @@
   animation: toTop 1s;
   display: flex;
   flex-direction: column;
-  margin: 0 30px;
+  margin: 30px;
 }
 
 .project-card h4 {

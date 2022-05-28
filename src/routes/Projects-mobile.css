@@ -5,6 +5,11 @@
     padding: 40px 0 80px 0;
   }
 
+  .project-link img {
+    width: 130px;
+    height: 130px;
+  }
+
   .project-link img:hover {
     width: 100px;
     height: 100px;
