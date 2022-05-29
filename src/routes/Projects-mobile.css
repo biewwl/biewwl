@@ -15,4 +15,8 @@
     height: 130px;
   }
 
+  .project-card {
+    margin: 0;
+  }
+
 }
