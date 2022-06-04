@@ -1,11 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { changeColor } from "../redux/actions/themeAction";
 import './ColorsMenu.css';
 
-class ColorsMenu extends Component {
-  render() {
-    const { dispatch, color, theme } = this.props;
+function ColorsMenu({ dispatch, color, theme }) {
     return (
       <ul className={`bg${color} colors-menu bb${theme}`}>
         <li
@@ -62,7 +60,6 @@ class ColorsMenu extends Component {
         </li>}
       </ul>
     );
-  }
 }
 
 const mapStateToProps = (state) => ({
