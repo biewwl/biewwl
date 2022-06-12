@@ -29,5 +29,11 @@ const data = [
     image: 'https://i.ibb.co/br5wyGx/20220528-183646-0000.png',
     url: 'https://biewwl.github.io/projetos/project-trybewarts/',
   },
+  {
+    name: 'Trivia',
+    description: 'Esse projeto é um jogo trivia',
+    image: 'https://i.ibb.co/bdJNqW1/20220611-214344-0000.png',
+    url: 'https://biewwl.github.io/project-trivia/',
+  },
 ]
 export default data;
