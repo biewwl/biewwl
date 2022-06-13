@@ -12,6 +12,10 @@
     font-weight: 100;
   }
 
+  .project-name span {
+    font-size: 0.8em;
+  }
+
   .project-detail {
     display: flex;
     flex-direction: column;
