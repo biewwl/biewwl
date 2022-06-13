@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../../components/Header";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import invert from "../helpers/invertTheme";
-import "./Home.css";
-import "./Home-mobile.css";
+import invert from "../../helpers/invertTheme";
+import "./styles/Home.css";
+import "./styles/Home-mobile.css";
 
 function Home({ color, theme }) {
   return (

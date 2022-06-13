@@ -1,6 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
-import "./Gallery.css";
+import "./styles/Gallery.css";
+import Perfil from './images/perfil.png';
+import Trybe from './images/trybe.jpg';
+import Hat from './images/hat.jpg';
+import Sky from './images/sky.jpg';
+import Mask from './images/mask.png';
+import Friends from './images/friends.jpg';
 
 export default function Gallery() {
   const settings = {
@@ -11,35 +17,34 @@ export default function Gallery() {
     slidesToScroll: 1,
     autoplaySpeed: 3000,
     autoplay: true,
-    pauseOnFocus: true,
     };
 
   return (
     <Slider {...settings} className="slider">
       <div>
-        <img src="https://i.ibb.co/3MrPZ6s/oie-21235143b9e2-O2-HX.jpg" alt="img-1" />
+        <img src={Perfil} alt="img-1" />
       </div>
       <div>
-        <img src="https://i.ibb.co/6JNDvbk/oie-n7t-JHWLAt-WQ8.png" alt="img-2" />
+        <img src={Trybe} alt="img-2" />
       </div>
       <div>
         <img
-          src="https://i.ibb.co/pJ4t651/oie-c-PDZk-R2-IU0y3.jpg"
+          src={Hat}
           alt="img-3"
         />
       </div>
       <div>
         <img
-          src="https://i.ibb.co/72g3g9c/oie-QRUr-Oxvnl-Gu-O.jpg"
+          src={Sky}
           alt="img-2"
           className="img-4"
         />
       </div>
       <div>
-        <img src="https://i.ibb.co/6DhcBTS/20211220-234332.png" alt="img-5" />
+        <img src={Mask} alt="img-5" />
       </div>
       <div>
-        <img src="https://i.ibb.co/44dmVbh/oie-21235044h-El-Bw8sj.jpg" alt="img-6" />
+        <img src={Friends} alt="img-6" />
       </div>
     </Slider>
   );

@@ -7,7 +7,6 @@
   transition: 1s;
   width: 100vw;
   z-index: 2;
-  resize: vertical;
 }
 
 .logo {

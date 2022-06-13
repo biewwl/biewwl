@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../../components/Header";
 import { connect } from "react-redux";
-import Gallery from "../components/Gallery";
+import Gallery from "./components/Gallery";
 import { HashLink as Link } from "react-router-hash-link";
-import invert from "../helpers/invertTheme";
+import invert from "../../helpers/invertTheme";
 import { Icon } from "@iconify/react";
-import "./About.css";
-import "./About-mobile.css";
+import "./styles/About.css";
+import "./styles/About-mobile.css";
 
 function About({ color, theme }) {
   return (

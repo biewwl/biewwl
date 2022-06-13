@@ -82,7 +82,7 @@
 .home-image {
   animation: toTop 1s;
   border-radius: 76% 24% 38% 62% / 53% 24% 76% 47% ;
-  background-image: url('https://i.ibb.co/GQhN8B6/Pics-Art-05-08-04-29-10.png');
+  background-image: url(../images/home-image.png);
   background-size: contain;
   height: 300px;
   width: 300px;

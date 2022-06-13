@@ -1,39 +1,27 @@
+import Correct from "../pages/Project/images/correct.png";
+import Login from "../pages/Project/images/login.png";
+import Game from "../pages/Project/images/game.png";
+import Ranking from "../pages/Project/images/ranking.png";
+
 const data = [
   {
-    name: 'TrySeries',
-    description: 'Esse projeto simula um site de séries, utilizando uma API do site TVmaze. Ele contém funcionalidades para favoritar, ordenar e pesquisar por nome, gênero...',
-    image: 'https://i.ibb.co/9v9bX7M/20220528-183212-0000.png',
-    url: 'https://biewwl.github.io/projetos/extra-project-tryseries/',
+    path: "trivia",
+    name: "Trivia",
+    description: "This project is a trivia game, built completely in React. Have fun answering easy, medium or hard level questions. Also remember to be fast if you want to be the best!",
+    cover: "https://i.ibb.co/bdJNqW1/20220611-214344-0000.png",
+    links: {
+      repository: "https://github.com/biewwl/project-trivia",
+      project: "https://biewwl.github.io/project-trivia/",
+    },
+    images: [Login, Game, Correct, Ranking],
+    skills: ["HTML", "CSS", "Javascript", "React", "Hooks", "API"],
+    tools: [
+      "react-router-dom",
+      "gh-pages",
+      "crypto-js",
+      "howler",
+    ],
+    development: "individual",
   },
-  {
-    name: 'Color Guess',
-    description: 'Esse projeto é um mini jogo onde o objetivo é descobrir qual é a cor que é apresentada pelo padrão rgb.',
-    image: 'https://i.ibb.co/B6mgqHt/20220528-183348-0000.png',
-    url: 'https://biewwl.github.io/projetos/project-color-guess/',
-  },
-  {
-    name: 'Pixels Art',
-    description: 'Esse projeto é uma aplicação de desenvolver desenhos, pintando píxel por píxel.',
-    image: 'https://i.ibb.co/Z80jWf4/20220528-183415-0000.png',
-    url: 'https://biewwl.github.io/projetos/project-pixels-art/',
-  },
-  {
-    name: 'To do List',
-    description: 'Esse projeto é uma aplicação To do List, onde você pode criar uma lista de tarefas, marcar como concluídas, excluir e salvar sua lista.',
-    image: 'https://i.ibb.co/XXrZ4B0/20220528-183521-0000.png',
-    url: 'https://biewwl.github.io/projetos/project-to-do-list/',
-  },
-  {
-    name: 'Trybewarts',
-    description: 'Esse projeto simula um site de cadastramento para uma escola chamada Trybewarts.',
-    image: 'https://i.ibb.co/br5wyGx/20220528-183646-0000.png',
-    url: 'https://biewwl.github.io/projetos/project-trybewarts/',
-  },
-  {
-    name: 'Trivia',
-    description: 'Esse projeto é um jogo trivia',
-    image: 'https://i.ibb.co/bdJNqW1/20220611-214344-0000.png',
-    url: 'https://biewwl.github.io/project-trivia/',
-  },
-]
+];
 export default data;
