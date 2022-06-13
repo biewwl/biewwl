@@ -63,9 +63,15 @@ function Project({ match, theme, color }) {
                 <h3 className={`c${color}`}>Libraries Used</h3>
                 <p>
                   {dataProject.tools.map((e) => (
-                    <span className={`tool c${invert(theme)}`} key={e}>
-                      {e}
-                    </span>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href={e.link}
+                      className={`tool c${invert(theme)}`}
+                      key={e}
+                    >
+                      {e.name}
+                    </a>
                   ))}
                 </p>
               </section>

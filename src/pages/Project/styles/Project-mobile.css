@@ -50,11 +50,11 @@
   }
 
   .project-infos h3 {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
-  .project-infos span {
-    font-size: 0.6em;
+  .project-infos span, .project-infos a {
+    font-size: 0.7em;
   }
   
 }
