@@ -47,8 +47,9 @@
 
 .project-links a {
   padding: 5px 10px;
-  border-width: 3px;
+  border-width: 2px;
   width: 45%;
+  font-size: 900;
 }
 
 .project-infos {
