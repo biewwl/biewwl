@@ -7,6 +7,10 @@
     padding: 40px 20px;
   }
 
+  .project-name a {
+    font-size: 0.8em;
+  }
+
   .project-name h1 {
     font-size: 2em;
     font-weight: 100;
