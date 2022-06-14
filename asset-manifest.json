@@ -1,25 +1,31 @@
 {
   "files": {
     "main.css": "/biewwl/static/css/main.1893cc7d.css",
-    "main.js": "/biewwl/static/js/main.9a496e62.js",
+    "main.js": "/biewwl/static/js/main.84a7ff87.js",
     "static/media/home-image.png": "/biewwl/static/media/home-image.c8e47156dd800ab657be.png",
     "static/media/ranking.png": "/biewwl/static/media/ranking.ec80c7f597ce9426eb89.png",
     "static/media/mask.png": "/biewwl/static/media/mask.be9ae12913fcd558de94.png",
-    "static/media/login.png": "/biewwl/static/media/login.f90894e81efae6710bb3.png",
+    "static/media/login.png": "/biewwl/static/media/login.09346e03d1a52230176a.png",
     "static/media/game.png": "/biewwl/static/media/game.0e4dc40d17338ae017c4.png",
     "static/media/correct.png": "/biewwl/static/media/correct.ff9178872f4ae14ebcdc.png",
     "static/media/perfil.png": "/biewwl/static/media/perfil.571290301d021598712f.png",
     "static/media/sky.jpg": "/biewwl/static/media/sky.cf529ed60f5d430dd95c.jpg",
+    "static/media/edit-profile.png": "/biewwl/static/media/edit-profile.991b8a4aa83429b64a6a.png",
+    "static/media/search.png": "/biewwl/static/media/search.5e24cf854f8b5bda3b29.png",
     "static/media/hat.jpg": "/biewwl/static/media/hat.0bcbdc724ca544bcc231.jpg",
+    "static/media/favorites.png": "/biewwl/static/media/favorites.0b44197648525b0a22ce.png",
+    "static/media/profile.png": "/biewwl/static/media/profile.f778718ad0042a856781.png",
     "static/media/friends.jpg": "/biewwl/static/media/friends.0178f336b6626f1eb7fb.jpg",
+    "static/media/album.png": "/biewwl/static/media/album.874d5c9cc5a7ab1d5421.png",
     "static/media/Product Sans Regular.ttf": "/biewwl/static/media/Product Sans Regular.d165384076551a756b3c.ttf",
     "static/media/trybe.jpg": "/biewwl/static/media/trybe.ee246f4a1a202c7de591.jpg",
+    "static/media/home.png": "/biewwl/static/media/home.970cb2ca03c9250c41a6.png",
     "index.html": "/biewwl/index.html",
     "main.1893cc7d.css.map": "/biewwl/static/css/main.1893cc7d.css.map",
-    "main.9a496e62.js.map": "/biewwl/static/js/main.9a496e62.js.map"
+    "main.84a7ff87.js.map": "/biewwl/static/js/main.84a7ff87.js.map"
   },
   "entrypoints": [
     "static/css/main.1893cc7d.css",
-    "static/js/main.9a496e62.js"
+    "static/js/main.84a7ff87.js"
   ]
 }
