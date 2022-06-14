@@ -1,5 +1,9 @@
 @media screen and (max-width: 768px) {
 
+  .social-label {
+    position: static;
+  }
+
   .nav-bar {
     bottom: 0;
     height: 60px;
