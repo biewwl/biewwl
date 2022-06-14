@@ -1,5 +1,18 @@
+@keyframes toRight {
+  
+  0% {
+    opacity: 0%;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
 .project .slider {
   width: 60%;
+  animation: 1s toRight;
 }
 
 .project .slider div div {

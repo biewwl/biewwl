@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import invert from "../../helpers/invertTheme";
 import "./styles/Project.css";
 import "./styles/Project-mobile.css";
+import { Link } from "react-router-dom";
 
 function Project({ match, theme, color }) {
   const {
@@ -20,7 +21,10 @@ function Project({ match, theme, color }) {
         {dataProject ? (
           <>
             <section className="project-name">
-              <h1 className={`c${invert(theme)}`}>{dataProject.name}</h1>
+              <div>
+                <Link to="/projects" className={`c${color}`}>Projects /</Link>
+                <h1 className={`c${invert(theme)}`}>{dataProject.name}</h1>
+              </div>
               <span className={`c${color}`}>{dataProject.development}</span>
             </section>
             <section className={`project-detail bg${color}`}>
@@ -52,8 +56,8 @@ function Project({ match, theme, color }) {
               <section>
                 <h3 className={`c${color}`}>Skills Used</h3>
                 <p>
-                  {dataProject.skills.map((e) => (
-                    <span className={`skill c${invert(theme)}`} key={e}>
+                  {dataProject.skills.map((e, i) => (
+                    <span className={`skill c${invert(theme)}`} key={i}>
                       {e}
                     </span>
                   ))}
@@ -62,13 +66,13 @@ function Project({ match, theme, color }) {
               <section>
                 <h3 className={`c${color}`}>Libraries Used</h3>
                 <p>
-                  {dataProject.tools.map((e) => (
+                  {dataProject.tools.map((e, i) => (
                     <a
                       rel="noreferrer"
                       target="_blank"
                       href={e.link}
                       className={`tool c${invert(theme)}`}
-                      key={e}
+                      key={i}
                     >
                       {e.name}
                     </a>

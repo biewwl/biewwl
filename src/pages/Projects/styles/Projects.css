@@ -71,15 +71,12 @@
 }
 
 .cover span {
-  font-size: 0.7em;
+  font-size: 0.5em;
   position: absolute;
   top: 5px;
+  text-transform: uppercase;
 }
 
-@media screen and (min-width: 990px) {
-  .projects {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-  }
+.cover h3 {
+  font-weight: 100;
 }
