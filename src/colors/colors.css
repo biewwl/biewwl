@@ -34,8 +34,7 @@ Light
   color: var(--light);
 }
 
-.selected-light {
-  color: var(--light);
+.selected {
   text-decoration: underline 2px;
 }
 
@@ -64,7 +63,6 @@ Dark
 }
 
 .selected-dark {
-  color: var(--dark);
   text-decoration: underline 2px;
 }
 
