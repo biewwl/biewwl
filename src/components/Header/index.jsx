@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import ColorsMenu from "./ColorsMenu";
-import SocialMenu from "./SocialMenu";
-import { changeColor, changeTheme } from "../redux/actions/themeAction";
-import invert from "../helpers/invertTheme";
-import "./Header.css";
+import ColorsMenu from "./components/ColorsMenu";
+import SocialMenu from "./components/SocialMenu";
+import { changeColor, changeTheme } from "../../redux/actions/themeAction";
+import invert from "../../helpers/invertTheme";
+import "./styles/Header.css";
+import "./styles/Header-mobile.css";
 
 function Header({ color, theme, selectedPage, dispatch }) {
   const [socialMenu, setSocialMenu] = useState(false);

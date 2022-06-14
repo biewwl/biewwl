@@ -1,7 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { changeColor } from "../redux/actions/themeAction";
-import './ColorsMenu.css';
+import { changeColor } from "../../../../redux/actions/themeAction";
+import './styles/ColorsMenu.css';
+import './styles/ColorsMenu-mobile.css';
 
 function ColorsMenu({ dispatch, color, theme }) {
     return (

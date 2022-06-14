@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import './SocialMenu.css';
+import './styles/SocialMenu.css';
+import './styles/SocialMenu-mobile.css';
 
 function SocialMenu({ color, theme }) {
   return (

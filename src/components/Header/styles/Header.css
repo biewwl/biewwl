@@ -1,0 +1,59 @@
+.nav-bar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  transition: 1s;
+  width: 100vw;
+  z-index: 2;
+}
+
+.logo {
+  cursor: default;
+  font-size: 1.2em;
+  transition: 1s;
+}
+
+.nav-bar > ul {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  width: 40%;
+}
+
+.social-label, .colors-label {
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  transition: 1s;
+  width: 35px;
+}
+
+.social-label {
+  bottom: 15px;
+  left: 20px;
+  position: fixed;
+}
+
+.nav-bar input[ type = checkbox ] {
+  display: none;
+}
+
+.nav-icon {
+  font-size: 0.8em;
+  transition: 1s;
+}
+
+.nav-icon-mobile {
+  display: none;
+}
+
+.ri-moon-fill, .ri-sun-fill {
+  cursor: pointer;
+  transition: 1s;
+}

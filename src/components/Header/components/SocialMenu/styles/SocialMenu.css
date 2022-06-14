@@ -35,11 +35,3 @@
 .social-menu .ri-instagram-line {
   color: #e73c61;
 }
-
-@media screen and (max-width: 768px) {
-
-  .social-menu {
-    bottom: 60px;
-  }
-
-}

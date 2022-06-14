@@ -27,12 +27,3 @@
   min-height: 20px;
   min-width: 20px;
 }
-
-@media screen and (max-width: 768px) {
-
-  .colors-menu {
-    bottom: 60px;
-    top: auto;
-  }
-  
-}
