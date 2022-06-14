@@ -7,7 +7,7 @@ import './styles/Projects-mobile.css';
 import invert from "../../helpers/invertTheme";
 import { Link } from "react-router-dom";
 
-function Projects({ theme }) {
+function Projects({ theme, color }) {
   return (
     <>
       <Header selectedPage="projects" />
@@ -19,7 +19,10 @@ function Projects({ theme }) {
               to={`/projects/${e.path}`}
               className="project-link"
             >
-              <img src={e.cover} alt={e.name}/>
+              <section className={`cover bg${color} c${theme}`}>
+                <span>Project</span>
+                <h3>{e.name}</h3>
+              </section>
             </Link>
             <h4 className={`c${invert(theme)}`}>{e.name}</h4>
           </section>
@@ -31,6 +34,7 @@ function Projects({ theme }) {
 
 const mapStateToProps = (state) => ({
   theme: state.theme.theme,
+  color: state.theme.color,
 });
 
 export default connect(mapStateToProps)(Projects);

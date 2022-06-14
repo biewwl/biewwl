@@ -17,7 +17,6 @@ const data = [
     name: "Trivia",
     description:
       "This project is a trivia game, built completely in React. Have fun answering easy, medium or hard level questions. Also remember to be fast if you want to be the best!",
-    cover: "https://i.ibb.co/bdJNqW1/20220611-214344-0000.png",
     links: {
       repository: "https://github.com/biewwl/project-trivia",
       project: "https://biewwl.github.io/project-trivia/",
@@ -49,7 +48,6 @@ const data = [
     name: "Favorite Musics",
     description:
       "This project is a music search application, which uses the iTunes API. Search for your favorite songs and add them to your favorites list.",
-    cover: "https://i.ibb.co/bdJNqW1/20220611-214344-0000.png",
     links: {
       repository: "https://github.com/biewwl/project-favorite-musics",
       project: "https://biewwl.github.io/project-favorite-musics/",
