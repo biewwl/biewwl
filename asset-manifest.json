@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/biewwl/static/css/main.95427bac.css",
+    "main.css": "/biewwl/static/css/main.3cd2ec72.css",
     "main.js": "/biewwl/static/js/main.b46fea56.js",
     "static/media/home-image.png": "/biewwl/static/media/home-image.c8e47156dd800ab657be.png",
     "static/media/ranking.png": "/biewwl/static/media/ranking.ec80c7f597ce9426eb89.png",
@@ -21,11 +21,11 @@
     "static/media/trybe.jpg": "/biewwl/static/media/trybe.ee246f4a1a202c7de591.jpg",
     "static/media/home.png": "/biewwl/static/media/home.970cb2ca03c9250c41a6.png",
     "index.html": "/biewwl/index.html",
-    "main.95427bac.css.map": "/biewwl/static/css/main.95427bac.css.map",
+    "main.3cd2ec72.css.map": "/biewwl/static/css/main.3cd2ec72.css.map",
     "main.b46fea56.js.map": "/biewwl/static/js/main.b46fea56.js.map"
   },
   "entrypoints": [
-    "static/css/main.95427bac.css",
+    "static/css/main.3cd2ec72.css",
     "static/js/main.b46fea56.js"
   ]
 }
