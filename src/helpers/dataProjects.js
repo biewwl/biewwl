@@ -2,6 +2,7 @@ import TriviaCorrect from "../pages/Project/images/trivia/correct.png";
 import TriviaLogin from "../pages/Project/images/trivia/login.png";
 import TriviaGame from "../pages/Project/images/trivia/game.png";
 import TriviaRanking from "../pages/Project/images/trivia/ranking.png";
+import TriviaSettings from '../pages/Project/images/trivia/settings.png'
 
 import FMLogin from '../pages/Project/images/favorite-musics/login.png';
 import FMHome from '../pages/Project/images/favorite-musics/home.png';
@@ -26,7 +27,7 @@ const data = [
       repository: "https://github.com/biewwl/project-trivia",
       project: "https://biewwl.github.io/project-trivia/",
     },
-    images: [TriviaLogin, TriviaGame, TriviaCorrect, TriviaRanking],
+    images: [TriviaLogin, TriviaSettings, TriviaGame, TriviaCorrect, TriviaRanking],
     skills: ["HTML", "CSS", "Javascript", "React", "Hooks", "API"],
     tools: [
       {
