@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../../components/Header";
 import { connect } from "react-redux";
 import "./styles/Projects.css";
-import data from "../../helpers/dataProjects";
 import './styles/Projects-mobile.css';
+import data from "../../helpers/dataProjects";
 import invert from "../../helpers/invertTheme";
 import { Link } from "react-router-dom";
 
