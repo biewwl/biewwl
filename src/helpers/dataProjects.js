@@ -12,9 +12,9 @@ import FMEditProfile from '../pages/Project/images/favorite-musics/edit-profile.
 import FMFavorites from '../pages/Project/images/favorite-musics/favorites.png';
 
 import OSHome from '../pages/Project/images/online-store/Home.png';
-import OSAttr from '../pages/Project/images/online-store/Home.png';
-import OSProduct from '../pages/Project/images/online-store/Home.png';
-import OSCart from '../pages/Project/images/online-store/Home.png';
+import OSAttr from '../pages/Project/images/online-store/Attributes.png';
+import OSProduct from '../pages/Project/images/online-store/Product.png';
+import OSCart from '../pages/Project/images/online-store/Cart.png';
 
 const data = [
   {
