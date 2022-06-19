@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/biewwl/static/css/main.f3a1aa91.css",
-    "main.js": "/biewwl/static/js/main.b46fea56.js",
+    "main.js": "/biewwl/static/js/main.949ee375.js",
     "static/media/home-image.png": "/biewwl/static/media/home-image.c8e47156dd800ab657be.png",
     "static/media/ranking.png": "/biewwl/static/media/ranking.ec80c7f597ce9426eb89.png",
     "static/media/mask.png": "/biewwl/static/media/mask.be9ae12913fcd558de94.png",
@@ -9,6 +9,7 @@
     "static/media/game.png": "/biewwl/static/media/game.0e4dc40d17338ae017c4.png",
     "static/media/correct.png": "/biewwl/static/media/correct.ff9178872f4ae14ebcdc.png",
     "static/media/perfil.png": "/biewwl/static/media/perfil.571290301d021598712f.png",
+    "static/media/Home.png": "/biewwl/static/media/Home.85bfa19d98b3e266bc94.png",
     "static/media/sky.jpg": "/biewwl/static/media/sky.cf529ed60f5d430dd95c.jpg",
     "static/media/edit-profile.png": "/biewwl/static/media/edit-profile.991b8a4aa83429b64a6a.png",
     "static/media/search.png": "/biewwl/static/media/search.5e24cf854f8b5bda3b29.png",
@@ -22,10 +23,10 @@
     "static/media/home.png": "/biewwl/static/media/home.970cb2ca03c9250c41a6.png",
     "index.html": "/biewwl/index.html",
     "main.f3a1aa91.css.map": "/biewwl/static/css/main.f3a1aa91.css.map",
-    "main.b46fea56.js.map": "/biewwl/static/js/main.b46fea56.js.map"
+    "main.949ee375.js.map": "/biewwl/static/js/main.949ee375.js.map"
   },
   "entrypoints": [
     "static/css/main.f3a1aa91.css",
-    "static/js/main.b46fea56.js"
+    "static/js/main.949ee375.js"
   ]
 }
