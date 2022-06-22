@@ -3,11 +3,11 @@ import Gallery from "./components/Gallery";
 import { connect } from "react-redux";
 import Header from "../../components/Header";
 import invert from "../../helpers/invertTheme";
-import "./styles/Project.css";
-import "./styles/Project-mobile.css";
+import "./styles/Site.css";
+import "./styles/Site-mobile.css";
 import { Link } from "react-router-dom";
 
-function Project({ match, theme, color }) {
+function Site({ match, theme, color }) {
   const {
     params: { project },
   } = match;
@@ -17,22 +17,23 @@ function Project({ match, theme, color }) {
   return (
     <>
       <Header selectedPage="projects" />
-      <main className={`project bg${theme}`}>
+      <main className={`site bg${theme}`}>
         {dataProject ? (
           <>
-            <section className="project-name">
+            <section className="site-name">
               <div>
                 <Link to="/projects" className={`c${color}`}>Projects /</Link>
+                {/* <Link to="/sites" className={`c${color}`}>Sites /</Link> */}
                 <h1 className={`c${invert(theme)}`}>{dataProject.name}</h1>
               </div>
               <span className={`c${color}`}>{dataProject.development}</span>
             </section>
-            <section className={`project-detail bg${color}`}>
+            <section className={`site-detail bg${color}`}>
               <Gallery images={dataProject.images} />
-              <section className={`project-description c${theme}`}>
+              <section className={`site-description c${theme}`}>
                 <h2>Description</h2>
                 <p>{dataProject.description}</p>
-                <section className="project-links">
+                <section className="site-links">
                   <a
                     href={dataProject.links.repository}
                     target="_blank"
@@ -52,7 +53,7 @@ function Project({ match, theme, color }) {
                 </section>
               </section>
             </section>
-            <section className="project-infos">
+            <section className="site-infos">
               <section>
                 <h3 className={`c${color}`}>Skills Used</h3>
                 <p>
@@ -94,4 +95,4 @@ const mapStateToProps = (state) => ({
   theme: state.theme.theme,
 });
 
-export default connect(mapStateToProps)(Project);
+export default connect(mapStateToProps)(Site);

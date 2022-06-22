@@ -16,7 +16,7 @@ function Projects({ theme, color }) {
           <section className="project-card" key={e.name}>
             <Link
               rel="noreferrer"
-              to={`/projects/${e.path}`}
+              to={`/projects/sites/${e.path}`}
               className="project-link"
             >
               <section className={`cover bg${color} c${theme}`}>

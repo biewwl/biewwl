@@ -5,7 +5,7 @@ import Projects from "./pages/Projects";
 import "./colors/colors.css";
 import "./App.css";
 import About from "./pages/About";
-import Project from "./pages/Project";
+import Site from "./pages/Site";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/about" component={About}></Route>
         <Route exact path="/projects" component={Projects}></Route>
-        <Route exact path="/projects/:project" component={Project}></Route>
+        <Route exact path="/projects/sites/:project" component={Site}></Route>
       </Switch>
     </div>
   );

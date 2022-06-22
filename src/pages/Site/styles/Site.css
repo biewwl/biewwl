@@ -46,12 +46,12 @@
   }
 }
 
-.project {
+.site {
   padding: 80px 0 30px;
   transition: 1s;
 }
 
-.project-detail {
+.site-detail {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -61,36 +61,36 @@
   animation: 1s fade;
 }
 
-.project-name {
+.site-name {
   padding: 40px 20px 40px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.project-name h1 {
+.site-name h1 {
   font-size: 2.5em;
   font-weight: 100;
   transition: 1s;
   animation: 1s toRight;
 }
 
-.project-name span {
+.site-name span {
   font-style: italic;
   padding: 20px;
   transition: 1s;
 }
 
-.project-name div {
+.site-name div {
   animation: 1s toRight;
 }
 
-.project-name a {
+.site-name a {
   padding: 2px;
   transition: 1s;
 }
 
-.project-description {
+.site-description {
   width: 30%;
   height: 50%;
   display: flex;
@@ -99,18 +99,18 @@
   animation: 1s toTop;
 }
 
-.project-description h2 {
+.site-description h2 {
   padding: 10px 0;
   font-size: 1.2em;
 }
 
-.project-links {
+.site-links {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
 }
 
-.project-links a {
+.site-links a {
   padding: 5px 10px;
   border-width: 2px;
   width: 45%;
@@ -119,30 +119,30 @@
   font-size: 0.8em;
 }
 
-.project-infos {
+.site-infos {
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.project-infos section {
+.site-infos section {
   padding: 10px;
   animation: 1s toTop;
 }
 
-.project-infos h3 {
+.site-infos h3 {
   font-weight: 100;
   padding: 10px 0;
   transition: 1s;
 }
 
-.project-infos p {
+.site-infos p {
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-infos span, .project-infos a {
+.site-infos span, .site-infos a {
   font-weight: 100;
   font-size: 0.9em;
   padding: 10px 0;

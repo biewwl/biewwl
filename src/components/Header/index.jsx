@@ -60,43 +60,31 @@ function Header({ color, theme, selectedPage, dispatch }) {
         <li>
           <Link
             to="/"
-            className={`nav-icon c${invert(theme)} ${selected(
-              "home",
-              color
-            )}`}
+            className={`nav-icon c${invert(theme)} ${selected("home", color)}`}
           >
             Home
           </Link>
-          <Link
-            to="/"
-            className="nav-icon-mobile"
-          >
-            { selectedPage === 'home' ? (
-            <i className={`ri-home-2-fill c${color}`} />
+          <Link to="/" className="nav-icon-mobile">
+            {selectedPage === "home" ? (
+              <i className={`ri-home-2-fill c${color}`} />
             ) : (
-            <i className={`ri-home-2-line c${invert(theme)}`} />
-            ) }
+              <i className={`ri-home-2-line c${invert(theme)}`} />
+            )}
           </Link>
         </li>
         <li>
           <Link
             to="/about"
-            className={`nav-icon c${invert(theme)} ${selected(
-              "about",
-              color
-            )}`}
+            className={`nav-icon c${invert(theme)} ${selected("about", color)}`}
           >
             About
           </Link>
-          <Link
-            to="/about"
-            className="nav-icon-mobile"
-          >
-            { selectedPage === 'about' ? (
-            <i className={`ri-user-fill c${color}`} />
+          <Link to="/about" className="nav-icon-mobile">
+            {selectedPage === "about" ? (
+              <i className={`ri-user-fill c${color}`} />
             ) : (
-            <i className={`ri-user-line c${invert(theme)}`} />
-            ) }
+              <i className={`ri-user-line c${invert(theme)}`} />
+            )}
           </Link>
         </li>
         <li>
@@ -109,15 +97,12 @@ function Header({ color, theme, selectedPage, dispatch }) {
           >
             Projects
           </Link>
-          <Link
-            to="/projects"
-            className="nav-icon-mobile"
-          >
-            { selectedPage === 'projects' ? (
-            <i className={`ri-file-code-fill c${color}`} />
+          <Link to="/projects" className="nav-icon-mobile">
+            {selectedPage === "projects" ? (
+              <i className={`ri-file-code-fill c${color}`} />
             ) : (
-            <i className={`ri-file-code-line c${invert(theme)}`} />
-            ) }
+              <i className={`ri-file-code-line c${invert(theme)}`} />
+            )}
           </Link>
         </li>
         {theme === "" && (

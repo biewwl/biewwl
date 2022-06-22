@@ -1,21 +1,21 @@
-import TriviaCorrect from "../pages/Project/images/trivia/correct.png";
-import TriviaLogin from "../pages/Project/images/trivia/login.png";
-import TriviaGame from "../pages/Project/images/trivia/game.png";
-import TriviaRanking from "../pages/Project/images/trivia/ranking.png";
-import TriviaSettings from '../pages/Project/images/trivia/settings.png'
+import TriviaCorrect from "../pages/Site/images/trivia/correct.png";
+import TriviaLogin from "../pages/Site/images/trivia/login.png";
+import TriviaGame from "../pages/Site/images/trivia/game.png";
+import TriviaRanking from "../pages/Site/images/trivia/ranking.png";
+import TriviaSettings from '../pages/Site/images/trivia/settings.png';
 
-import FMLogin from '../pages/Project/images/favorite-musics/login.png';
-import FMHome from '../pages/Project/images/favorite-musics/home.png';
-import FMSearch from '../pages/Project/images/favorite-musics/search.png';
-import FMAlbum from '../pages/Project/images/favorite-musics/album.png';
-import FMProfile from '../pages/Project/images/favorite-musics/profile.png';
-import FMEditProfile from '../pages/Project/images/favorite-musics/edit-profile.png';
-import FMFavorites from '../pages/Project/images/favorite-musics/favorites.png';
+import FMLogin from '../pages/Site/images/favorite-musics/login.png';
+import FMHome from '../pages/Site/images/favorite-musics/home.png';
+import FMSearch from '../pages/Site/images/favorite-musics/search.png';
+import FMAlbum from '../pages/Site/images/favorite-musics/album.png';
+import FMProfile from '../pages/Site/images/favorite-musics/profile.png';
+import FMEditProfile from '../pages/Site/images/favorite-musics/edit-profile.png';
+import FMFavorites from '../pages/Site/images/favorite-musics/favorites.png';
 
-import OSHome from '../pages/Project/images/online-store/Home.png';
-import OSAttr from '../pages/Project/images/online-store/Attributes.png';
-import OSProduct from '../pages/Project/images/online-store/Product.png';
-import OSCart from '../pages/Project/images/online-store/Cart.png';
+import OSHome from '../pages/Site/images/online-store/Home.png';
+import OSAttr from '../pages/Site/images/online-store/Attributes.png';
+import OSProduct from '../pages/Site/images/online-store/Product.png';
+import OSCart from '../pages/Site/images/online-store/Cart.png';
 
 const data = [
   {
