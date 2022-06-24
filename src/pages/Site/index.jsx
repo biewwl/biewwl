@@ -23,7 +23,7 @@ function Site({ match, theme, color }) {
             <section className="site-name">
               <div>
                 <Link to="/projects" className={`c${color}`}>Projects /</Link>
-                {/* <Link to="/sites" className={`c${color}`}>Sites /</Link> */}
+                {/* <Link to="/sites" className={`c${color}`}>Sites /</Link>clear */}
                 <h1 className={`c${invert(theme)}`}>{dataProject.name}</h1>
               </div>
               <span className={`c${color}`}>{dataProject.development}</span>
