@@ -6,8 +6,16 @@ import "./styles/Home.css";
 import "./styles/Home-mobile.css";
 import { changeColor, changeTheme } from "../../redux/actions/themeAction";
 import biewwl from "./images/biewwl.jpg";
+import { Icon } from "@iconify/react";
+import { useState } from "react";
 
 function Home({ color, theme, dispatch }) {
+  const [querySearch, setQuerySearch] = useState("");
+
+  const handleQueryChange = ({ target }) => {
+    setQuerySearch(target.value);
+  }
+
   const changeInvertTheme = () => {
     if (theme === "" && color === "-dark") {
       dispatch(changeTheme("-dark"));
@@ -46,11 +54,23 @@ function Home({ color, theme, dispatch }) {
               <span className="star-home">✦</span>
               <img src={biewwl} alt="" />
             </section>
-            <section className="message-container">
+            <section className="search-container">
               <h3 className={`message c${invert(theme)}`}>
                 Feel free to explore the projects!
               </h3>
-              <input type="text" placeholder="Name, library..." />
+              <div htmlFor="search">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="Name, library..."
+                  value={querySearch}
+                  onChange={handleQueryChange}
+                />
+                {querySearch !== '' && <Icon
+                  icon="akar-icons:arrow-right"
+                  className={`c${invert(theme)}`}
+                />}
+              </div>
             </section>
           </div>
           <div className="bottom-content">
