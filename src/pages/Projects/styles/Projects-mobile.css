@@ -16,4 +16,8 @@
   .container-projects {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
+
+  .card-difficulty {
+    font-size: 1em;
+  }
 }
