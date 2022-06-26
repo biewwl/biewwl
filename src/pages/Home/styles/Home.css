@@ -1,5 +1,4 @@
 @keyframes toTop {
-
   0% {
     transform: translateY(100px);
   }
@@ -10,7 +9,6 @@
 }
 
 @keyframes toRight {
-
   0% {
     opacity: 0%;
     transform: translateX(-50px);
@@ -25,66 +23,169 @@
 .home {
   transition: 1s;
   display: flex;
-  min-height: 100vh;
-  padding-top: 64px;
-}
-
-.home-introduction-container {
   align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 55%;
+  height: 100vh;
+  width: 100vw;
+  padding: 1vw;
 }
 
-.home-introduction-content {
-  align-items: flex-start;
-  animation: toRight 1s;
+.card-left,
+.card-left-dark {
+  background-image: url("../images/light-wallpaper.png");
+  background-size: cover;
+  border-radius: 1em;
+  height: 100%;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  cursor: default;
+  justify-content: space-between;
+  transition: 0.5s;
+  animation: toRight 1s;
 }
 
-.i-am {
-  font-size: 2em;
+.card-left-dark {
+  background-image: url("../images/dark-wallpaper.png");
+}
+
+.card-left h1,
+.card-left-dark h1 {
+  font-size: 1.2em;
+  padding: 30px 40px;
+  color: #17453d;
   font-weight: 100;
-  transition: 1s;
+  transition: 0.5s;
 }
 
-.name {
-  font-size: 4em;
-  font-weight: 500;
-  transition: 1s;
+.card-left-dark h1 {
+  color: white;
 }
 
-.web-developer {
-  font-size: 2.5em;
+.home-introduction {
+  height: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  color: white;
+}
+
+.home-introduction h2 {
+  margin: 10px 0;
+}
+
+.home-introduction h2,
+.home-introduction span {
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.card-left .home-button,
+.card-left-dark .home-button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+  background-color: white;
+  color: #434261;
+  transition: 0.5s;
+}
+
+.home .ri-moon-fill,
+.home .ri-sun-fill {
+  position: fixed;
+  bottom: 1.5vw;
+  right: 1.5vw;
+  color: #434261;
+  transition: 0.5s;
+}
+
+.home .ri-sun-fill {
+  color: white;
+}
+
+.home .card-right,
+.home .card-right-dark {
+  height: 100%;
+  width: 40%;
+  padding: 40px;
+  transition: 0.5s;
+  animation: toTop 1s;
+}
+
+.home .card-right .top-content,
+.home .card-right-dark .top-content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home .header-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.star-home {
+  font-size: 1.5em;
+  transition: 0.5s;
+  color: goldenrod;
+}
+
+.home .header-card-right img {
+  width: 40px;
+  border-radius: 0.5em;
+}
+
+.message-container h3 {
+  width: 50%;
+  transition: 0.5s;
+  font-weight: 100;
+}
+
+.card-right .message-container input,
+.card-right-dark .message-container input {
+  margin: 40px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 25px;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  transition: 0.5s;
+}
+
+.card-right-dark .message-container input {
+  background-color: rgb(81, 81, 81);
+  color: white;
+}
+
+.home .bottom-content  {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home .bottom-content nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.8em;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.home .bottom-content nav a {
+  transition: 0.5s;
+}
+
+.about-home {
+  height: 100%;
+  display: flex;
+  align-items: center;
   font-style: italic;
   font-weight: 100;
-  transition: 1s;
-}
-
-.projects-button {
-  padding: 10px 15px;
-  border-radius: 25px;
-  margin: 10px 0;
-  transition: 1s;
-}
-
-.home-image-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-height: 350px;
-  width: 45%;
-}
-
-.home-image {
-  animation: toTop 1s;
-  border-radius: 76% 24% 38% 62% / 53% 24% 76% 47% ;
-  background-image: url(../images/home-image.png);
-  background-size: contain;
-  height: 300px;
-  width: 300px;
-  transition: 1.5s;
+  font-size: 0.9em;
+  transition: 0.5s;
 }
