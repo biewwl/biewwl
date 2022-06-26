@@ -32,7 +32,7 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     justify-content: center;
-    animation: toBottom 1s;
+    animation: toBottom 0.5s;
   }
 
   .card-left h1,

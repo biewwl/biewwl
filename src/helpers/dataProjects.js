@@ -21,8 +21,10 @@ const data = [
   {
     path: "trivia",
     name: "Trivia",
+    type: 'Site',
+    difficulty: '✦✦✦',
     description:
-      "This project is a trivia game, built completely in React. Have fun answering easy, medium or hard level questions. Also remember to be fast if you want to be the best!",
+      "This project is a trivia game, built completely in React. Have fun answering questions. Also remember to be fast if you want to be the best!",
     links: {
       repository: "https://github.com/biewwl/project-trivia",
       project: "https://biewwl.github.io/project-trivia/",
@@ -52,6 +54,8 @@ const data = [
   {
     path: "favorite-musics",
     name: "Favorite Musics",
+    type: 'Site',
+    difficulty: '✦✦✦✦',
     description:
       "This project is a music search application, which uses the iTunes API. Search for your favorite songs and add them to your favorites list.",
     links: {
@@ -87,6 +91,8 @@ const data = [
   {
     path: "online-store",
     name: "Online Store",
+    type: 'Site',
+    difficulty: '✦✦✦',
     description:
       "This project is a simulation of an online store, built on the basis of the Mercado Livre api. Search for what you want and add it to your cart!",
     links: {

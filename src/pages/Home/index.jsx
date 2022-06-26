@@ -1,20 +1,35 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import invert from "../../helpers/invertTheme";
 import "./styles/Home.css";
 import "./styles/Home-mobile.css";
 import { changeColor, changeTheme } from "../../redux/actions/themeAction";
+import { goSearch } from "../../redux/actions/searchAction";
 import biewwl from "./images/biewwl.jpg";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 
 function Home({ color, theme, dispatch }) {
+  const history = useHistory();
+
   const [querySearch, setQuerySearch] = useState("");
 
   const handleQueryChange = ({ target }) => {
     setQuerySearch(target.value);
-  }
+  };
+
+  const handleSearch = () => {
+    dispatch(goSearch(querySearch));
+    history.push('/projects');
+  };
+
+  const handleSearchEnter = (e) => {
+    if (e.key === "Enter" &&  e.target.value !== '') {
+      e.preventDefault();
+      handleSearch();
+    }
+  };
 
   const changeInvertTheme = () => {
     if (theme === "" && color === "-dark") {
@@ -29,9 +44,9 @@ function Home({ color, theme, dispatch }) {
       dispatch(changeTheme(""));
     }
   };
+
   return (
     <>
-      {/* <Header selectedPage="home" /> */}
       <main className={`bg${theme} home`}>
         <section className={`card-left${theme}`}>
           <h1>biewwl</h1>
@@ -65,20 +80,24 @@ function Home({ color, theme, dispatch }) {
                   placeholder="Name, library..."
                   value={querySearch}
                   onChange={handleQueryChange}
+                  onKeyDown={handleSearchEnter}
                 />
-                {querySearch !== '' && <Icon
-                  icon="akar-icons:arrow-right"
-                  className={`c${invert(theme)}`}
-                />}
+                {querySearch !== "" && (
+                  <Icon
+                    icon="akar-icons:arrow-right"
+                    className={`c${invert(theme)}`}
+                    onClick={handleSearch}
+                  />
+                )}
               </div>
             </section>
           </div>
           <div className="bottom-content">
             <nav>
-              <Link to="/about" className={`c${invert(theme)}`}>
+              <Link to="/about" className={`c${color}`}>
                 About
               </Link>
-              <Link to="/projects" className={`c${invert(theme)}`}>
+              <Link to="/projects" className={`c${color}`}>
                 Projects
               </Link>
             </nav>

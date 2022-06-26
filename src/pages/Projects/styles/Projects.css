@@ -1,8 +1,7 @@
 @keyframes toTop {
-  
   0% {
     opacity: 0%;
-    transform: translateY(50px);
+    transform: translateY(10px);
   }
   100% {
     opacity: 100%;
@@ -10,73 +9,139 @@
   }
 }
 
-.projects {
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  padding: 100px 20px;
+@keyframes toRight {
+  
+  0% {
+    opacity: 0%;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+.projects,
+.projects-dark {
+  padding: 100px 0;
   transition: 1s;
-  gap: 1em;
 }
 
-.project-link {
+.projects-search {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  animation: toRight 1s;
+}
+
+.projects-search span {
+  transition: 1s;
+}
+
+.projects .input-search,
+.projects-dark .input-search {
+  background-color: rgb(238, 238, 238);
+  border-radius: 25px;
+  border: none;
+  margin: 40px 0;
+  padding: 10px;
+  transition: 1s;
+  width: 30%;
+}
+
+.projects-dark .input-search {
+  background-color: rgb(81, 81, 81);
+  color: white;
+}
+
+.container-projects {
+  display: grid;
+  grid-gap: 40px 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-items: center;
+  padding: 20px;
+  transition: 1s;
+  width: 100vw;
+}
+
+.projects .card-project a,
+.projects-dark .card-project a {
+  animation: toTop 0.5s;
+  background-color: rgb(238, 238, 238);
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+  transition: 1s;
+}
+
+.projects-dark .card-project a {
+  background-color: rgb(59, 59, 59);
+}
+
+.projects .card-project .card-image,
+.projects-dark .card-project .card-image {
+  background-image: url(../images/light-wallpaper.png);
+  background-position: bottom;
+  background-size: cover;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  height: 50%;
+  transition: 1s;
+  width: 100%;
+}
+
+.card-project .card-infos {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
+  height: 40%;
+  justify-content: space-around;
+  padding: 0 20px;
+  transition: 1s;
 }
 
-.project-link img {
-  transition: 0.5s;
-  width: 110px;
-  height: 110px;
-  border-radius: 0.3em;
-  margin: 0px;
+.projects-dark .card-project .card-image {
+  background-image: url(../images/dark-wallpaper.png);
+  transition: 1s;
 }
 
-.project-link img:hover {
-  width: 120px;
-  height: 120px;
-}
-
-.project-card {
-  align-items: flex-start;
-  animation: toTop 1s;
-  display: flex;
-  flex-direction: column;
-  margin: 30px;
-  justify-self: center;
-}
-
-.project-card h4 {
+.card-title {
   align-items: center;
   display: flex;
+  flex-direction: column;
+  transition: 1s;
+}
+
+.card-project span {
   font-size: 0.8em;
+  transition: 1s;
+}
+
+.card-project h3 {
+  font-weight: 100;
+  margin: 10px 0;
+  transition: 1s;
+  /*  */
+}
+
+.card-project p {
+  font-size: 0.9em;
+  font-weight: 100;
+  text-align: justify;
+  transition: 1s;
+}
+
+.card-difficulty {
+  align-items: center;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  display: flex;
+  font-size: 1.5em;
+  height: 6%;
   justify-content: center;
   transition: 1s;
-  padding: 10px 0;
-}
-
-.cover {
-  width: 110px;
-  height: 110px;
-  border-radius: 0.3em;
-  display: grid;
-  padding: 5px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  transition: 1s;
-}
-
-.cover span {
-  font-size: 0.5em;
-  position: absolute;
-  top: 5px;
-  text-transform: uppercase;
-}
-
-.cover h3 {
-  font-weight: 100;
 }

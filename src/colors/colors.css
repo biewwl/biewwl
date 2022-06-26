@@ -34,6 +34,10 @@ Light
   color: var(--light);
 }
 
+.c2 {
+  color: rgb(109, 109, 109);
+}
+
 .selected {
   text-decoration: underline 2px;
 }
@@ -60,6 +64,10 @@ Dark
 
 .c-dark {
   color: var(--dark);
+}
+
+.c2-dark {
+  color: rgb(155, 155, 155);
 }
 
 .selected-dark {
