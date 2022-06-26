@@ -62,25 +62,61 @@ function Home({ color, theme, dispatch }) {
                 Projects
               </Link>
             </nav>
-            <p className={`about-home c${invert(theme)}`}>
+            <p className={`about-home`}>
               Since I was very young I have always been fascinated by virtual
               worlds and at the beginning of 2022 I joined a web development
               school. I learned to love programming and became very good at
               it...
             </p>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/biewwl"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`c${invert(theme)}`}
+                >
+                  <i className="ri-github-line" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/biewwl/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`c${invert(theme)}`}
+                >
+                  <i className="ri-linkedin-line" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/21biewwl"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`c${invert(theme)}`}
+                >
+                  <i className="ri-twitter-line" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/biewwl/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`c${invert(theme)}`}
+                >
+                  <i className="ri-instagram-line" />
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
         {theme === "" && (
-          <span
-            className={`ri-moon-fill`}
-            onClick={changeInvertTheme}
-          />
+          <span className={`ri-moon-fill`} onClick={changeInvertTheme} />
         )}
         {theme === "-dark" && (
-          <span
-            className={`ri-sun-fill`}
-            onClick={changeInvertTheme}
-          />
+          <span className={`ri-sun-fill`} onClick={changeInvertTheme} />
         )}
       </main>
     </>
