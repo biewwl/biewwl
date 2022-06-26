@@ -9,9 +9,14 @@ import { goSearch } from "../../redux/actions/searchAction";
 import biewwl from "./images/biewwl.jpg";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
+import { useEffect } from "react";
 
 function Home({ color, theme, dispatch }) {
   const history = useHistory();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   const [querySearch, setQuerySearch] = useState("");
 

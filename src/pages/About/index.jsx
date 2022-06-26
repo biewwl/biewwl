@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import { connect } from "react-redux";
 import Gallery from "./components/Gallery";
@@ -9,6 +9,11 @@ import "./styles/About.css";
 import "./styles/About-mobile.css";
 
 function About({ color, theme }) {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <>
       <Header selectedPage="about" />

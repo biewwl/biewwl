@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import "./styles/Projects.css";
 import "./styles/Projects-mobile.css";
@@ -11,6 +11,10 @@ import { Icon } from "@iconify/react";
 
 function Projects({ theme, color, query, dispatch }) {
   const [querySearch, setQuerySearch] = useState(query);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   const filterProjects = () =>
     data.filter(
@@ -31,7 +35,7 @@ function Projects({ theme, color, query, dispatch }) {
 
   return (
     <>
-      <Header></Header>
+      <Header selectedPage="projects" />
       <main className={`projects${theme} bg${theme}`}>
         <section className="projects-search">
           <span className={`c${invert(theme)}`}>{querySearch !== '' ? `"${querySearch}"` : 'Start a new search'}</span>

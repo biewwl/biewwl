@@ -216,3 +216,19 @@
 .home .bottom-content ul a {
   transition: 0.5s;
 }
+
+.home .bottom-content ul .ri-github-line {
+  color: #c9510c;
+}
+
+.home .bottom-content ul .ri-linkedin-line {
+  color: #0072b1;
+}
+
+.home .bottom-content ul .ri-twitter-line {
+  color: #1DA1F2;
+}
+
+.home .bottom-content ul .ri-instagram-line {
+  color: #C13584;
+}

@@ -6,11 +6,16 @@ import invert from "../../helpers/invertTheme";
 import "./styles/Site.css";
 import "./styles/Site-mobile.css";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Site({ match, theme, color }) {
   const {
     params: { project },
   } = match;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   const dataProject = data.find((e) => e.path === project);
 
