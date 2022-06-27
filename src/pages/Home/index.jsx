@@ -16,7 +16,7 @@ function Home({ color, theme, dispatch }) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+  }, []);
 
   const [querySearch, setQuerySearch] = useState("");
 
@@ -26,11 +26,11 @@ function Home({ color, theme, dispatch }) {
 
   const handleSearch = () => {
     dispatch(goSearch(querySearch));
-    history.push('/projects');
+    history.push("/projects");
   };
 
   const handleSearchEnter = (e) => {
-    if (e.key === "Enter" &&  e.target.value !== '') {
+    if (e.key === "Enter" && e.target.value !== "") {
       e.preventDefault();
       handleSearch();
     }
@@ -54,16 +54,21 @@ function Home({ color, theme, dispatch }) {
     <>
       <main className={`bg${theme} home`}>
         <section className={`card-left${theme}`}>
-          <h1>biewwl</h1>
+          <section className="home-logo-theme">
+            <h1>biewwl</h1>
+            {theme === "" && (
+              <span className={`ri-moon-fill`} onClick={changeInvertTheme} />
+            )}
+            {theme === "-dark" && (
+              <span className={`ri-sun-fill`} onClick={changeInvertTheme} />
+            )}
+          </section>
           <section className={`home-introduction`}>
             <span>Welcome!</span>
             <h2>
               Follow my projects developed in my trajectory as a WEB developer
             </h2>
-            <Link
-              to="/projects"
-              className={`home-button bg${theme} c${invert(theme)}`}
-            >
+            <Link to="/projects" className="home-button">
               Explore projects
             </Link>
           </section>
@@ -99,10 +104,10 @@ function Home({ color, theme, dispatch }) {
           </div>
           <div className="bottom-content">
             <nav>
-              <Link to="/about" className={`c${color}`}>
+              <Link to="/about" className={`c${invert(theme)}`}>
                 About
               </Link>
-              <Link to="/projects" className={`c${color}`}>
+              <Link to="/projects" className={`c${invert(theme)}`}>
                 Projects
               </Link>
             </nav>
@@ -156,12 +161,6 @@ function Home({ color, theme, dispatch }) {
             </ul>
           </div>
         </section>
-        {theme === "" && (
-          <span className={`ri-moon-fill`} onClick={changeInvertTheme} />
-        )}
-        {theme === "-dark" && (
-          <span className={`ri-sun-fill`} onClick={changeInvertTheme} />
-        )}
       </main>
     </>
   );

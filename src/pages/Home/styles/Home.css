@@ -1,5 +1,4 @@
 @keyframes toTop {
-  
   0% {
     transform: translateY(100px);
   }
@@ -10,7 +9,6 @@
 }
 
 @keyframes toRight {
-  
   0% {
     opacity: 0%;
     transform: translateX(-50px);
@@ -28,7 +26,7 @@
   height: 100vh;
   min-height: 530px;
   padding: 1vw;
-  transition: 1s;
+  transition: 0.5s;
   width: 100vw;
 }
 
@@ -50,27 +48,29 @@
   background-image: url("../images/dark-wallpaper.png");
 }
 
-.card-left h1,
-.card-left-dark h1 {
-  color: #17453d;
-  font-size: 1.2em;
-  font-weight: 100;
-  padding: 30px 40px;
-  transition: 0.5s;
+.home-logo-theme {
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.card-left h1,
 .card-left-dark h1 {
+  font-size: 1.2em;
+  font-weight: 100;
+  transition: 0.5s;
   color: white;
 }
 
-.home-introduction {
+.card-left .home-introduction,
+.card-left-dark .home-introduction {
   align-items: flex-start;
   color: white;
   display: flex;
   flex-direction: column;
   height: 40%;
   justify-content: center;
-  padding: 0 40px;
   padding: 20px;
   width: 80%;
 }
@@ -96,16 +96,15 @@
   transition: 0.5s;
 }
 
-.home .ri-moon-fill,
-.home .ri-sun-fill {
-  bottom: 1.5vw;
-  color: #434261;
-  position: fixed;
-  right: 1.5vw;
-  transition: 0.5s;
+.card-left-dark .home-button {
+  background-color: rgb(81, 81, 81);
+  color: white;
 }
 
+.home .ri-moon-fill,
 .home .ri-sun-fill {
+  right: 1.5vw;
+  transition: 0.5s;
   color: white;
 }
 
@@ -113,7 +112,7 @@
 .home .card-right-dark {
   animation: toTop 0.5s;
   height: 100%;
-  padding: 40px;
+  padding: 50px;
   transition: 0.5s;
   width: 40%;
 }
@@ -218,17 +217,17 @@
 }
 
 .home .bottom-content ul .ri-github-line {
-  color: #c9510c;
+  color: #ff642c;
 }
 
 .home .bottom-content ul .ri-linkedin-line {
-  color: #0072b1;
+  color: #0e76a8;
 }
 
 .home .bottom-content ul .ri-twitter-line {
-  color: #1DA1F2;
+  color: #00acee;
 }
 
 .home .bottom-content ul .ri-instagram-line {
-  color: #C13584;
+  color: #c13584;
 }

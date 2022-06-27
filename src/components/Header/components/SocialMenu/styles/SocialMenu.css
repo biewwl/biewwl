@@ -11,7 +11,7 @@
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  transition: 0.2s;
+  transition: 0.5s;
   width: 50px;
 }
 
@@ -33,5 +33,5 @@
 }
 
 .social-menu .ri-instagram-line {
-  color: #e73c61;
+  color: #C13584;
 }

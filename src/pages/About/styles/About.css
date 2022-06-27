@@ -44,7 +44,7 @@
 
 
 .about {
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .images-about {
@@ -55,7 +55,7 @@
   justify-content: center;
   min-height: 500px;
   height: 100vh;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .link-about-me {
@@ -67,7 +67,7 @@
 }
 
 .link-about-me i {
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .container-about-me {
@@ -75,7 +75,7 @@
   display: flex;
   justify-content: center;
   min-height: 50vh;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .about-me {
@@ -88,17 +88,17 @@
 .about-me h3 {
   letter-spacing: 0.1em;
   padding: 20px 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .about-me p {
   line-height: 1.6em;
   text-align: justify;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .skills-container {
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .skills {
@@ -117,7 +117,7 @@
   animation: toTop 1s;
   display: flex;
   flex-direction: column;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .skills svg {
