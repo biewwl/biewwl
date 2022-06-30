@@ -17,9 +17,10 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
-  .projects .card-project a {
+  .projects .card-project,
+  .projects-dark .card-project  {
     justify-self: center;
-    max-width: 250px;
+    max-width: 90%;
   }
 
   .card-difficulty {
