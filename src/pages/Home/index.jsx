@@ -92,13 +92,15 @@ function Home({ color, theme, dispatch }) {
                   onChange={handleQueryChange}
                   onKeyDown={handleSearchEnter}
                 />
-                {querySearch !== "" && (
-                  <Icon
-                    icon="akar-icons:arrow-right"
-                    className={`c${invert(theme)}`}
-                    onClick={handleSearch}
-                  />
-                )}
+                <Icon
+                  icon="akar-icons:arrow-right"
+                  className={`c${invert(theme)}${
+                    querySearch !== ""
+                      ? " arrow-search-visible"
+                      : " arrow-search"
+                  }`}
+                  onClick={handleSearch}
+                />
               </div>
             </section>
           </div>

@@ -164,10 +164,19 @@
   color: white;
 }
 
-.card-right .search-container svg,
-.card-right-dark .search-container svg {
-  cursor: pointer;
+.arrow-search {
+  opacity: 0;
+  width: 0px;
+  transition: width 0.5s, margin 0.5s;
+  margin: 0;
+}
+
+.arrow-search-visible {
+  width: 15px;
+  opacity: 1;
+  transition: width 0.5s, margin 0.5s;
   margin: 0 10px;
+  cursor: pointer;
 }
 
 .card-right .search-container div,
