@@ -51,7 +51,7 @@ function Projects({ theme, color, query, dispatch }) {
           {filterProjects().map((e) => (
             <section key={e.name} className="card-project">
               <Link rel="noreferrer" to={`/projects/sites/${e.path}`}>
-                <div className="card-image"></div>
+                <img className="card-image" src={ e.images[0] } alt="" />
                 <section className="card-infos">
                   <div className="card-title">
                     <span className={`c${color}`}>{e.type}</span>
