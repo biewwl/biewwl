@@ -7,7 +7,6 @@ import invert from "../../helpers/invertTheme";
 import { Link } from "react-router-dom";
 import { goSearch } from "../../redux/actions/searchAction";
 import Header from "../../components/Header";
-import { Icon } from "@iconify/react";
 
 function Projects({ theme, color, query, dispatch }) {
   const [querySearch, setQuerySearch] = useState(query);

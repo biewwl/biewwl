@@ -1,4 +1,4 @@
-import lS from 'biewwl-localstorage';
+import lS from 'manager-local-storage';
 
 const INITIAL_STATE = {
   color: '-blue',
