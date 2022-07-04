@@ -14,13 +14,4 @@
     justify-content: center;
   }
 
-  .projects .card-project,
-  .projects-dark .card-project  {
-    justify-self: center;
-    width: 255px;
-  }
-
-  .card-difficulty {
-    font-size: 1em;
-  }
 }

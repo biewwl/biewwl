@@ -1,22 +1,42 @@
 @keyframes toTop {
   0% {
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(10px);
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes toRight {
   0% {
-    opacity: 0%;
+    opacity: 0;
     transform: translateX(-10px);
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes copied {
+  
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
   }
 }
 
@@ -62,84 +82,4 @@
   padding: 20px;
   transition: 0.5s;
   width: 100vw;
-}
-
-.projects .card-project,
-.projects-dark .card-project {
-  animation: toTop 0.5s;
-  background-color: #eeeeee;
-  border-radius: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: 0.5s;
-  height: 350px;
-  width: 250px;
-}
-
-.projects-dark .card-project {
-  background-color: #3b3b3b;
-}
-
-.projects .card-project .card-image,
-.projects-dark .card-project .card-image {
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  border: 1px solid #eee;
-  height: 50%;
-  object-fit: cover;
-  transition: 0.5s;
-  width: 100%;
-}
-
-.projects-dark .card-project .card-image {
-  border: 1px solid #3b3b3b;
-}
-
-.card-project .card-infos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 15px;
-  transition: 0.5s;
-  height: 50%;
-}
-
-.card-title {
-  /* align-items: center; */
-  display: flex;
-  flex-direction: column;
-  transition: 0.5s;
-}
-
-.card-project span {
-  transition: 0.5s;
-}
-
-.card-project h3 {
-  font-size: 1em;
-  font-weight: 100;
-  margin: 10px 0;
-  transition: 0.5s;
-}
-
-.card-project p {
-  font-size: 0.85em;
-
-  font-weight: 100;
-  text-align: justify;
-  transition: 0.5s;
-}
-
-.card-button {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  transition: 0.5s;
-  width: 100%;
-  padding: 5px;
-  border-radius: 1em;
-  margin-top: 20px;
-  font-size: 0.8em;
-  cursor: pointer;
 }

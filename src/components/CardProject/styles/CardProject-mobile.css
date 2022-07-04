@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+
+  .projects .card-project,
+  .projects-dark .card-project  {
+    justify-self: center;
+    width: 255px;
+  }
+
+}

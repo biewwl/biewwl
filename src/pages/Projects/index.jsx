@@ -4,9 +4,9 @@ import "./styles/Projects.css";
 import "./styles/Projects-mobile.css";
 import data from "../../helpers/dataProjects";
 import invert from "../../helpers/invertTheme";
-import { Link } from "react-router-dom";
 import { goSearch } from "../../redux/actions/searchAction";
 import Header from "../../components/Header";
+import CardProject from "../../components/CardProject";
 
 function Projects({ theme, color, query, dispatch }) {
   const [querySearch, setQuerySearch] = useState(query);
@@ -49,24 +49,13 @@ function Projects({ theme, color, query, dispatch }) {
           />
         </section>
         <article className="container-projects">
-          {filterProjects().map((e) => (
-            <section key={e.name} className="card-project">
-              <img className="card-image" src={e.images[0]} alt="" />
-              <section className="card-infos">
-                <div className="card-title">
-                  {/* <span className={`c${color}`}>{e.type}</span> */}
-                  <h3 className={`c${invert(theme)}`}>{e.name}</h3>
-                </div>
-                <p className={`c2${invert(theme)}`}>{e.description}</p>
-                  <Link
-                    rel="noreferrer"
-                    to={`/projects/sites/${e.path}`}
-                    className={`card-button bg${color} c${theme}`}
-                  >
-                    Go to Project
-                  </Link>
-              </section>
-            </section>
+          {filterProjects().map((e, i) => (
+            <CardProject
+              key={i}
+              projectDetails={e}
+              theme={theme}
+              color={color}
+            />
           ))}
         </article>
       </main>

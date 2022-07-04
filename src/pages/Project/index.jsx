@@ -3,12 +3,12 @@ import Gallery from "./components/Gallery";
 import { connect } from "react-redux";
 import Header from "../../components/Header";
 import invert from "../../helpers/invertTheme";
-import "./styles/Site.css";
-import "./styles/Site-mobile.css";
+import "./styles/Project.css";
+import "./styles/Project-mobile.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-function Site({ match, theme, color }) {
+function Project({ match, theme, color }) {
   const {
     params: { project },
   } = match;
@@ -100,4 +100,4 @@ const mapStateToProps = (state) => ({
   theme: state.theme.theme,
 });
 
-export default connect(mapStateToProps)(Site);
+export default connect(mapStateToProps)(Project);
