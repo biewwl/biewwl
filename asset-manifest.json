@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/biewwl/static/css/main.84e996d1.css",
-    "main.js": "/biewwl/static/js/main.988d5841.js",
+    "main.css": "/biewwl/static/css/main.1893d5c6.css",
+    "main.js": "/biewwl/static/js/main.50856a50.js",
+    "static/media/comparation.jpg": "/biewwl/static/media/comparation.32554e67b6a352f91567.jpg",
     "static/media/ranking.png": "/biewwl/static/media/ranking.ec80c7f597ce9426eb89.png",
+    "static/media/without.jpg": "/biewwl/static/media/without.52b72255ab05c2f2e2f0.jpg",
     "static/media/mask.png": "/biewwl/static/media/mask.be9ae12913fcd558de94.png",
     "static/media/login.png": "/biewwl/static/media/login.84559186c9c55c532774.png",
     "static/media/settings.png": "/biewwl/static/media/settings.69a7e01b719d540c53de.png",
+    "static/media/with.jpg": "/biewwl/static/media/with.ddb450b7a58d96c303ef.jpg",
     "static/media/dark-wallpaper.png": "/biewwl/static/media/dark-wallpaper.91a6b3e0d7ea3826db40.png",
     "static/media/correct.png": "/biewwl/static/media/correct.cbfc744c61ab2f119f03.png",
     "static/media/game.png": "/biewwl/static/media/game.545cc36c1f9643eb8bd1.png",
@@ -28,11 +31,11 @@
     "static/media/trybe.jpg": "/biewwl/static/media/trybe.ee246f4a1a202c7de591.jpg",
     "static/media/home.png": "/biewwl/static/media/home.2f20696a7869c2c90470.png",
     "index.html": "/biewwl/index.html",
-    "main.84e996d1.css.map": "/biewwl/static/css/main.84e996d1.css.map",
-    "main.988d5841.js.map": "/biewwl/static/js/main.988d5841.js.map"
+    "main.1893d5c6.css.map": "/biewwl/static/css/main.1893d5c6.css.map",
+    "main.50856a50.js.map": "/biewwl/static/js/main.50856a50.js.map"
   },
   "entrypoints": [
-    "static/css/main.84e996d1.css",
-    "static/js/main.988d5841.js"
+    "static/css/main.1893d5c6.css",
+    "static/js/main.50856a50.js"
   ]
 }
