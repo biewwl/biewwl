@@ -20,26 +20,6 @@
   }
 }
 
-@keyframes copied {
-  
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  20% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  80% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-}
-
 .projects,
 .projects-dark {
   padding: 100px 0;

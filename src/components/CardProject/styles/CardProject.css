@@ -1,3 +1,22 @@
+@keyframes copied {
+  
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
 
 .projects .card-project,
 .projects-dark .card-project {
@@ -97,7 +116,7 @@
   top: 0;
   left: 0;
   z-index: 100;
-  animation: copied 2s;
+  animation: copied 3s;
   width: 100%;
   display: flex;
   justify-content: center;

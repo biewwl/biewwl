@@ -19,7 +19,7 @@ function CardProject({
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
-    }, 2000);
+    }, 3000);
   };
 
   return (
