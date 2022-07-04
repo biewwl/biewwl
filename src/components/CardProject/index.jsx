@@ -47,7 +47,8 @@ function CardProject({
             to={`/projects/${path}`}
             className={`card-button bb${color} c${color}`}
           >
-            More details!
+            <span>More details</span>
+            <Icon icon="bi:arrow-right" /> 
           </Link>
           <button className={`c${color} share`} onClick={copy}>
             <Icon icon={`${copied ? "charm:tick" : "eva:link-2-fill"}`} />

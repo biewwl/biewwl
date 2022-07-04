@@ -65,10 +65,6 @@
   transition: 0.5s;
 }
 
-.card-project span {
-  transition: 0.5s;
-}
-
 .card-project h3 {
   font-size: 1em;
   font-weight: 100;
@@ -91,14 +87,15 @@
 }
 
 .card-button {
-  justify-content: center;
+  justify-content: space-around;
   transition: 0.5s;
   width: 80%;
   padding: 5px;
   border-radius: 1em;
   font-size: 0.8em;
   cursor: pointer;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .buttons-container .share {
