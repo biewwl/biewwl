@@ -22,10 +22,10 @@ function Project({ match, theme, color }) {
   return (
     <>
       <Header selectedPage="projects" />
-      <main className={`site bg${theme}`}>
+      <main className={`project bg${theme}`}>
         {dataProject ? (
           <>
-            <section className="site-name">
+            <section className="project-name">
               <div>
                 <Link to="/projects" className={`c${color}`}>
                   Projects /
@@ -34,12 +34,12 @@ function Project({ match, theme, color }) {
               </div>
               <span className={`c${color}`}>{dataProject.development}</span>
             </section>
-            <section className={`site-detail bg${color}`}>
+            <section className={`project-detail bg${color}`}>
               <Gallery images={dataProject.images} />
-              <section className={`site-description c${theme}`}>
+              <section className={`project-description c${theme}`}>
                 <h2>Description</h2>
                 <p>{dataProject.description}</p>
-                <section className="site-links">
+                <section className="project-links">
                   <a
                     href={dataProject.links.repository}
                     target="_blank"
@@ -59,7 +59,7 @@ function Project({ match, theme, color }) {
                 </section>
               </section>
             </section>
-            <section className="site-infos">
+            <section className="project-infos">
               <section>
                 <h3 className={`c${color}`}>Skills Used</h3>
                 <p>

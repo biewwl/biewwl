@@ -1,26 +1,26 @@
 @media screen and (max-width: 768px) {
-  .site {
+  .project {
     padding: 0 0 80px;
   }
 
-  .site-name {
+  .project-name {
     padding: 40px 20px;
   }
 
-  .site-name a {
+  .project-name a {
     font-size: 0.8em;
   }
 
-  .site-name h1 {
+  .project-name h1 {
     font-size: 2em;
     font-weight: 100;
   }
 
-  .site-name span {
+  .project-name span {
     font-size: 0.8em;
   }
 
-  .site-detail {
+  .project-detail {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
     height: auto;
   }
 
-  .site-description {
+  .project-description {
     width: 100%;
     height: 50%;
     display: flex;
@@ -37,27 +37,27 @@
     padding: 40px 0;
   }
 
-  .site-description h2 {
+  .project-description h2 {
     font-size: 1em;
   }
 
-  .site-links {
+  .project-links {
     padding: 20px 0;
   }
 
-  .site-description p, .site-links a {
+  .project-description p, .project-links a {
     font-size: 0.8em;
   }
 
-  .site-infos {
+  .project-infos {
     padding: 10px;
   }
 
-  .site-infos h3 {
+  .project-infos h3 {
     font-size: 0.9em;
   }
 
-  .site-infos span, .site-infos a {
+  .project-infos span, .project-infos a {
     font-size: 0.7em;
   }
   
