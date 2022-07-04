@@ -14,7 +14,7 @@ function CardProject({
 
   const copy = () => {
     navigator.clipboard.writeText(
-      `http://biewwl.github.io/biewwl#/projects/sites/${path}`
+      `http://biewwl.github.io/biewwl#/projects/${path}`
     );
     setCopied(true);
     setTimeout(() => {
@@ -47,7 +47,7 @@ function CardProject({
           </Link>
           <button className={`c${color} share`} onClick={copy}>
             <Icon
-              icon={`${copied ? "subway:tick" : "fontisto:share-a"}`}
+              icon={`${copied ? "charm:tick" : "eva:link-2-fill"}`}
             />
           </button>
         </div>
