@@ -13,7 +13,7 @@ function Projects({ theme, color, query, dispatch }) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+  }, []);
 
   const filterProjects = () =>
     data.filter(
@@ -37,31 +37,35 @@ function Projects({ theme, color, query, dispatch }) {
       <Header selectedPage="projects" />
       <main className={`projects${theme} bg${theme}`}>
         <section className="projects-search">
-          <span className={`c${invert(theme)}`}>{querySearch !== '' ? `"${querySearch}"` : 'Start a new search'}</span>
+          <span className={`c${invert(theme)}`}>
+            {querySearch !== "" ? `"${querySearch}"` : "Start a new search"}
+          </span>
           <input
             type="text"
             className="input-search"
             value={querySearch}
             onChange={handleQueryChange}
             placeholder="Name, library..."
-            />
+          />
         </section>
         <article className="container-projects">
           {filterProjects().map((e) => (
             <section key={e.name} className="card-project">
-              <Link rel="noreferrer" to={`/projects/sites/${e.path}`}>
-                <img className="card-image" src={ e.images[0] } alt="" />
-                <section className="card-infos">
-                  <div className="card-title">
-                    <span className={`c${color}`}>{e.type}</span>
-                    <h3 className={`c${invert(theme)}`}>{e.name}</h3>
-                  </div>
-                  <p className={`c2${invert(theme)}`}>{e.description}</p>
-                </section>
-                <section className={`card-difficulty bg${color}`}>
-                  <span className={`card-star c${theme}`}>{e.difficulty}</span>
-                </section>
-              </Link>
+              <img className="card-image" src={e.images[0]} alt="" />
+              <section className="card-infos">
+                <div className="card-title">
+                  {/* <span className={`c${color}`}>{e.type}</span> */}
+                  <h3 className={`c${invert(theme)}`}>{e.name}</h3>
+                </div>
+                <p className={`c2${invert(theme)}`}>{e.description}</p>
+                  <Link
+                    rel="noreferrer"
+                    to={`/projects/sites/${e.path}`}
+                    className={`card-button bg${color} c${theme}`}
+                  >
+                    Go to Project
+                  </Link>
+              </section>
             </section>
           ))}
         </article>

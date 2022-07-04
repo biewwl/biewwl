@@ -10,13 +10,14 @@
   }
 
   .container-projects {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(255px, 255px));
+    justify-content: center;
   }
 
   .projects .card-project,
   .projects-dark .card-project  {
     justify-self: center;
-    max-width: 90%;
+    width: 255px;
   }
 
   .card-difficulty {
