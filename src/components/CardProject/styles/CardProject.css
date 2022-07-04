@@ -89,6 +89,7 @@
   border: none;
   width: 15%;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .copied {
