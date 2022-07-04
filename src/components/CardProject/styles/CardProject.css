@@ -1,5 +1,4 @@
 @keyframes copied {
-  
   0% {
     opacity: 0;
     transform: translateY(-10px);
@@ -17,11 +16,9 @@
     transform: translateY(-10px);
   }
 }
-
-.projects .card-project,
-.projects-dark .card-project {
+:is(.projects, .projects-dark) .card-project  {
   animation: toTop 0.5s;
-  background-color: #eeeeee;
+  background-color: #eee;
   border-radius: 1em;
   display: flex;
   flex-direction: column;
@@ -35,8 +32,7 @@
   background-color: #3b3b3b;
 }
 
-.projects .card-project .card-image,
-.projects-dark .card-project .card-image {
+:is(.projects, .projects-dark) .card-project .card-image {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   border: 1px solid #eee;
@@ -60,7 +56,6 @@
 }
 
 .card-title {
-  /* align-items: center; */
   display: flex;
   flex-direction: column;
   transition: 0.5s;
@@ -79,7 +74,6 @@
 
 .card-project p {
   font-size: 0.85em;
-
   font-weight: 100;
   text-align: justify;
   transition: 0.5s;

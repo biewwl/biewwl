@@ -11,14 +11,14 @@ import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { useEffect } from "react";
 
-function Home({ color, theme, dispatch }) {
+function Home({ color, theme, query, dispatch }) {
   const history = useHistory();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [querySearch, setQuerySearch] = useState("");
+  const [querySearch, setQuerySearch] = useState(query);
 
   const handleQueryChange = ({ target }) => {
     setQuerySearch(target.value);
@@ -171,6 +171,7 @@ function Home({ color, theme, dispatch }) {
 const mapStateToProps = (state) => ({
   color: state.theme.color,
   theme: state.theme.theme,
+  query: state.search.query,
 });
 
 export default connect(mapStateToProps)(Home);

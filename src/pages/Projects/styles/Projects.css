@@ -38,8 +38,7 @@
   font-size: 1.5em;
 }
 
-.projects .input-search,
-.projects-dark .input-search {
+:is(.projects, .projects-dark) .input-search {
   background-color: rgb(238, 238, 238);
   border-radius: 25px;
   border: none;
