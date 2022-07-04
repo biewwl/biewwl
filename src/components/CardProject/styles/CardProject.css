@@ -16,6 +16,19 @@
     transform: translateY(-10px);
   }
 }
+
+@keyframes arrow {
+  
+  0% {
+    opacity: 0%;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
 :is(.projects, .projects-dark) .card-project  {
   animation: toTop 0.5s;
   background-color: #eee;
@@ -96,6 +109,10 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+.card-button:hover svg {
+  animation: arrow 1s infinite;  
 }
 
 .buttons-container .share {
