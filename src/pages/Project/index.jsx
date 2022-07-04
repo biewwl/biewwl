@@ -15,7 +15,7 @@ function Project({ match, theme, color }) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+  }, []);
 
   const dataProject = data.find((e) => e.path === project);
 
@@ -27,8 +27,9 @@ function Project({ match, theme, color }) {
           <>
             <section className="site-name">
               <div>
-                <Link to="/projects" className={`c${color}`}>Projects /</Link>
-                {/* <Link to="/sites" className={`c${color}`}>Sites /</Link>clear */}
+                <Link to="/projects" className={`c${color}`}>
+                  Projects /
+                </Link>
                 <h1 className={`c${invert(theme)}`}>{dataProject.name}</h1>
               </div>
               <span className={`c${color}`}>{dataProject.development}</span>
@@ -70,20 +71,24 @@ function Project({ match, theme, color }) {
                 </p>
               </section>
               <section>
-                <h3 className={`c${color}`}>Libraries Used</h3>
-                <p>
-                  {dataProject.tools.map((e, i) => (
-                    <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href={e.link}
-                      className={`tool c${invert(theme)}`}
-                      key={i}
-                    >
-                      {e.name}
-                    </a>
-                  ))}
-                </p>
+                {dataProject.tools.length > 0 && (
+                  <>
+                    <h3 className={`c${color}`}>Libraries Used</h3>
+                    <p>
+                      {dataProject.tools.map((e, i) => (
+                        <a
+                          rel="noreferrer"
+                          target="_blank"
+                          href={e.link}
+                          className={`tool c${invert(theme)}`}
+                          key={i}
+                        >
+                          {e.name}
+                        </a>
+                      ))}
+                    </p>
+                  </>
+                )}
               </section>
             </section>
           </>

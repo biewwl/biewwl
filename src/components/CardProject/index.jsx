@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import invert from "../../helpers/invertTheme";
 import "./styles/CardProject.css";
-import './styles/CardProject-mobile.css';
+import "./styles/CardProject-mobile.css";
 
 function CardProject({
-  projectDetails: { images, name, description, path },
+  projectDetails: { images, name, description, path, type },
   theme,
   color,
 }) {
@@ -23,7 +23,11 @@ function CardProject({
   };
 
   return (
-    <section className="card-project">
+    <section
+      className={
+        type === "Library" ? `card-project bb${color} library` : "card-project"
+      }
+    >
       {copied && (
         <div className="copied">
           <span className={`bg${theme} bb${color} c${color}`}>
@@ -43,12 +47,10 @@ function CardProject({
             to={`/projects/${path}`}
             className={`card-button bb${color} c${color}`}
           >
-            Go to Project
+            More details!
           </Link>
           <button className={`c${color} share`} onClick={copy}>
-            <Icon
-              icon={`${copied ? "charm:tick" : "eva:link-2-fill"}`}
-            />
+            <Icon icon={`${copied ? "charm:tick" : "eva:link-2-fill"}`} />
           </button>
         </div>
       </section>

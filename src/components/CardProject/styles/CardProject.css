@@ -46,6 +46,10 @@
   border: 1px solid #3b3b3b;
 }
 
+:is(.projects, .projects-dark) .card-project.library .card-image {
+  border: none;
+}
+
 .card-project .card-infos {
   display: flex;
   flex-direction: column;

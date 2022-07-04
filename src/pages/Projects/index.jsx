@@ -24,7 +24,7 @@ function Projects({ theme, color, query, dispatch }) {
         ) ||
         project.tools.some((tool) =>
           tool.name.toLowerCase().includes(query.toLowerCase())
-        )
+        ) || project.type.toLowerCase().includes(query.toLowerCase())
     );
 
   const handleQueryChange = ({ target }) => {

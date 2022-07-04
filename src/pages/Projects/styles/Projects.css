@@ -56,7 +56,7 @@
 .container-projects {
   display: grid;
   grid-gap: 40px 20px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   justify-items: center;
   padding: 20px;
   transition: 0.5s;
