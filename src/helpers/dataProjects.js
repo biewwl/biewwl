@@ -47,6 +47,10 @@ const data = [
       {
         name: "howler",
         link: "https://www.npmjs.com/package/howler",
+      },
+      {
+        name: "manager-local-storage",
+        link: "https://www.npmjs.com/package/manager-local-storage",
       }
     ],
     development: "individual",
@@ -126,6 +130,10 @@ const data = [
         name: "redux-thunk",
         link: "https://www.npmjs.com/package/redux-thunk",
       },
+      {
+        name: "manager-local-storage",
+        link: "https://www.npmjs.com/package/manager-local-storage",
+      }
     ],
     development: "individual",
   },
