@@ -18,7 +18,6 @@
 }
 
 @keyframes arrow {
-  
   0% {
     opacity: 0%;
     transform: translateX(-10px);
@@ -29,7 +28,19 @@
   }
 }
 
-:is(.projects, .projects-dark) .card-project  {
+@keyframes shine {
+  0% {
+    background-position-x: 200%;
+  }
+  30% {
+    background-position-x: -100%;
+  }
+  100% {
+    background-position-x: -100%;
+  }
+}
+
+:is(.projects, .projects-dark) .card-project {
   animation: toTop 0.5s;
   background-color: #eee;
   border-radius: 1em;
@@ -99,7 +110,7 @@
   justify-content: space-between;
 }
 
-.card-button {
+:is(.projects, .projects-dark) .card-button {
   justify-content: space-around;
   transition: 0.5s;
   width: 80%;
@@ -109,10 +120,38 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  background-image: linear-gradient(
+    -60deg,
+    transparent,
+    transparent 40%,
+    #ffffffbb 40%,
+    #ffffffbb 60%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 200%;
+}
+
+.projects-dark .card-button {
+  background-image: linear-gradient(
+    -60deg,
+    transparent,
+    transparent 40%,
+    #6e6e6ebb 40%,
+    #6e6e6ebb 60%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+
+.card-button:hover {
+  animation: shine 3s 0s infinite;
 }
 
 .card-button:hover svg {
-  animation: arrow 1s infinite;  
+  animation: arrow 1s infinite;
 }
 
 .buttons-container .share {

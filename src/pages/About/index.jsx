@@ -73,8 +73,8 @@ function About({ color, theme }) {
               Jest
             </li>
             <li>
-              <Icon icon="akar-icons:vscode-fill" />
-              VS Code
+              <Icon icon="cib:npm" />
+              NPM
             </li>
           </ul>
         </article>

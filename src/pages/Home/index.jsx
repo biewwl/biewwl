@@ -114,7 +114,7 @@ function Home({ color, theme, query, dispatch }) {
               </Link>
             </nav>
             <p className={`about-home`}>
-              Since I was very young I have always been fascinated by virtual
+              Hi! My name is Gabriel Dias. Since I was very young I have always been fascinated by virtual
               worlds and at the beginning of 2022 I joined a web development
               school. I learned to love programming and became very good at
               it...
