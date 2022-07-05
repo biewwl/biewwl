@@ -6,16 +6,7 @@
     width: 255px;
   }
 
-  .projects-dark .card-button {
-    background-image: linear-gradient(
-      -60deg,
-      transparent,
-      transparent 40%,
-      #6e6e6ebb 40%,
-      #6e6e6ebb 60%,
-      transparent 60%,
-      transparent 100%
-    );
+  :is(.projects, .projects-dark) .card-button {
     animation: shine 3s 0s infinite;
   }
 
