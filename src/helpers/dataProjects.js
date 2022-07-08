@@ -21,6 +21,10 @@ import MLSComparation from "../pages/Project/images/manager-local-storage/compar
 import MLSWith from "../pages/Project/images/manager-local-storage/with.jpg";
 import MLSWithout from "../pages/Project/images/manager-local-storage/without.jpg";
 
+import THome from '../pages/Project/images/trunfo/Home.png';
+import THome2 from '../pages/Project/images/trunfo/Home2.png';
+import TCards from '../pages/Project/images/trunfo/Cards.png';
+
 const data = [
   {
     path: "trivia",
@@ -39,7 +43,7 @@ const data = [
       TriviaCorrect,
       TriviaRanking,
     ],
-    skills: ["HTML", "CSS", "Javascript", "React", "Hooks", "API"],
+    skills: ["HTML", "CSS", "Javascript", "React", "Hooks", "API", "Context API"],
     tools: [
       {
         name: "react-router-dom",
@@ -144,6 +148,30 @@ const data = [
       {
         name: "redux-thunk",
         link: "https://www.npmjs.com/package/redux-thunk",
+      },
+      {
+        name: "manager-local-storage",
+        link: "https://www.npmjs.com/package/manager-local-storage",
+      },
+    ],
+    development: "individual",
+  },
+  {
+    path: "trunfo",
+    name: "Trunfo",
+    type: "Site",
+    description:
+      "This project is a Trunfo card generator, have fun creating your own deck!",
+    links: {
+      repository: "https://github.com/biewwl/project-trunfo",
+      project: "https://biewwl.github.io/project-trunfo/",
+    },
+    images: [THome, THome2, TCards],
+    skills: ["HTML", "CSS", "Javascript", "React", "Hooks", "Context API"],
+    tools: [
+      {
+        name: "gh-pages",
+        link: "https://www.npmjs.com/package/gh-pages",
       },
       {
         name: "manager-local-storage",
