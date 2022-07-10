@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import { connect } from "react-redux";
-import Gallery from "./components/Gallery";
-import { HashLink as Link } from "react-router-hash-link";
 import invert from "../../helpers/invertTheme";
 import { Icon } from "@iconify/react";
 import "./styles/About.css";
 import "./styles/About-mobile.css";
+import perfil from "././images/perfil.png";
 
 function About({ color, theme }) {
   useEffect(() => {
@@ -17,15 +16,12 @@ function About({ color, theme }) {
     <>
       <Header selectedPage="about" />
       <main className={`about bg${theme}`}>
-        <section className="images-about">
-          <Gallery />
-          <Link to="/about#about-me" className="link-about-me">
-            <i className={`ri-arrow-down-s-line c${color}`} />
-          </Link>
-        </section>
-        <article className={`container-about-me bg${color}`} id="about-me">
-          <section className={`about-me c${theme}`}>
-            <h3>A little about me...</h3>
+        <article
+          className={`container-about-me c${invert(theme)}`}
+          id="about-me"
+        >
+          <section className={`about-me`}>
+            <h3  className={`c${color}`}>A little about me...</h3>
             <p>
               I was born in 2001 in Santa Inês, MA, Brazil. I have studied and
               graduated from Trybe, a wonderful school, in Web Development.
@@ -36,55 +32,56 @@ function About({ color, theme }) {
               being a developer and I will get better and better!
             </p>
           </section>
+          <img src={perfil} alt="" />
         </article>
         <article className="skills-container">
           <ul className={`skills c${invert(theme)}`}>
             <li>
-              <Icon icon="ant-design:html5-outlined" />
+              <Icon icon="ant-design:html5-outlined" className={`c${color}`} />
               Html
             </li>
             <li>
-              <Icon icon="la:css3" />
+              <Icon icon="la:css3" className={`c${color}`} />
               Css
             </li>
             <li>
-              <Icon icon="bxl:javascript" />
+              <Icon icon="bxl:javascript" className={`c${color}`} />
               Javascript
             </li>
             <li>
-              <Icon icon="fe:github-alt" />
+              <Icon icon="fe:github-alt" className={`c${color}`} />
               Git & Github
             </li>
             <li>
-              <Icon icon="bxl:react" />
+              <Icon icon="bxl:react" className={`c${color}`} />
               React.js
             </li>
             <li>
-              <Icon icon="bxl:redux" />
+              <Icon icon="bxl:redux" className={`c${color}`} />
               Redux
             </li>
             <li>
-              <Icon icon="cib:bootstrap" />
+              <Icon icon="cib:bootstrap" className={`c${color}`} />
               Bootstrap
             </li>
             <li>
-              <Icon icon="akar-icons:node-fill" />
+              <Icon icon="akar-icons:node-fill" className={`c${color}`} />
               Node.js
             </li>
             <li>
-              <Icon icon="cib:jest" />
+              <Icon icon="cib:jest" className={`c${color}`} />
               Jest
             </li>
             <li>
-              <Icon icon="cib:npm" />
+              <Icon icon="cib:npm" className={`c${color}`} />
               NPM
             </li>
             <li>
-              <Icon icon="fa-brands:docker" />
+              <Icon icon="fa-brands:docker" className={`c${color}`} />
               Docker
             </li>
             <li>
-              <Icon icon="bi:kanban" />
+              <Icon icon="bi:kanban" className={`c${color}`} />
               Kanban
             </li>
           </ul>

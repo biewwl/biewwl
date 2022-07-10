@@ -42,6 +42,17 @@
   }
 }
 
+@keyframes toLeft {
+  
+  0% {
+    opacity: 0%;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
 
 .about {
   transition: 0.5s;
@@ -73,16 +84,16 @@
 .container-about-me {
   align-items: center;
   display: flex;
-  justify-content: center;
-  min-height: 50vh;
-  transition: 0.5s;
+  justify-content: space-around;
+  min-height: 100vh;
+  padding: 40px;
 }
 
 .about-me {
   animation: toRight 1s;
   cursor: default;
   padding: 20px;
-  width: 75%;
+  width: 50%;
 }
 
 .about-me h3 {
@@ -95,6 +106,12 @@
   line-height: 1.6em;
   text-align: justify;
   transition: 0.5s;
+}
+
+.container-about-me img {
+  border-radius: 1em;
+  animation: toLeft 1s;
+  width: 300px;
 }
 
 .skills-container {
@@ -122,17 +139,5 @@
 .skills svg {
   font-size: 2.5em;
   padding: 5px;
-}
-
-.certificates {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-@media screen and (max-height: 500px) {
-  .link-about-me {
-    display: none;
-  }
+  transition: 0.5s;
 }

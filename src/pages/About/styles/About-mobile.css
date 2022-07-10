@@ -18,7 +18,8 @@
   }
 
   .container-about-me {
-    height: auto;
+    flex-direction: column-reverse;
+    padding-top: 80px;
   }
 
   .container-about-me h3 {
@@ -50,5 +51,16 @@
 
   .link-about-me {
     display: none;
+  }
+  
+  .container-about-me img {
+    width: 200px;
+  }
+  
+  .about-me {
+    animation: toRight 1s;
+    cursor: default;
+    padding: 20px;
+    width: 100%;
   }
 }
