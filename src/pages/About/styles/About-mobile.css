@@ -20,9 +20,8 @@
   .container-about-me {
     flex-direction: column-reverse;
     justify-content: center;
-    padding: 20px;
-    padding-top: 80px;
-    min-height: auto;
+    padding: 40px 20px;
+    min-height: 80vh;
   }
 
   .container-about-me h3 {
@@ -58,6 +57,7 @@
   
   .container-about-me img {
     width: 200px;
+    margin-bottom: 20px;
   }
   
   .about-me {
@@ -65,5 +65,6 @@
     cursor: default;
     padding: 20px;
     width: 100%;
+    margin-top: 20px;
   }
 }
