@@ -108,8 +108,7 @@
   font-size: 0.8em;
   justify-content: space-evenly;
   list-style: none;
-  height: 30vh;
-  min-height: 80px;
+  min-height: 30vh;
 }
 
 .skills li {

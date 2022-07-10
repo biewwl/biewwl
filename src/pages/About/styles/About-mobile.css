@@ -1,5 +1,4 @@
 @media screen and (max-width: 768px) {
-
   @keyframes height {
     0% {
       min-height: 80vh;
@@ -22,22 +21,22 @@
     height: auto;
   }
 
-  .container-about-me h3{
+  .container-about-me h3 {
     font-size: 1em;
   }
 
-  .container-about-me p{
+  .container-about-me p {
     font-size: 0.8em;
   }
 
   .skills-container {
-    padding: 40px 0 80px 0;
+    padding: 40px 0;
   }
 
   .skills {
     flex-wrap: wrap;
     font-size: 0.6em;
-    min-height: 170px;
+    height: 40vh;
   }
 
   .skills li {
@@ -52,5 +51,4 @@
   .link-about-me {
     display: none;
   }
-
 }

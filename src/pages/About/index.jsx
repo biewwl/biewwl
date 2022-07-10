@@ -9,10 +9,9 @@ import "./styles/About.css";
 import "./styles/About-mobile.css";
 
 function About({ color, theme }) {
-
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+  }, []);
 
   return (
     <>
@@ -30,11 +29,11 @@ function About({ color, theme }) {
             <p>
               I was born in 2001 in Santa Inês, MA, Brazil. I have studied and
               graduated from Trybe, a wonderful school, in Web Development.
-              After a few months studying something totally new for me, today,
-              I can say with certainty that it is something I really love to
-              do. Every code, every function, every array... bring me a
-              challenge and arouse the desire to go further and further. So,
-              yes, I love being a developer and I will get better and better!
+              After a few months studying something totally new for me, today, I
+              can say with certainty that it is something I really love to do.
+              Every code, every function, every array... bring me a challenge
+              and arouse the desire to go further and further. So, yes, I love
+              being a developer and I will get better and better!
             </p>
           </section>
         </article>
@@ -65,6 +64,10 @@ function About({ color, theme }) {
               Redux
             </li>
             <li>
+              <Icon icon="cib:bootstrap" />
+              Bootstrap
+            </li>
+            <li>
               <Icon icon="akar-icons:node-fill" />
               Node.js
             </li>
@@ -75,6 +78,14 @@ function About({ color, theme }) {
             <li>
               <Icon icon="cib:npm" />
               NPM
+            </li>
+            <li>
+              <Icon icon="fa-brands:docker" />
+              Docker
+            </li>
+            <li>
+              <Icon icon="bi:kanban" />
+              Kanban
             </li>
           </ul>
         </article>
