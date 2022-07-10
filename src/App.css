@@ -3,9 +3,9 @@
   src: url(./fonts/Product\ Sans\ Regular.ttf);
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 * {
   box-sizing: border-box;
