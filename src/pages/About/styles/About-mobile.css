@@ -19,8 +19,10 @@
 
   .container-about-me {
     flex-direction: column-reverse;
+    justify-content: center;
     padding: 20px;
     padding-top: 80px;
+    min-height: auto;
   }
 
   .container-about-me h3 {
