@@ -16,12 +16,9 @@ function About({ color, theme }) {
     <>
       <Header selectedPage="about" />
       <main className={`about bg${theme}`}>
-        <article
-          className={`container-about-me c${invert(theme)}`}
-          id="about-me"
-        >
+        <article className={`container-about-me c${invert(theme)}`}>
           <section className={`about-me`}>
-            <h3  className={`c${color}`}>A little about me...</h3>
+            <h3 className={`c${color}`}>A little about me...</h3>
             <p>
               I was born in 2001 in Santa Inês, MA, Brazil. I have studied and
               graduated from Trybe, a wonderful school, in Web Development.

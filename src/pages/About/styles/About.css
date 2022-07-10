@@ -58,29 +58,6 @@
   transition: 0.5s;
 }
 
-.images-about {
-  align-items: center;
-  animation: fade 2s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 500px;
-  height: 100vh;
-  transition: 0.5s;
-}
-
-.link-about-me {
-  animation: jump 1s infinite alternate;
-  bottom: 0;
-  cursor: pointer;
-  font-size: 2em;
-  position: absolute;
-}
-
-.link-about-me i {
-  transition: 0.5s;
-}
-
 .container-about-me {
   align-items: center;
   display: flex;
