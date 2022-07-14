@@ -235,7 +235,7 @@ Orange
 }
 
 @media screen and (min-width: 769px) {
-  .bbT-blue, .bbT-yellow, .bbT-green, .bbT-purple, .bbT-pink, .bbT-red, .bbT-orange {
+  .bbT-blue, .bbT-yellow, .bbT-green, .bbT-purple, .bbT-pink, .bbT-red, .bbT-orange, .bbT, .bbT-dark {
     border-top: none;
   }
 }
