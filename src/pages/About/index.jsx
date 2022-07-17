@@ -78,8 +78,8 @@ function About({ color, theme }) {
               Docker
             </li>
             <li>
-              <Icon icon="bi:kanban" className={`c${color}`} />
-              Kanban
+            <Icon icon="fontisto:mysql" className={`c${color}`}  />
+              mySQL
             </li>
           </ul>
         </article>
