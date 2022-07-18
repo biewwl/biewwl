@@ -5,11 +5,9 @@ import { Icon } from "@iconify/react";
 import invert from "../../helpers/invertTheme";
 
 function Certificates({ color, theme, visible }) {
-  console.log(visible);
   return (
     <>
-      {visible && (
-        <section className="certificates-container">
+      <section className={`certificates-container bb${color} ${visible ? ' show' : ''}`}>
           {data.map((certificate, index) => (
             <div key={index} className={`certificate-card bb${color}`}>
               <img src={certificate.image} alt={certificate.title} />
@@ -25,7 +23,6 @@ function Certificates({ color, theme, visible }) {
             </div>
           ))}
         </section>
-      )}
     </>
   );
 }

@@ -40,7 +40,7 @@ function About({ color, theme }) {
         </article>
         <article>
           <h3
-            className={`bg${color} c${theme} certificates-h3`}
+            className={`bg${color} c${theme} certificates-h3${showCertificates ? " show" : ""}`}
             onClick={toggleCertificates}
           >
             <div>

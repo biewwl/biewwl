@@ -3,11 +3,16 @@
   font-weight: 100;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 95%;
   padding: 20px;
   cursor: pointer;
   border-radius: 0.5em;
   transition: 0.5s;
+  margin: auto;
+}
+
+.certificates-h3.show {
+  border-radius: 0.5em 0.5em 0 0;
 }
 
 .certificates-h3 div {
@@ -20,13 +25,40 @@
   margin-left: 10px;
 }
 
+.about.bg .certificates-container {
+  background-color: #eee;
+}
+
+.about.bg-dark .certificates-container {
+  background-color: #3b3b3b;
+}
+
 .certificates-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   grid-gap: 40px;
   justify-content: center;
-  padding: 80px 0;
   transition: 0.5s;
+  width: 95%;
+  margin: auto;
+  border-radius: 0 0 0.5em 0.5em;
+  height: 0;
+  border-width: 0;
+  overflow: hidden;
+}
+
+.certificates-container.show {
+  height: auto;
+  padding: 80px 10px;
+  border-width: 1px;
+}
+
+.about.bg .certificates-container .certificate-card {
+  box-shadow: 0 0 10px rgb(184, 184, 184);
+}
+
+.about.bg-dark .certificates-container .certificate-card {
+  box-shadow: 0 0 10px rgb(33, 33, 33);
 }
 
 .certificates-container .certificate-card {
@@ -37,12 +69,12 @@
   flex-direction: column;
   align-items: flex-start;
   transition: 0.5s;
+  max-width: 95%;
 }
 
 .certificates-container .certificate-card img {
   width: 100%;
   border-radius: 0.5em;
-  min-width: 284px;
 }
 
 .certificates-container .certificate-card h4 {
@@ -64,9 +96,9 @@
   display: flex;
   align-items: center;
   transition: all 0.3s ease-in-out;
-  padding: 5px 10px;
+  padding: 8px 12px;
 }
 
-.certificates-container .certificate-card a svg {
+.certificates-container .certificate-card svg {
   margin-left: 10px;
 }
