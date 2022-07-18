@@ -1,0 +1,72 @@
+.certificates-h3 {
+  justify-content: space-between;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 0.5em;
+  transition: 0.5s;
+}
+
+.certificates-h3 div {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.certificates-h3 div svg {
+  margin-left: 10px;
+}
+
+.certificates-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+  grid-gap: 40px;
+  justify-content: center;
+  padding: 80px 0;
+  transition: 0.5s;
+}
+
+.certificates-container .certificate-card {
+  justify-self: center;
+  padding: 10px;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: 0.5s;
+}
+
+.certificates-container .certificate-card img {
+  width: 100%;
+  border-radius: 0.5em;
+  min-width: 284px;
+}
+
+.certificates-container .certificate-card h4 {
+  font-weight: 100;
+  padding: 20px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%;
+  transition: 0.5s;
+}
+
+.certificates-container .certificate-card a {
+  border: none;
+  border-radius: 25px;
+  font-size: 0.8em;
+  font-weight: 100;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  padding: 5px 10px;
+}
+
+.certificates-container .certificate-card a svg {
+  margin-left: 10px;
+}

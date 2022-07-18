@@ -5,12 +5,19 @@ import invert from "../../helpers/invertTheme";
 import { Icon } from "@iconify/react";
 import "./styles/About.css";
 import "./styles/About-mobile.css";
-import perfil from "././images/perfil.png";
+import profile from "././images/hat.jpg";
+import Certificates from "../../components/Certificates";
 
 function About({ color, theme }) {
+  const [showCertificates, setShowCertificates] = React.useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const toggleCertificates = () => {
+    setShowCertificates(!showCertificates);
+  }
 
   return (
     <>
@@ -29,7 +36,20 @@ function About({ color, theme }) {
               being a developer and I will get better and better!
             </p>
           </section>
-          <img src={perfil} alt="" />
+          <img src={profile} alt="" />
+        </article>
+        <article>
+          <h3
+            className={`bg${color} c${theme} certificates-h3`}
+            onClick={toggleCertificates}
+          >
+            <div>
+              <span>Certificates</span>
+              <Icon icon="teenyicons:certificate-outline" />
+            </div>
+            <Icon icon={`fe:arrow-${showCertificates ? 'up' : 'down'}`} />
+          </h3>
+          <Certificates visible={showCertificates} />
         </article>
         <article className="skills-container">
           <ul className={`skills c${invert(theme)}`}>
@@ -78,7 +98,7 @@ function About({ color, theme }) {
               Docker
             </li>
             <li>
-            <Icon icon="fontisto:mysql" className={`c${color}`}  />
+              <Icon icon="fontisto:mysql" className={`c${color}`} />
               mySQL
             </li>
           </ul>
