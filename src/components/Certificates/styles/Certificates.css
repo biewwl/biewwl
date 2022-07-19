@@ -25,13 +25,13 @@
   margin-left: 10px;
 }
 
-.about.bg .certificates-container {
+/* .about.bg .certificates-container {
   background-color: #eee;
 }
 
 .about.bg-dark .certificates-container {
   background-color: #3b3b3b;
-}
+} */
 
 .certificates-container {
   display: grid;
@@ -54,11 +54,11 @@
 }
 
 .about.bg .certificates-container .certificate-card {
-  box-shadow: 0 0 10px rgb(184, 184, 184);
+  background-color: #eee;
 }
 
 .about.bg-dark .certificates-container .certificate-card {
-  box-shadow: 0 0 10px rgb(33, 33, 33);
+  background-color: #3b3b3b;
 }
 
 .certificates-container .certificate-card {

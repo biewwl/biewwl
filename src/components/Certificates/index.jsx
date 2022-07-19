@@ -7,22 +7,26 @@ import invert from "../../helpers/invertTheme";
 function Certificates({ color, theme, visible }) {
   return (
     <>
-      <section className={`certificates-container bb${color} ${visible ? ' show' : ''}`}>
-          {data.map((certificate, index) => (
-            <div key={index} className={`certificate-card bb${color}`}>
-              <img src={certificate.image} alt={certificate.title} />
-              <h4 className={`c${invert(theme)}`}>{certificate.title}</h4>
-              <a
-                href={certificate.link}
-                className={`bg${color} c${theme}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                View <Icon icon="bx:link-external" />
-              </a>
-            </div>
-          ))}
-        </section>
+      <section
+        className={`certificates-container bg${color} ${
+          visible ? " show" : ""
+        }`}
+      >
+        {data.map((certificate, index) => (
+          <div key={index} className="certificate-card">
+            <img src={certificate.image} alt={certificate.title} />
+            <h4 className={`c${invert(theme)}`}>{certificate.title}</h4>
+            <a
+              href={certificate.link}
+              className={`bg${color} c${theme}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View <Icon icon="bx:link-external" />
+            </a>
+          </div>
+        ))}
+      </section>
     </>
   );
 }
