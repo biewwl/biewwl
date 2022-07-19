@@ -57,10 +57,18 @@ function Home({ color, theme, query, dispatch }) {
           <section className="home-logo-theme">
             <h1>biewwl</h1>
             {theme === "" && (
-              <span className={`ri-moon-fill`} onClick={changeInvertTheme} />
+              <Icon
+                icon="line-md:moon-filled"
+                onClick={changeInvertTheme}
+                className="c-dark theme-icon"
+              />
             )}
             {theme === "-dark" && (
-              <span className={`ri-sun-fill`} onClick={changeInvertTheme} />
+              <Icon
+                icon="line-md:sun-rising-filled-loop"
+                onClick={changeInvertTheme}
+                className="c-yellow theme-icon"
+              />
             )}
           </section>
           <section className={`home-introduction`}>
@@ -114,10 +122,10 @@ function Home({ color, theme, query, dispatch }) {
               </Link>
             </nav>
             <p className={`about-home`}>
-              Hi! My name is Gabriel Dias. Since I was very young I have always been fascinated by virtual
-              worlds and at the beginning of 2022 I joined a web development
-              school. I learned to love programming and became very good at
-              it...
+              Hi! My name is Gabriel Dias. Since I was very young I have always
+              been fascinated by virtual worlds and at the beginning of 2022 I
+              joined a web development school. I learned to love programming and
+              became very good at it...
             </p>
             <ul>
               <li>
