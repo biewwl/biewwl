@@ -51,7 +51,8 @@ function CardProject({
             <Icon icon="bi:arrow-right" /> 
           </Link>
           <button className={`c${color} share`} onClick={copy}>
-            <Icon icon={`${copied ? "charm:tick" : "eva:link-2-fill"}`} />
+            {copied && <Icon icon="charm:tick" />}
+            {!copied && <Icon icon="line-md:external-link" />}
           </button>
         </div>
       </section>

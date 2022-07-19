@@ -7,6 +7,7 @@ import { changeColor, changeTheme } from "../../redux/actions/themeAction";
 import invert from "../../helpers/invertTheme";
 import "./styles/Header.css";
 import "./styles/Header-mobile.css";
+import { Icon } from "@iconify/react";
 
 function Header({ color, theme, selectedPage, dispatch }) {
   const [socialMenu, setSocialMenu] = useState(false);
@@ -41,7 +42,7 @@ function Header({ color, theme, selectedPage, dispatch }) {
             className={`social-label bg${color} c${theme} bb${theme}`}
           >
             {socialMenu ? (
-              <i className="ri-close-line" />
+              <Icon icon="line-md:close" />
             ) : (
               <i className="ri-link" />
             )}
@@ -106,17 +107,17 @@ function Header({ color, theme, selectedPage, dispatch }) {
           </Link>
         </li>
         {theme === "" && (
-          <li
-            className={`ri-moon-fill c${invert(theme)}`}
+          <Icon
+            icon="line-md:moon-filled"
             onClick={changeInvertTheme}
-            data-testid="dark-theme"
+            className={`c${color} theme-icon`}
           />
         )}
         {theme === "-dark" && (
-          <li
-            className={`ri-sun-fill c${invert(theme)}`}
+          <Icon
+            icon="line-md:sun-rising-filled-loop"
             onClick={changeInvertTheme}
-            data-testid="light-theme"
+            className={`c${color} theme-icon`}
           />
         )}
         <li>

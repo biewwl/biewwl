@@ -53,7 +53,7 @@
   display: none;
 }
 
-.ri-moon-fill, .ri-sun-fill {
+.theme-icon {
   cursor: pointer;
   transition: 0.5s;
 }
