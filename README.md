@@ -147,10 +147,4 @@ available at [https://biewwl.github.io/biewwl/](https://biewwl.github.io/biewwl/
   </a>
 </p>
 
-<p>
-  &nbsp;<img
-    align="center"
-    src="https://github-readme-stats.vercel.app/api?username=biewwl&show_icons=true&locale=en"
-    alt="biewwl"
-  />
-</p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=biewwl&show_icons=true&theme=dracula&hide_border=true&locale=en" alt="biewwl" /></p>
