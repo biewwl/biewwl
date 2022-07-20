@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import ColorsMenu from "./components/ColorsMenu";
 import SocialMenu from "./components/SocialMenu";
-import { changeColor, changeTheme } from "../../redux/actions/themeAction";
 import invert from "../../helpers/invertTheme";
 import "./styles/Header.css";
 import "./styles/Header-mobile.css";
@@ -49,7 +48,6 @@ function Header({ color, theme, selectedPage, dispatch }) {
           </Link>
           <Link to="/" className="nav-icon-mobile">
             <Icon icon="line-md:home-simple" className={`c${invert(theme)}`} />
-            <span className={`c${invert(theme)}`}>Home</span>
           </Link>
         </li>
         <li>
@@ -61,15 +59,9 @@ function Header({ color, theme, selectedPage, dispatch }) {
           </Link>
           <Link to="/about" className="nav-icon-mobile">
             {selectedPage === "about" ? (
-              <>
-                <Icon icon="line-md:account" className={`c${color}`} />
-                <span className={`c${color}`}>About</span>
-              </>
+              <Icon icon="line-md:account" className={`c${color}`} />
             ) : (
-              <>
-                <Icon icon="line-md:account" className={`c${invert(theme)}`} />
-                <span className={`c${invert(theme)}`}>About</span>
-              </>
+              <Icon icon="line-md:account" className={`c${invert(theme)}`} />
             )}
           </Link>
         </li>
@@ -85,18 +77,12 @@ function Header({ color, theme, selectedPage, dispatch }) {
           </Link>
           <Link to="/projects" className="nav-icon-mobile">
             {selectedPage === "projects" ? (
-              <>
-                <Icon icon="line-md:document-code" className={`c${color}`} />
-                <span className={`c${color}`}>Projects</span>
-              </>
+              <Icon icon="line-md:document-code" className={`c${color}`} />
             ) : (
-              <>
-                <Icon
-                  icon="line-md:document-code"
-                  className={`c${invert(theme)}`}
-                />
-                <span className={`c${invert(theme)}`}>Projects</span>
-              </>
+              <Icon
+                icon="line-md:document-code"
+                className={`c${invert(theme)}`}
+              />
             )}
           </Link>
         </li>
