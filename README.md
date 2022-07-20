@@ -1,7 +1,14 @@
-<h1 align="center">Hi 👋, I'm Gabriel Dias</h1>
-<h3 align="center">A passionate frontend developer from Brazil 🇧🇷</h3>
+<p align="center">
+<img src="https://i.ibb.co/0Q1WRG1/CC-20220615-111945.png" height="150" width="150" />
+</p>
+<h1 align="center">Hi, I'm Gabriel Dias</h1>
+<h3 align="center">I'm a Frontend Web Developer from Brazil 🇧🇷</h3>
 
-<p align="left"> <a href="https://twitter.com/21biewwl" target="blank"><img src="https://img.shields.io/twitter/follow/21biewwl?logo=twitter&style=for-the-badge" alt="21biewwl" /></a> </p>
+<p align="center">
+  <a href="https://twitter.com/21biewwl" target="blank">
+    <img src="https://img.shields.io/twitter/follow/21biewwl?logo=twitter&style=for-the-badge" alt="21biewwl" />
+  </a>
+</p>
 
 - 🌱 I’m currently learning **TypeScript, Node.js**
 
@@ -11,8 +18,10 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://twitter.com/21biewwl" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="21biewwl" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/biewwl" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="biewwl" height="30" width="40" /></a>
+<a href="https://twitter.com/21biewwl" target="blank">
+  <img align="center" src="https://www.pngkey.com/png/full/67-671021_twitter-logo-white-vector-facebook-logo-grey-round.png" alt="21biewwl" height="40" width="40" />
+</a>
+<a href="https://linkedin.com/in/biewwl" target="blank"><img align="center" src="https://cdn.icon-icons.com/icons2/792/PNG/512/LINKEDIN_icon-icons.com_65538.png" alt="biewwl" height="40" width="40" /></a>
 <a href="https://instagram.com/biewwl" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="biewwl" height="30" width="40" /></a>
 </p>
 
