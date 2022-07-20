@@ -30,8 +30,13 @@
   }
   
   .nav-icon-mobile span {
+    transition: 0.5s;
     font-size: 0.6em;
     margin-top: 2.5px;
+  }
+
+  .nav-icon-mobile svg {
+    transition: 0.5s;
   }
 
   .selected-light {
