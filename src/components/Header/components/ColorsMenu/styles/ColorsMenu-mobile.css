@@ -4,5 +4,10 @@
     bottom: 60px;
     top: auto;
   }
+
+  .theme-li {
+    top: -50px;
+    bottom: auto;
+  }
   
 }

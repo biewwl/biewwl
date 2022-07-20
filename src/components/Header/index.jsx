@@ -13,20 +13,6 @@ function Header({ color, theme, selectedPage, dispatch }) {
   const [socialMenu, setSocialMenu] = useState(false);
   const [colorsMenu, setColorsMenu] = useState(false);
 
-  const changeInvertTheme = () => {
-    if (theme === "" && color === "-dark") {
-      dispatch(changeTheme("-dark"));
-      dispatch(changeColor(""));
-    } else if (theme === "-dark" && color === "") {
-      dispatch(changeTheme(""));
-      dispatch(changeColor("-dark"));
-    } else if (theme === "") {
-      dispatch(changeTheme("-dark"));
-    } else {
-      dispatch(changeTheme(""));
-    }
-  };
-
   const selected = (button, color) => {
     if (button === selectedPage) return `selected${color}`;
     return "";
@@ -41,11 +27,8 @@ function Header({ color, theme, selectedPage, dispatch }) {
             htmlFor="social"
             className={`social-label bg${color} c${theme} bb${theme}`}
           >
-            {socialMenu ? (
-              <Icon icon="line-md:close" />
-            ) : (
-              <i className="ri-link" />
-            )}
+            {socialMenu && <Icon icon="line-md:close" />}
+            {!socialMenu && <Icon icon="line-md:external-link" />}
             <input
               type="checkbox"
               name="socialMenu"
@@ -53,7 +36,6 @@ function Header({ color, theme, selectedPage, dispatch }) {
               className="social"
               checked={socialMenu}
               onChange={() => setSocialMenu(!socialMenu)}
-              data-testid="socialMenu"
             />
             <SocialMenu />
           </label>
@@ -66,11 +48,8 @@ function Header({ color, theme, selectedPage, dispatch }) {
             Home
           </Link>
           <Link to="/" className="nav-icon-mobile">
-            {selectedPage === "home" ? (
-              <i className={`ri-home-2-fill c${color}`} />
-            ) : (
-              <i className={`ri-home-2-line c${invert(theme)}`} />
-            )}
+            <Icon icon="line-md:home-simple" className={`c${invert(theme)}`} />
+            <span className={`c${invert(theme)}`}>Home</span>
           </Link>
         </li>
         <li>
@@ -82,9 +61,15 @@ function Header({ color, theme, selectedPage, dispatch }) {
           </Link>
           <Link to="/about" className="nav-icon-mobile">
             {selectedPage === "about" ? (
-              <i className={`ri-user-fill c${color}`} />
+              <>
+                <Icon icon="line-md:account" className={`c${color}`} />
+                <span className={`c${color}`}>About</span>
+              </>
             ) : (
-              <i className={`ri-user-line c${invert(theme)}`} />
+              <>
+                <Icon icon="line-md:account" className={`c${invert(theme)}`} />
+                <span className={`c${invert(theme)}`}>About</span>
+              </>
             )}
           </Link>
         </li>
@@ -100,35 +85,29 @@ function Header({ color, theme, selectedPage, dispatch }) {
           </Link>
           <Link to="/projects" className="nav-icon-mobile">
             {selectedPage === "projects" ? (
-              <i className={`ri-file-code-fill c${color}`} />
+              <>
+                <Icon icon="line-md:document-code" className={`c${color}`} />
+                <span className={`c${color}`}>Projects</span>
+              </>
             ) : (
-              <i className={`ri-file-code-line c${invert(theme)}`} />
+              <>
+                <Icon
+                  icon="line-md:document-code"
+                  className={`c${invert(theme)}`}
+                />
+                <span className={`c${invert(theme)}`}>Projects</span>
+              </>
             )}
           </Link>
         </li>
-        {theme === "" && (
-          <Icon
-            icon="line-md:moon-filled"
-            onClick={changeInvertTheme}
-            className={`c${color} theme-icon`}
-          />
-        )}
-        {theme === "-dark" && (
-          <Icon
-            icon="line-md:sun-rising-filled-loop"
-            onClick={changeInvertTheme}
-            className={`c${color} theme-icon`}
-          />
-        )}
         <li>
           <label
             htmlFor="colors"
             className={`colors-label bg${color} c${theme}`}
           >
-            {colorsMenu ? (
-              <i className="ri-close-line" />
-            ) : (
-              <i className="ri-palette-line" />
+            {colorsMenu && <Icon icon="line-md:close" />}
+            {!colorsMenu && (
+              <Icon icon="line-md:paint-drop-half-filled-twotone" />
             )}
             <input
               type="checkbox"
@@ -137,7 +116,6 @@ function Header({ color, theme, selectedPage, dispatch }) {
               className="colors"
               checked={colorsMenu}
               onChange={() => setColorsMenu(!colorsMenu)}
-              data-testid="colorsMenu"
             />
             <ColorsMenu />
           </label>

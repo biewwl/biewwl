@@ -23,12 +23,14 @@
   }
 
   .nav-icon-mobile {
-    display: block;
-    height: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .nav-icon-mobile i {
-    transition: 0.5s;
+  
+  .nav-icon-mobile span {
+    font-size: 0.6em;
   }
 
   .selected-light {
