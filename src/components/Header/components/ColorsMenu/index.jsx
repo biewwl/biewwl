@@ -76,14 +76,14 @@ function ColorsMenu({ dispatch, color, theme }) {
         <li className={`theme-li bg${color} bb${theme}`}>
           {theme === "" && (
             <Icon
-              icon="line-md:moon-filled"
+              icon="line-md:moon-twotone"
               onClick={changeInvertTheme}
               className={`theme-icon`}
             />
           )}
           {theme === "-dark" && (
             <Icon
-              icon="line-md:sun-rising-filled-loop"
+              icon="line-md:sunny-outline-twotone-loop"
               onClick={changeInvertTheme}
               className={`theme-icon`}
             />

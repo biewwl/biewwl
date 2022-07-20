@@ -60,7 +60,7 @@ function Home({ color, theme, query, dispatch }) {
               <Icon
                 icon="line-md:moon-filled"
                 onClick={changeInvertTheme}
-                className="c-dark theme-icon"
+                className="c theme-icon"
               />
             )}
             {theme === "-dark" && (
