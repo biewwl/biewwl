@@ -51,7 +51,7 @@ function CardProject({
             <Icon icon="bi:arrow-right" /> 
           </Link>
           <button className={`c${color} share`} onClick={copy}>
-            {copied && <Icon icon="charm:tick" />}
+            {copied && <Icon icon="line-md:confirm" />}
             {!copied && <Icon icon="line-md:external-link" />}
           </button>
         </div>
