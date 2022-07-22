@@ -5,7 +5,7 @@ import invert from "../../helpers/invertTheme";
 import { Icon } from "@iconify/react";
 import "./styles/About.css";
 import "./styles/About-mobile.css";
-import profile from "././images/hat.jpg";
+import profile from "././images/perfil.jpg";
 import Certificates from "../../components/Certificates";
 
 function About({ color, theme }) {
