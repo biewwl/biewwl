@@ -27,122 +27,135 @@ available at [https://biewwl.github.io/biewwl/](https://biewwl.github.io/biewwl/
   <a href="https://twitter.com/21biewwl" target="blank">
     <img
       align="center"
-      src="https://api.iconify.design/ei/sc-twitter.svg?color=%2300acee"
+      src="https://img.shields.io/badge/Twitter-@21biewwl-1DA1F2?&style=for-the-badge&logo=twitter&logoColor=white"
       alt="21biewwl"
-      height="40"
-      width="40"
+      height="30"
     />
   </a>
+</p>
+<p align="left">
   <a href="https://linkedin.com/in/biewwl" target="blank">
     <img
       align="center"
-      src="https://api.iconify.design/typcn/social-linkedin.svg?color=%230a66c2"
+      src="https://img.shields.io/badge/Linkedin-@biewwl-0A66C2?&style=for-the-badge&logo=linkedin&logoColor=white"
       alt="biewwl"
-      height="40"
-      width="40"
-  /></a>
+      height="30"
+    />
+  </a>
+</p>
+<p align="left">
   <a href="https://instagram.com/biewwl" target="blank"
     ><img
       align="center"
-      src="https://api.iconify.design/ei/sc-instagram.svg?color=%23e1306c"
+      src="https://img.shields.io/badge/Instagram-@biewwl-E4405F?&style=for-the-badge&logo=instagram&logoColor=white"
       alt="biewwl"
-      height="40"
-      width="40"
-  /></a>
+      height="30"
+    />
+  </a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
+<h3 align="left">My Toolbox:</h3>
 <p align="left">
-  <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
-    <img
-      src="https://brandlogos.net/wp-content/uploads/2021/09/bootstrap-logo.png"
-      alt="bootstrap"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-    <img
-      src="https://github.com/css.png"
-      alt="css3"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
-    <img
-      src="https://4.bp.blogspot.com/-ElHOWTsMmu0/WICr4BM0ArI/AAAAAAAAscQ/G8hPehhiJkoKCa-Sc6QPW-TxWD52Y08ZgCPcB/s1600/docker-logo1.png"
-      alt="docker"
-      width="40"
-      height="40"
-    />
-  </a>
   <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
     <img
-      src="https://api.iconify.design/bxl/html5.svg?color=%23ec5d28"
+      src="https://img.shields.io/badge/-html5-E34F26?&style=for-the-badge&logo=html5&logoColor=white"
       alt="html5"
-      width="40"
-      height="40"
+      height="30"
     />
   </a>
-  <a
+    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-CSS-1572B6?&style=for-the-badge&logo=css3&logoColor=white"
+      alt="css3"
+      height="30"
+    />
+  </a>
+    <a
     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     target="_blank"
     rel="noreferrer"
   >
     <img
-      src="https://api.iconify.design/vscode-icons/file-type-js.svg"
+      src="https://img.shields.io/badge/-JavaScript-F7DF1E?&style=for-the-badge&logo=javascript&logoColor=black"
       alt="javascript"
-      width="40"
-      height="40"
+      height="30"
+    />
+  </a>
+  <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Bootstrap-7952B3?&style=for-the-badge&logo=bootstrap&logoColor=white"
+      alt="bootstrap"
+      height="30"
+    />
+  </a>
+  <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Docker-2496ED?&style=for-the-badge&logo=docker&logoColor=white"
+      alt="docker"
+      height="30"
     />
   </a>
   <a href="https://jestjs.io" target="_blank" rel="noreferrer">
     <img
-      src="https://api.iconify.design/vscode-icons/file-type-jest-snapshot.svg"
+      src="https://img.shields.io/badge/-Jest-C21325?&style=for-the-badge&logo=jest&logoColor=white"
       alt="jest"
-      width="35"
-      height="35"
+      height="30"
     />
   </a>
-  <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+    <a href="https://testing-library.com/" target="_blank" rel="noreferrer">
     <img
-      src="https://api.iconify.design/flat-color-icons/linux.svg"
-      alt="linux"
-      width="40"
-      height="40"
+      src="https://img.shields.io/badge/-Testing%20Library-white?&style=for-the-badge&logo=testinglibrary&logoColor=E33332"
+      alt="testing-library"
+      height="30"
     />
   </a>
   <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
     <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+      src="https://img.shields.io/badge/-MySQL-4479A1?&style=for-the-badge&logo=mysql&logoColor=white"
       alt="mysql"
-      width="40"
-      height="40"
+      height="30"
     />
   </a>
   <a href="https://nodejs.org" target="_blank" rel="noreferrer">
     <img
-      src="https://api.iconify.design/vscode-icons/file-type-node.svg"
+      src="https://img.shields.io/badge/-Node.js-339933?&style=for-the-badge&logo=nodedotjs&logoColor=white"
       alt="nodejs"
-      width="40"
-      height="40"
+      height="30"
     />
   </a>
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
     <img
-      src="https://api.iconify.design/vscode-icons/file-type-reactjs.svg"
+      src="https://img.shields.io/badge/-React.js-grey?&style=for-the-badge&logo=react&logoColor=#61DAFB"
       alt="react"
-      width="40"
-      height="40"
+      height="30"
     />
   </a>
   <a href="https://redux.js.org" target="_blank" rel="noreferrer">
     <img
-      src="https://api.iconify.design/bxl/redux.svg?color=%23764abc"
+      src="https://img.shields.io/badge/-Redux-764ABC?&style=for-the-badge&logo=redux&logoColor=white"
       alt="redux"
-      width="40"
-      height="40"
+      height="30"
+    />
+  </a>
+  <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Linux-black?&style=for-the-badge&logo=linux&logoColor=FCC624"
+      alt="linux"
+      height="30"
+    />
+  </a>
+  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-GNU%20Bash-4EAA25?&style=for-the-badge&logo=gnubash&logoColor=white"
+      alt="bash"
+      height="30"
+    />
+  </a>
+  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Git-F05032?&style=for-the-badge&logo=git&logoColor=white"
+      alt="git"
+      height="30"
     />
   </a>
 </p>
