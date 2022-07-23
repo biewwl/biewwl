@@ -5,24 +5,71 @@
     width="150"
   />
 </p>
+
 <h1 align="center">Hi, I'm Gabriel Dias</h1>
 <h3 align="center">I'm a Frontend Web Developer from Brazil 🇧🇷</h3>
 
-<p align="center">
-  <a href="https://twitter.com/21biewwl" target="blank">
-    <img
-      src="https://img.shields.io/twitter/follow/21biewwl?logo=twitter&style=for-the-badge"
-      alt="21biewwl"
-    />
-  </a>
+<br/>
+
+<p><em>Parachuted here? Well, I'm a Frontend Programmer passionate about WEB development! Although I started my programming studies in 2022, I GUARANTEE you that you will be amazed at the level of development I have achieved in this short time! The goal is to learn more and more... Besides programming I like to spend my time watching series with my friends and playing games.</em></p>
+
+<br/>
+
+- 📚 I’m currently learning **TypeScript, Node.js**
+- 🧑🏻‍💻 All of my projects are
+  available at [https://biewwl.github.io/biewwl/](https://biewwl.github.io/biewwl/)
+- ✉️ How to reach me **21biewwl@gmail.com**
+
+<br />
+
+<h3 align="left">🤷🏻‍♂️ Some things about me:</h3>
+<p>
+  <ul>
+    <li>🖥️ I started my studies as a programmer in 2022!</li>
+    <li>💬 Pronouns: <strong>He</strong>, <strong>Her</strong></li>
+    <li>🎶 Musical preference: <strong>Rap</strong>, <strong>Alternative</strong>, <strong>Indie</strong>, <strong>Rock</strong></li>
+    <li>🍂 Music of the moment: <strong>Toxic</strong> <em>by BoyWithUke</em></li>
+    <li>❄️ My favorite season is <strong>winter</strong></li>
+    <li>⚜️ Hogwarts House: <strong>Gryffindor</strong></li>
+    <li>⌨️ Development environment: <strong>Dark</strong>, <strong>playlist</strong>, <strong>headphones</strong> and <strong>coffee</strong></li>
+    <li>❤️ Favorite programming area: <strong>Frontend</strong></li>
+    <li>🎬 Favorite sagas: <strong>Harry Potter</strong>, <strong>The Hobbit</strong> and <strong>The Lord of the Rings</strong></li>
+  </ul>
 </p>
 
-- 🌱 I’m currently learning **TypeScript, Node.js**
-- 👨‍💻 All of my projects are
-available at [https://biewwl.github.io/biewwl/](https://biewwl.github.io/biewwl/)
-- 📫 How to reach me **21biewwl@gmail.com**
+<br />
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">🏆 Skills:</h3>
+<p>
+  <ul>
+    <li>⚡ I have a fast learning</li>
+    <li>🎯 I'm very focused</li>
+    <li>📖 I want to learn more</li>
+    <li>🙇🏻‍♂️ I'm very respectful</li>
+  </ul>
+</p>
+
+<br />
+
+<blockquote>
+  <p>
+    "Happiness can be found, even in the darkest of times, if one only remembers to turn on the light." - Albus Dumbledore
+  </p>
+</blockquote>
+<blockquote>
+  <p>
+  "I don't want to be heard, I want to be listened to" - Twenty One Pilots
+  </p>
+</blockquote>
+<blockquote>
+  <p>
+  "Don't ever look down, be comfortable with who you are, our flaws are what makes us perfect." - Machine Gun Kelly
+  </p>
+</blockquote>
+
+<br/>
+
+<h3 align="left">🔗 Connect with me:</h3>
 <p align="left">
   <a href="https://twitter.com/21biewwl" target="blank">
     <img
@@ -54,7 +101,9 @@ available at [https://biewwl.github.io/biewwl/](https://biewwl.github.io/biewwl/
   </a>
 </p>
 
-<h3 align="left">My Toolbox:</h3>
+<br/>
+
+<h3 align="left">🔧 My Toolbox:</h3>
 <p align="left">
   <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
     <img
@@ -160,6 +209,9 @@ available at [https://biewwl.github.io/biewwl/](https://biewwl.github.io/biewwl/
   </a>
 </p>
 
+<br/>
+
+<h3 align="left">📈 My GitHub stats:</h3>
 <p align="center">&nbsp;
   <img
     align="center"
