@@ -25,6 +25,14 @@ import THome from '../pages/Project/images/trunfo/Home.png';
 import THome2 from '../pages/Project/images/trunfo/Home2.png';
 import TCards from '../pages/Project/images/trunfo/Cards.png';
 
+import RALogin from '../pages/Project/images/recipes-app/Login.png';
+import RAFoods from '../pages/Project/images/recipes-app/Foods.png';
+import RADrinks from '../pages/Project/images/recipes-app/Drinks.png';
+import RADetails from '../pages/Project/images/recipes-app/Details.png';
+import RAProgress from '../pages/Project/images/recipes-app/Progress.png';
+import RADone from '../pages/Project/images/recipes-app/Done.png';
+import RAFavorites from '../pages/Project/images/recipes-app/Favorites.png';
+
 const data = [
   {
     path: "trivia",
@@ -179,6 +187,38 @@ const data = [
       },
     ],
     development: "individual",
+  },
+  {
+    path: "recipes-app",
+    name: "Recipes App",
+    type: "Site",
+    description:
+      "This project is a recipe site. Search by recipes, favorites and more!",
+    links: {
+      repository: "https://github.com/biewwl/project-recipes-app",
+      project: "https://biewwl.github.io/project-recipes-app/",
+    },
+    images: [RALogin, RAFoods, RADrinks, RADetails, RAProgress, RADone, RAFavorites],
+    skills: ["HTML", "CSS", "Javascript", "React", "Hooks", "Context API"],
+    tools: [
+      {
+        name: "react-router-dom",
+        link: "https://www.npmjs.com/package/react-router-dom",
+      },
+      {
+        name: "gh-pages",
+        link: "https://www.npmjs.com/package/gh-pages",
+      },
+      {
+        name: "manager-local-storage",
+        link: "https://www.npmjs.com/package/manager-local-storage",
+      },
+      {
+        name: "clipboard-copy",
+        link: "https://www.npmjs.com/package/clipboard-copy",
+      },
+    ],
+    development: "squad",
   },
   {
     path: "manager-local-storage",
