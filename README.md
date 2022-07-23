@@ -26,7 +26,7 @@
 <p>
   <ul>
     <li>🖥️ I started my studies as a programmer in 2022!</li>
-    <li>💬 Pronouns: <strong>He</strong>, <strong>Her</strong></li>
+    <li>💬 Pronouns: <strong>He</strong>, <strong>Him</strong></li>
     <li>🎶 Musical preference: <strong>Rap</strong>, <strong>Alternative</strong>, <strong>Indie</strong>, <strong>Rock</strong></li>
     <li>🍂 Music of the moment: <strong>Toxic</strong> <em>by BoyWithUke</em></li>
     <li>❄️ My favorite season is <strong>winter</strong></li>
