@@ -1,13 +1,13 @@
 :root {
-  --light: white;
-  --dark: rgb(36, 36, 36);
-  --blue: rgb(66, 135, 245);
-  --yellow: rgb(244, 180, 0);
-  --green: rgb(15, 157, 88);
-  --purple: rgb(136, 65, 218);
-  --pink: rgb(240, 70, 169);
-  --red: rgb(219, 68, 55);
-  --orange: rgb(240, 118, 70);
+  --light: #fff;
+  --dark: #242424;
+  --blue: #4285f4;
+  --yellow: #fbbc05;
+  --green: #34a853;
+  --purple: #8841da;
+  --pink: #f046a9;
+  --red: #ea4335;
+  --orange: #f07646;
 }
 
 /*
@@ -19,7 +19,7 @@ Light
 }
 
 .bg2 {
-  background-color: rgba(255, 255, 255, 0.678);
+  background-color: #ffffffad;
 }
 
 .bb {
@@ -35,7 +35,7 @@ Light
 }
 
 .c2 {
-  color: rgb(109, 109, 109);
+  color: #6d6d6d;
 }
 
 /*
@@ -47,7 +47,7 @@ Dark
 }
 
 .bg2-dark {
-  background-color: rgba(36, 36, 36, 0.678);
+  background-color: #242424ad;
 }
 
 .bb-dark {
@@ -63,7 +63,7 @@ Dark
 }
 
 .c2-dark {
-  color: rgb(155, 155, 155);
+  color: #9b9b9b;
 }
 
 /* 
