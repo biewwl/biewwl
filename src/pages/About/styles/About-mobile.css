@@ -35,9 +35,10 @@
 
   .container-about-me img {
     width: 200px;
+    height: 200px;
     margin-bottom: 20px;
   }
-  
+
   .about-me {
     animation: toRight 1s;
     cursor: default;

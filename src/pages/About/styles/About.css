@@ -89,6 +89,9 @@
   border-radius: 1em;
   animation: toLeft 1s;
   width: 300px;
+  height: 300px;
+  object-fit: cover;
+  filter: grayscale();
 }
 
 .skills-container {
