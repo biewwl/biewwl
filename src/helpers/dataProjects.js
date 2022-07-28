@@ -4,6 +4,7 @@ import OnlineStore from "./data/OnlineStore";
 import Trunfo from "./data/Trunfo";
 import RecipesApp from "./data/RecipesApp";
 import ManagerLocalStorage from "./data/ManagerLocalStorage";
+import GoogleGenerator from "./data/GoogleGenerator";
 
 const data = [
   Trivia,
@@ -11,6 +12,7 @@ const data = [
   OnlineStore,
   Trunfo,
   RecipesApp,
+  GoogleGenerator,
   ManagerLocalStorage,
 ];
 
