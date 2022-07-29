@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import ColorsMenu from "./components/ColorsMenu";
 import SocialMenu from "./components/SocialMenu";
-import { changeColor, changeTheme } from "../../redux/actions/themeAction";
 import invert from "../../helpers/invertTheme";
 import "./styles/Header.css";
 import "./styles/Header-mobile.css";
@@ -20,7 +19,7 @@ function Header({ color, theme, selectedPage, dispatch }) {
 
   return (
     <header className={`nav-bar bgC${theme} bbT${color}`}>
-      <span className={`logo c${color}`}>biewwl</span>
+      <span className={`logo c${color}`}>✦ biewwl</span>
       <ul>
         <li>
           <label

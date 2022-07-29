@@ -5,7 +5,7 @@ import invert from "../../helpers/invertTheme";
 import { Icon } from "@iconify/react";
 import "./styles/About.css";
 import "./styles/About-mobile.css";
-import profile from "././images/perfil.jpg";
+import profile from "././images/perfil.png";
 import Certificates from "../../components/Certificates";
 
 function About({ color, theme }) {
@@ -36,7 +36,7 @@ function About({ color, theme }) {
               being a developer and I will get better and better!
             </p>
           </section>
-          <img src={profile} alt="biewwl" />
+          <img src={profile} alt="biewwl" className={`bg${color}`} />
         </article>
         <article>
           <h3
