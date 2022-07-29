@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/biewwl/static/css/main.1b68025f.css",
-    "main.js": "/biewwl/static/js/main.68b7ee21.js",
+    "main.css": "/biewwl/static/css/main.367c49b4.css",
+    "main.js": "/biewwl/static/js/main.d84010be.js",
     "static/media/Login.png": "/biewwl/static/media/Login.5abd9b6b09025da49822.png",
     "static/media/comparative.jpg": "/biewwl/static/media/comparative.32554e67b6a352f91567.jpg",
     "static/media/ranking.png": "/biewwl/static/media/ranking.ec80c7f597ce9426eb89.png",
@@ -28,20 +28,20 @@
     "static/media/search.png": "/biewwl/static/media/search.3c739bcfc76aee97677c.png",
     "static/media/Cart.png": "/biewwl/static/media/Cart.6130a30b48ca7961a153.png",
     "static/media/favorites.png": "/biewwl/static/media/favorites.f5a9200de9ae09688f39.png",
-    "static/media/cat.jpg": "/biewwl/static/media/cat.f5a1566571417eb455f0.jpg",
     "static/media/Attributes.png": "/biewwl/static/media/Attributes.372bfecde07a6a9b3bc7.png",
     "static/media/album.png": "/biewwl/static/media/album.cae3933b4966d3603e3d.png",
     "static/media/edit-profile.png": "/biewwl/static/media/edit-profile.20fe672b1c8c8a377851.png",
     "static/media/history.png": "/biewwl/static/media/history.4110248acbe1d9508666.png",
+    "static/media/perfil.jpg": "/biewwl/static/media/perfil.239bf35837a72c504e03.jpg",
     "static/media/profile.png": "/biewwl/static/media/profile.04bbaca73b77f47b8113.png",
     "static/media/Product Sans Regular.ttf": "/biewwl/static/media/Product Sans Regular.d165384076551a756b3c.ttf",
     "static/media/home.png": "/biewwl/static/media/home.2f20696a7869c2c90470.png",
     "index.html": "/biewwl/index.html",
-    "main.1b68025f.css.map": "/biewwl/static/css/main.1b68025f.css.map",
-    "main.68b7ee21.js.map": "/biewwl/static/js/main.68b7ee21.js.map"
+    "main.367c49b4.css.map": "/biewwl/static/css/main.367c49b4.css.map",
+    "main.d84010be.js.map": "/biewwl/static/js/main.d84010be.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b68025f.css",
-    "static/js/main.68b7ee21.js"
+    "static/css/main.367c49b4.css",
+    "static/js/main.d84010be.js"
   ]
 }
