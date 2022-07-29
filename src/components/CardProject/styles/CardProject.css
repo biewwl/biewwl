@@ -53,7 +53,7 @@
 }
 
 .projects-dark .card-project {
-  background-color: #282828;
+  background-color: #3e3e3e;
 }
 
 :is(.projects, .projects-dark) .card-project .card-image {
