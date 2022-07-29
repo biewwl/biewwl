@@ -1,13 +1,13 @@
 :root {
   --light: #fff;
   --dark: #242424;
-  --blue: #3273db;
-  --yellow: #fbbc05;
-  --green: #309c5f;
-  --purple: #8841da;
-  --pink: #f046a9;
-  --red: #ea4335;
-  --orange: #f07646;
+  --blue: #9599e2;
+  --yellow: #fbab7e;
+  --green: #28c76f;
+  --purple: #8a51ec;
+  --pink: #9492ec;
+  --red: #ea5455;
+  --orange: #db5432;
 }
 
 /*
@@ -15,11 +15,15 @@ Light
 */
 
 .bg {
-  background-color: var(--light);
+  background-image: linear-gradient(40deg, #bcbcbc 10%, #fff 100%);
 }
 
 .bg2 {
   background-color: #ffffffad;
+}
+
+.bgC {
+  background-color: #fff;
 }
 
 .bb {
@@ -43,11 +47,15 @@ Dark
 */
 
 .bg-dark {
-  background-color: var(--dark);
+  background-image: linear-gradient(40deg, var(--dark) 10%, #333 100%);
 }
 
 .bg2-dark {
-  background-color: #242424ad;
+  background-color: #141414ad;
+}
+
+.bgC-dark {
+  background-color: var(--dark);
 }
 
 .bb-dark {
@@ -79,6 +87,10 @@ Blue
 }
 
 .bg-blue {
+  background-image: linear-gradient(30deg, var(--blue) 10%, #ddeaff 100%);
+}
+
+.bgC-blue {
   background-color: var(--blue);
 }
 
@@ -88,30 +100,6 @@ Blue
 
 .selected-blue {
   color: var(--blue);
-}
-
-/* 
-Yellow
-*/
-
-.bb-yellow {
-  border: 1px solid var(--yellow);
-}
-
-.bbT-yellow {
-  border-top: 1px solid var(--yellow);
-}
-
-.bg-yellow {
-  background-color: var(--yellow);
-}
-
-.c-yellow {
-  color: var(--yellow);
-}
-
-.selected-yellow {
-  color: var(--yellow);
 }
 
 /* 
@@ -127,6 +115,10 @@ Green
 }
 
 .bg-green {
+  background-image: linear-gradient(30deg, var(--green) 10%, #bdf9d8 100%);
+}
+
+.bgC-green {
   background-color: var(--green);
 }
 
@@ -136,6 +128,62 @@ Green
 
 .selected-green {
   color: var(--green);
+}
+
+/* 
+Yellow
+*/
+
+.bb-yellow {
+  border: 1px solid var(--yellow);
+}
+
+.bbT-yellow {
+  border-top: 1px solid var(--yellow);
+}
+
+.bg-yellow {
+  background-image: linear-gradient(30deg, var(--yellow) 0%, #f9dc93 50%);
+}
+
+.bgC-yellow {
+  background-color: var(--yellow);
+}
+
+.c-yellow {
+  color: var(--yellow);
+}
+
+.selected-yellow {
+  color: var(--yellow);
+}
+
+/* 
+Red
+*/
+
+.bb-red {
+  border: 1px solid var(--red);
+}
+
+.bbT-red {
+  border-top: 1px solid var(--red);
+}
+
+.bg-red {
+  background-image: linear-gradient(30deg, var(--red) 10%, #f99f9f 100%);
+}
+
+.bgC-red {
+  background-color: var(--red);
+}
+
+.c-red {
+  color: var(--red);
+}
+
+.selected-red {
+  color: var(--red);
 }
 
 /* 
@@ -151,6 +199,10 @@ Purple
 }
 
 .bg-purple {
+  background-image: linear-gradient(30deg, var(--purple) 10%, #e2b0ff 100%);
+}
+
+.bgC-purple {
   background-color: var(--purple);
 }
 
@@ -175,6 +227,10 @@ Pink
 }
 
 .bg-pink {
+  background-image: linear-gradient(30deg, var(--pink) 30%, #f5c2c2 100%);
+}
+
+.bgC-pink {
   background-color: var(--pink);
 }
 
@@ -184,30 +240,6 @@ Pink
 
 .selected-pink {
   color: var(--pink);
-}
-
-/* 
-Red
-*/
-
-.bb-red {
-  border: 1px solid var(--red);
-}
-
-.bbT-red {
-  border-top: 1px solid var(--red);
-}
-
-.bg-red {
-  background-color: var(--red);
-}
-
-.c-red {
-  color: var(--red);
-}
-
-.selected-red {
-  color: var(--red);
 }
 
 /* 
@@ -223,6 +255,10 @@ Orange
 }
 
 .bg-orange {
+  background-image: linear-gradient(30deg, var(--orange), #f9af95);
+}
+
+.bgC-orange {
   background-color: var(--orange);
 }
 
@@ -235,7 +271,43 @@ Orange
 }
 
 @media screen and (min-width: 769px) {
-  .bbT-blue, .bbT-yellow, .bbT-green, .bbT-purple, .bbT-pink, .bbT-red, .bbT-orange, .bbT, .bbT-dark {
+  .bbT-blue,
+  .bbT-yellow,
+  .bbT-green,
+  .bbT-purple,
+  .bbT-pink,
+  .bbT-red,
+  .bbT-orange,
+  .bbT,
+  .bbT-dark {
     border-top: none;
+  }
+
+  .bg-blue {
+    background-image: linear-gradient(-30deg, var(--blue) 10%, #ddeaff 100%);
+  }
+
+  .bg-green {
+    background-image: linear-gradient(-30deg, var(--green) 10%, #bdf9d8 100%);
+  }
+
+  .bg-yellow {
+    background-image: linear-gradient(-30deg, var(--yellow) 0%, #f9dc93 50%);
+  }
+
+  .bg-red {
+    background-image: linear-gradient(-30deg, var(--red) 10%, #f99f9f 100%);
+  }
+
+  .bg-purple {
+    background-image: linear-gradient(-30deg, var(--purple) 10%, #e2b0ff 100%);
+  }
+
+  .bg-pink {
+    background-image: linear-gradient(-30deg, var(--pink) 30%, #f5c2c2 100%);
+  }
+  
+  .bg-orange {
+    background-image: linear-gradient(-30deg, var(--orange), #f9af95);
   }
 }

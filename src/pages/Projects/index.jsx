@@ -35,7 +35,7 @@ function Projects({ theme, color, query, dispatch }) {
   return (
     <>
       <Header selectedPage="projects" />
-      <main className={`projects${theme} bg${theme}`}>
+      <main className={`projects${theme} bgC${theme}`}>
         <section className="projects-search">
           <span className={`c${invert(theme)}`}>
             {querySearch !== "" ? `"${querySearch}"` : "Start a new search"}

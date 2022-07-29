@@ -22,7 +22,7 @@ function Project({ match, theme, color }) {
   return (
     <>
       <Header selectedPage="projects" />
-      <main className={`project bg${theme}`}>
+      <main className={`project bgC${theme}`}>
         {dataProject ? (
           <>
             <section className="project-name">
@@ -52,7 +52,7 @@ function Project({ match, theme, color }) {
                     href={dataProject.links.project}
                     target="_blank"
                     rel="noreferrer"
-                    className={`bg${theme} c${color} bb${theme}`}
+                    className={`bgC${theme} c${color} bb${theme}`}
                   >
                     <span>Project</span>
                   </a>

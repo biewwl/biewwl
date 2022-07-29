@@ -8,7 +8,7 @@ function Certificates({ color, theme, visible }) {
   return (
     <>
       <section
-        className={`certificates-container bg${color} ${
+        className={`certificates-container bgC${color} ${
           visible ? " show" : ""
         }`}
       >
@@ -18,7 +18,7 @@ function Certificates({ color, theme, visible }) {
             <h4 className={`c${invert(theme)}`}>{certificate.title}</h4>
             <a
               href={certificate.link}
-              className={`bg${color} c${theme}`}
+              className={`bgC${color} c${theme}`}
               target="_blank"
               rel="noreferrer"
             >

@@ -5,7 +5,7 @@ import './styles/SocialMenu-mobile.css';
 
 function SocialMenu({ color, theme }) {
   return (
-    <ul className={`bg${theme} social-menu bb${color}`}>
+    <ul className={`bgC${theme} social-menu bb${color}`}>
       <li>
         <a href="https://github.com/biewwl" target="_blank" rel="noreferrer">
           <i className="ri-github-line" />

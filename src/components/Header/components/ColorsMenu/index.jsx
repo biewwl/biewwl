@@ -25,7 +25,7 @@ function ColorsMenu({ dispatch, color, theme }) {
 
   return (
     <>
-      <ul className={`bg${color} colors-menu bb${theme}`}>
+      <ul className={`bgC${color} colors-menu bb${theme}`}>
         <li
           className={`ex-color bg-blue bb${theme}`}
           onClick={() => dispatch(changeColor("-blue"))}
@@ -73,7 +73,7 @@ function ColorsMenu({ dispatch, color, theme }) {
             onClick={() => dispatch(changeColor("-dark"))}
           ></li>
         )}
-        <li className={`theme-li bg${color} bb${theme}`}>
+        <li className={`theme-li bgC${color} bb${theme}`}>
           {theme === "" && (
             <Icon
               icon="line-md:moon-twotone"

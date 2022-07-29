@@ -19,13 +19,13 @@ function Header({ color, theme, selectedPage, dispatch }) {
   };
 
   return (
-    <header className={`nav-bar bg${theme} bbT${color}`}>
+    <header className={`nav-bar bgC${theme} bbT${color}`}>
       <span className={`logo c${color}`}>biewwl</span>
       <ul>
         <li>
           <label
             htmlFor="social"
-            className={`social-label bg${color} c${theme} bb${theme}`}
+            className={`social-label bgC${color} c${theme} bb${theme}`}
           >
             {socialMenu && <Icon icon="line-md:close" />}
             {!socialMenu && <Icon icon="line-md:external-link" />}
@@ -103,7 +103,7 @@ function Header({ color, theme, selectedPage, dispatch }) {
         <li>
           <label
             htmlFor="colors"
-            className={`colors-label bg${color} c${theme}`}
+            className={`colors-label bgC${color} c${theme}`}
           >
             {colorsMenu && <Icon icon="line-md:close" />}
             {!colorsMenu && (

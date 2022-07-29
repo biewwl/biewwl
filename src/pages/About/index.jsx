@@ -5,7 +5,7 @@ import invert from "../../helpers/invertTheme";
 import { Icon } from "@iconify/react";
 import "./styles/About.css";
 import "./styles/About-mobile.css";
-import profile from "././images/cat.jpg";
+import profile from "././images/perfil.jpg";
 import Certificates from "../../components/Certificates";
 
 function About({ color, theme }) {
@@ -22,7 +22,7 @@ function About({ color, theme }) {
   return (
     <>
       <Header selectedPage="about" />
-      <main className={`about bg${theme}`}>
+      <main className={`about bgC${theme}`}>
         <article className={`container-about-me c${invert(theme)}`}>
           <section className={`about-me`}>
             <h3 className={`c${color}`}>A little about me...</h3>
@@ -40,7 +40,7 @@ function About({ color, theme }) {
         </article>
         <article>
           <h3
-            className={`bg${color} c${theme} certificates-h3${showCertificates ? " show" : ""}`}
+            className={`bgC${color} c${theme} certificates-h3${showCertificates ? " show" : ""}`}
             onClick={toggleCertificates}
           >
             <div>

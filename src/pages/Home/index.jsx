@@ -52,7 +52,7 @@ function Home({ color, theme, query, dispatch }) {
 
   return (
     <>
-      <main className={`bg${theme} home`}>
+      <main className={`bgC${theme} home`}>
         <section className={`card-left${theme}`}>
           <section className="home-logo-theme">
             <h1>biewwl</h1>
