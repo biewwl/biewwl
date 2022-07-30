@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+
+  .skills-container {
+    padding: 40px 0;
+  }
+
+  .skills {
+    font-size: 0.6em;
+    padding: 20px;
+  }
+
+  .skills li {
+    padding: 0;
+    width: 100%;
+  }
+
+  .skills svg {
+    font-size: 3em;
+  }
+
+}

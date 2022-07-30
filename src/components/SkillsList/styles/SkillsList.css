@@ -1,0 +1,25 @@
+.skills {
+  align-items: center;
+  cursor: default;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 40px 20px;
+  font-size: 0.8em;
+  list-style: none;
+  padding: 60px 40px 80px 40px;
+  min-height: 30vh;
+  justify-items: center;
+}
+
+.skills li {
+  align-items: center;
+  animation: toTop 1s;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.skills svg {
+  font-size: 2.5em;
+  padding: 5px;
+}

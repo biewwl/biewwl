@@ -9,6 +9,7 @@ import profile from "././images/perfil.png";
 import Certificates from "../../components/Certificates";
 import Helmet from "react-helmet";
 import convertColor from "../../helpers/convertColor";
+import SkillsList from "../../components/SkillsList/SkillsList";
 
 function About({ color, theme }) {
   const [showCertificates, setShowCertificates] = React.useState(false);
@@ -58,58 +59,7 @@ function About({ color, theme }) {
           </h3>
           <Certificates visible={showCertificates} />
         </article>
-        <article className="skills-container">
-          <ul className={`skills c${invert(theme)}`}>
-            <li>
-              <Icon icon="ant-design:html5-outlined" className={`c${color}`} />
-              Html
-            </li>
-            <li>
-              <Icon icon="la:css3" className={`c${color}`} />
-              Css
-            </li>
-            <li>
-              <Icon icon="bxl:javascript" className={`c${color}`} />
-              Javascript
-            </li>
-            <li>
-              <Icon icon="fe:github-alt" className={`c${color}`} />
-              Git & Github
-            </li>
-            <li>
-              <Icon icon="bxl:react" className={`c${color}`} />
-              React.js
-            </li>
-            <li>
-              <Icon icon="bxl:redux" className={`c${color}`} />
-              Redux
-            </li>
-            <li>
-              <Icon icon="cib:bootstrap" className={`c${color}`} />
-              Bootstrap
-            </li>
-            <li>
-              <Icon icon="akar-icons:node-fill" className={`c${color}`} />
-              Node.js
-            </li>
-            <li>
-              <Icon icon="cib:jest" className={`c${color}`} />
-              Jest
-            </li>
-            <li>
-              <Icon icon="cib:npm" className={`c${color}`} />
-              NPM
-            </li>
-            <li>
-              <Icon icon="fa-brands:docker" className={`c${color}`} />
-              Docker
-            </li>
-            <li>
-              <Icon icon="fontisto:mysql" className={`c${color}`} />
-              mySQL
-            </li>
-          </ul>
-        </article>
+        <SkillsList />
       </main>
     </>
   );
