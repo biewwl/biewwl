@@ -13,7 +13,7 @@ function Header({ color, theme, selectedPage, dispatch }) {
   const [colorsMenu, setColorsMenu] = useState(false);
 
   const selected = (button, color) => {
-    if (button === selectedPage) return `selected${color}`;
+    if (button === selectedPage) return `c${color}`;
     return "";
   };
 
