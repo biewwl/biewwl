@@ -261,7 +261,7 @@ Orange
   }
 
   .bg-green {
-    background-image: linear-gradient(-30deg, var(--green) 10%, #bdf9d8 100%);
+    background-image: linear-gradient(-30deg, var(--green) 10%, #c9ebf6 100%);
   }
 
   .bg-yellow {
@@ -281,6 +281,6 @@ Orange
   }
 
   .bg-orange {
-    background-image: linear-gradient(-30deg, var(--orange), #f9af95);
+    background-image: linear-gradient(-30deg, var(--orange), #f5d7ae);
   }
 }
