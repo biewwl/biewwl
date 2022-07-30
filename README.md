@@ -45,7 +45,8 @@
     <li>⚡ I have a fast learning</li>
     <li>🎯 I'm very focused</li>
     <li>📖 I want to learn more</li>
-    <li>🙇🏻‍♂️ I'm very respectful</li>
+    <li>🧪 I work well with <strong>TDD</strong></li>
+    <li>📋 I work well with <strong>Kanbam</strong> and <strong>Scrum</strong></li>
   </ul>
 </p>
 
@@ -204,6 +205,20 @@
     <img
       src="https://img.shields.io/badge/-Git-F05032?&style=for-the-badge&logo=git&logoColor=white"
       alt="git"
+      height="30"
+    />
+  </a>
+  <a href="https://mochajs.org/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Mocha-8D6748?&style=for-the-badge&logo=mocha&logoColor=white"
+      alt="mocha"
+      height="30"
+    />
+  </a>
+  <a href="https://www.chaijs.com/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Chai-A30701?&style=for-the-badge&logo=chai&logoColor=white"
+      alt="chai"
       height="30"
     />
   </a>
