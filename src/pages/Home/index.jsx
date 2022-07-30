@@ -10,6 +10,8 @@ import biewwl from "./images/biewwl.jpg";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { useEffect } from "react";
+import Helmet from "react-helmet";
+import convertColor from "../../helpers/convertColor";
 
 function Home({ color, theme, query, dispatch }) {
   const history = useHistory();
@@ -52,6 +54,9 @@ function Home({ color, theme, query, dispatch }) {
 
   return (
     <>
+      <Helmet title="biewwl">
+        <meta name="theme-color" content={convertColor(theme, true)} />
+      </Helmet>
       <main className={`bgC${theme} home`}>
         <section className={`card-left${theme}`}>
           <section className="home-logo-theme">

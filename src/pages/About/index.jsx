@@ -7,6 +7,8 @@ import "./styles/About.css";
 import "./styles/About-mobile.css";
 import profile from "././images/perfil.png";
 import Certificates from "../../components/Certificates";
+import Helmet from "react-helmet";
+import convertColor from "../../helpers/convertColor";
 
 function About({ color, theme }) {
   const [showCertificates, setShowCertificates] = React.useState(false);
@@ -17,10 +19,13 @@ function About({ color, theme }) {
 
   const toggleCertificates = () => {
     setShowCertificates(!showCertificates);
-  }
+  };
 
   return (
     <>
+      <Helmet title="About">
+        <meta name="theme-color" content={convertColor(color)} />
+      </Helmet>
       <Header selectedPage="about" />
       <main className={`about bgC${theme}`}>
         <article className={`container-about-me c${invert(theme)}`}>
@@ -40,14 +45,16 @@ function About({ color, theme }) {
         </article>
         <article>
           <h3
-            className={`bgC${color} c${theme} certificates-h3${showCertificates ? " show" : ""}`}
+            className={`bgC${color} c${theme} certificates-h3${
+              showCertificates ? " show" : ""
+            }`}
             onClick={toggleCertificates}
           >
             <div>
               <span>Certificates</span>
               <Icon icon="teenyicons:certificate-outline" />
             </div>
-            <Icon icon={`fe:arrow-${showCertificates ? 'up' : 'down'}`} />
+            <Icon icon={`fe:arrow-${showCertificates ? "up" : "down"}`} />
           </h3>
           <Certificates visible={showCertificates} />
         </article>

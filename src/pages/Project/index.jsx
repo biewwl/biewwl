@@ -7,6 +7,8 @@ import "./styles/Project.css";
 import "./styles/Project-mobile.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import Helmet from "react-helmet";
+import convertColor from "../../helpers/convertColor";
 
 function Project({ match, theme, color }) {
   const {
@@ -25,6 +27,9 @@ function Project({ match, theme, color }) {
       <main className={`project bgC${theme}`}>
         {dataProject ? (
           <>
+            <Helmet title={dataProject.name}>
+              <meta name="theme-color" content={convertColor(color)} />
+            </Helmet>
             <section className="project-name">
               <div>
                 <Link to="/projects" className={`c${color}`}>

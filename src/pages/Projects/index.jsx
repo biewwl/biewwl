@@ -7,6 +7,8 @@ import invert from "../../helpers/invertTheme";
 import { goSearch } from "../../redux/actions/searchAction";
 import Header from "../../components/Header";
 import CardProject from "../../components/CardProject";
+import Helmet from "react-helmet";
+import convertColor from "../../helpers/convertColor";
 
 function Projects({ theme, color, query, dispatch }) {
   const [querySearch, setQuerySearch] = useState(query);
@@ -24,7 +26,8 @@ function Projects({ theme, color, query, dispatch }) {
         ) ||
         project.tools.some((tool) =>
           tool.name.toLowerCase().includes(query.toLowerCase())
-        ) || project.type.toLowerCase().includes(query.toLowerCase())
+        ) ||
+        project.type.toLowerCase().includes(query.toLowerCase())
     );
 
   const handleQueryChange = ({ target }) => {
@@ -34,6 +37,9 @@ function Projects({ theme, color, query, dispatch }) {
 
   return (
     <>
+      <Helmet title="Projects">
+        <meta name="theme-color" content={convertColor(color)} />
+      </Helmet>
       <Header selectedPage="projects" />
       <main className={`projects${theme} bgC${theme}`}>
         <section className="projects-search">
