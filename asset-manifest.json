@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/biewwl/static/css/main.f7307eca.css",
-    "main.js": "/biewwl/static/js/main.408f495a.js",
+    "main.js": "/biewwl/static/js/main.c807627d.js",
     "static/media/Login.png": "/biewwl/static/media/Login.5abd9b6b09025da49822.png",
     "static/media/comparative.jpg": "/biewwl/static/media/comparative.32554e67b6a352f91567.jpg",
     "static/media/ranking.png": "/biewwl/static/media/ranking.ec80c7f597ce9426eb89.png",
     "static/media/without.jpg": "/biewwl/static/media/without.52b72255ab05c2f2e2f0.jpg",
+    "static/media/perfil.png": "/biewwl/static/media/perfil.67971a767f72aa4078d5.png",
     "static/media/Foods.png": "/biewwl/static/media/Foods.139ac26497a08323ff79.png",
     "static/media/login.png": "/biewwl/static/media/login.84559186c9c55c532774.png",
     "static/media/settings.png": "/biewwl/static/media/settings.69a7e01b719d540c53de.png",
@@ -20,7 +21,6 @@
     "static/media/correct.png": "/biewwl/static/media/correct.cbfc744c61ab2f119f03.png",
     "static/media/game.png": "/biewwl/static/media/game.545cc36c1f9643eb8bd1.png",
     "static/media/light-wallpaper.png": "/biewwl/static/media/light-wallpaper.3a06b7851f40e1dfebbd.png",
-    "static/media/perfil.png": "/biewwl/static/media/perfil.52fe184cddebb0e2cada.png",
     "static/media/biewwl.jpg": "/biewwl/static/media/biewwl.430ac4bde07ab7ccb750.jpg",
     "static/media/Explore.png": "/biewwl/static/media/Explore.256d23a2d767a36f695c.png",
     "static/media/Home.png": "/biewwl/static/media/Home.edeefd0fef7b21841afb.png",
@@ -38,10 +38,10 @@
     "static/media/home.png": "/biewwl/static/media/home.2f20696a7869c2c90470.png",
     "index.html": "/biewwl/index.html",
     "main.f7307eca.css.map": "/biewwl/static/css/main.f7307eca.css.map",
-    "main.408f495a.js.map": "/biewwl/static/js/main.408f495a.js.map"
+    "main.c807627d.js.map": "/biewwl/static/js/main.c807627d.js.map"
   },
   "entrypoints": [
     "static/css/main.f7307eca.css",
-    "static/js/main.408f495a.js"
+    "static/js/main.c807627d.js"
   ]
 }
