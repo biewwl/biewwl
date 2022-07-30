@@ -46,7 +46,7 @@
     <li>🎯 I'm very focused</li>
     <li>📖 I want to learn more</li>
     <li>🧪 I work well with <strong>TDD</strong></li>
-    <li>📋 I work well with <strong>Kanbam</strong> and <strong>Scrum</strong></li>
+    <li>📋 I work well with <strong>Kanban</strong> and <strong>Scrum</strong></li>
   </ul>
 </p>
 
