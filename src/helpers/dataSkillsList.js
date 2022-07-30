@@ -55,6 +55,10 @@ const dataSkillsList = [
     icon: "file-icons:chai",
     name: "Chai",
   },
+  {
+    icon: "simple-icons:express",
+    name: "Express",
+  },
 ];
 
 export default dataSkillsList;

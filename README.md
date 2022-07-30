@@ -222,6 +222,13 @@
       height="30"
     />
   </a>
+  <a href="https://www.npmjs.com/package/express" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Express-fff?&style=for-the-badge&logo=express&logoColor=000"
+      alt="express"
+      height="30"
+    />
+  </a>
 </p>
 
 <br/>
