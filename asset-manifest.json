@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/biewwl/static/css/main.6e58918c.css",
-    "main.js": "/biewwl/static/js/main.eb192848.js",
+    "main.js": "/biewwl/static/js/main.2951c19e.js",
     "static/media/Login.png": "/biewwl/static/media/Login.5abd9b6b09025da49822.png",
     "static/media/comparative.jpg": "/biewwl/static/media/comparative.32554e67b6a352f91567.jpg",
     "static/media/ranking.png": "/biewwl/static/media/ranking.ec80c7f597ce9426eb89.png",
@@ -38,10 +38,10 @@
     "static/media/home.png": "/biewwl/static/media/home.2f20696a7869c2c90470.png",
     "index.html": "/biewwl/index.html",
     "main.6e58918c.css.map": "/biewwl/static/css/main.6e58918c.css.map",
-    "main.eb192848.js.map": "/biewwl/static/js/main.eb192848.js.map"
+    "main.2951c19e.js.map": "/biewwl/static/js/main.2951c19e.js.map"
   },
   "entrypoints": [
     "static/css/main.6e58918c.css",
-    "static/js/main.eb192848.js"
+    "static/js/main.2951c19e.js"
   ]
 }
