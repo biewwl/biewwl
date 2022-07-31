@@ -229,7 +229,7 @@
       height="30"
     />
   </a>
-  <a href="https://www.npmjs.com/package/express" target="_blank" rel="noreferrer">
+  <a href="https://www.postman.com/" target="_blank" rel="noreferrer">
     <img
       src="https://img.shields.io/badge/-Postman-FF6C37?&style=for-the-badge&logo=postman&logoColor=fff"
       alt="postman"
