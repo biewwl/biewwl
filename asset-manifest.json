@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/biewwl/static/css/main.8e7fee31.css",
-    "main.js": "/biewwl/static/js/main.d62cbd53.js",
+    "main.css": "/biewwl/static/css/main.7c4b6bfb.css",
+    "main.js": "/biewwl/static/js/main.ee7daea3.js",
     "static/media/Login.png": "/biewwl/static/media/Login.5abd9b6b09025da49822.png",
     "static/media/comparative.jpg": "/biewwl/static/media/comparative.32554e67b6a352f91567.jpg",
     "static/media/ranking.png": "/biewwl/static/media/ranking.ec80c7f597ce9426eb89.png",
     "static/media/without.jpg": "/biewwl/static/media/without.52b72255ab05c2f2e2f0.jpg",
-    "static/media/perfil.png": "/biewwl/static/media/perfil.67971a767f72aa4078d5.png",
     "static/media/Foods.png": "/biewwl/static/media/Foods.139ac26497a08323ff79.png",
     "static/media/login.png": "/biewwl/static/media/login.84559186c9c55c532774.png",
     "static/media/settings.png": "/biewwl/static/media/settings.69a7e01b719d540c53de.png",
@@ -26,6 +25,7 @@
     "static/media/Home.png": "/biewwl/static/media/Home.edeefd0fef7b21841afb.png",
     "static/media/Product.png": "/biewwl/static/media/Product.3c5897c33aee48a3444a.png",
     "static/media/Home2.png": "/biewwl/static/media/Home2.53bd69b276aea6e75e24.png",
+    "static/media/logo.png": "/biewwl/static/media/logo.e104aeee2f4b24ba3f48.png",
     "static/media/search.png": "/biewwl/static/media/search.3c739bcfc76aee97677c.png",
     "static/media/Cart.png": "/biewwl/static/media/Cart.6130a30b48ca7961a153.png",
     "static/media/favorites.png": "/biewwl/static/media/favorites.f5a9200de9ae09688f39.png",
@@ -37,11 +37,11 @@
     "static/media/Product Sans Regular.ttf": "/biewwl/static/media/Product Sans Regular.d165384076551a756b3c.ttf",
     "static/media/home.png": "/biewwl/static/media/home.2f20696a7869c2c90470.png",
     "index.html": "/biewwl/index.html",
-    "main.8e7fee31.css.map": "/biewwl/static/css/main.8e7fee31.css.map",
-    "main.d62cbd53.js.map": "/biewwl/static/js/main.d62cbd53.js.map"
+    "main.7c4b6bfb.css.map": "/biewwl/static/css/main.7c4b6bfb.css.map",
+    "main.ee7daea3.js.map": "/biewwl/static/js/main.ee7daea3.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e7fee31.css",
-    "static/js/main.d62cbd53.js"
+    "static/css/main.7c4b6bfb.css",
+    "static/js/main.ee7daea3.js"
   ]
 }
