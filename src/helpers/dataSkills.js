@@ -1,4 +1,4 @@
-const dataSkillsList = [
+const dataSkills = [
   {
     icon: "ant-design:html5-outlined",
     name: "Html",
@@ -63,6 +63,10 @@ const dataSkillsList = [
     icon: "cib:postman",
     name: "Postman",
   },
+  {
+    icon: "simple-icons:insomnia",
+    name: "Insomnia",
+  },
 ];
 
-export default dataSkillsList;
+export default dataSkills;

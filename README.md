@@ -236,6 +236,13 @@
       height="30"
     />
   </a>
+  <a href="https://insomnia.rest/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Insomnia-fff?&style=for-the-badge&logo=insomnia&logoColor=4000BF"
+      alt="insomnia"
+      height="30"
+    />
+  </a>
 </p>
 
 <br/>

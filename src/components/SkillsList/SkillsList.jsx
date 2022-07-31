@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import { connect } from "react-redux";
-import dataSkillsList from "../../helpers/dataSkillsList";
+import dataSkills from "../../helpers/dataSkills";
 import invert from "../../helpers/invertTheme";
 import './styles/SkillsList.css';
 import './styles/SkillsList-mobile.css'
@@ -9,7 +9,7 @@ function SkillsList({ color, theme }) {
   return (
     <article className="skills-container">
       <ul className={`skills c${invert(theme)}`}>
-        {dataSkillsList.map((skill, i) => (
+        {dataSkills.map((skill, i) => (
           <li key={i} className={`c${color}`}>
             <Icon icon={skill.icon} />
             {skill.name}
