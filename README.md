@@ -175,7 +175,7 @@
   </a>
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-React.js-61DAFB?&style=for-the-badge&logo=react&logoColor=fff"
+      src="https://img.shields.io/badge/-React.js-61DAFB?&style=for-the-badge&logo=react&logoColor=000"
       alt="react"
       height="30"
     />
