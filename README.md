@@ -154,7 +154,7 @@
   </a>
     <a href="https://testing-library.com/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Testing%20Library-fff?&style=for-the-badge&logo=testinglibrary&logoColor=E33332"
+      src="https://img.shields.io/badge/-Testing%20Library-E33332?&style=for-the-badge&logo=testinglibrary&logoColor=fff"
       alt="testing-library"
       height="30"
     />
@@ -175,7 +175,7 @@
   </a>
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-React.js-808080?&style=for-the-badge&logo=react&logoColor=61DAFB"
+      src="https://img.shields.io/badge/-React.js-61DAFB?&style=for-the-badge&logo=react&logoColor=fff"
       alt="react"
       height="30"
     />
@@ -189,7 +189,7 @@
   </a>
   <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Linux-000?&style=for-the-badge&logo=linux&logoColor=FCC624"
+      src="https://img.shields.io/badge/-Linux-FCC624?&style=for-the-badge&logo=linux&logoColor=000"
       alt="linux"
       height="30"
     />
@@ -224,7 +224,7 @@
   </a>
   <a href="https://www.npmjs.com/package/express" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Express-fff?&style=for-the-badge&logo=express&logoColor=000"
+      src="https://img.shields.io/badge/-Express-000?&style=for-the-badge&logo=express&logoColor=fff"
       alt="express"
       height="30"
     />
@@ -238,7 +238,7 @@
   </a>
   <a href="https://insomnia.rest/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Insomnia-fff?&style=for-the-badge&logo=insomnia&logoColor=4000BF"
+      src="https://img.shields.io/badge/-Insomnia-4000BF?&style=for-the-badge&logo=insomnia&logoColor=fff"
       alt="insomnia"
       height="30"
     />
