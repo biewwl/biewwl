@@ -6,7 +6,7 @@ import invert from "../../helpers/invertTheme";
 import convertColor from "../../helpers/convertColor";
 import { changeColor, changeTheme } from "../../redux/actions/themeAction";
 import { goSearch } from "../../redux/actions/searchAction";
-import biewwl from "./images/biewwl.jpg";
+import logo from "./images/logo.png";
 import { Icon } from "@iconify/react";
 import "./styles/Home.css";
 import "./styles/Home-mobile.css";
@@ -87,8 +87,8 @@ function Home({ color, theme, query, dispatch }) {
         <section className={`card-right${theme}`}>
           <div className="top-content">
             <section className="header-card-right">
-              <span className="star-home">✦</span>
-              <img src={biewwl} alt="" />
+              <span className={`star-home c${color}`}>✦</span>
+              <img src={logo} className={`bgC${color}`} alt="logo" />
             </section>
             <section className="search-container">
               <h3 className={`message c${invert(theme)}`}>
@@ -105,7 +105,7 @@ function Home({ color, theme, query, dispatch }) {
                 />
                 <Icon
                   icon="akar-icons:arrow-right"
-                  className={`c${invert(theme)}${
+                  className={`c${color}${
                     querySearch !== ""
                       ? " arrow-search-visible"
                       : " arrow-search"
@@ -136,7 +136,7 @@ function Home({ color, theme, query, dispatch }) {
                   href="https://github.com/biewwl"
                   target="_blank"
                   rel="noreferrer"
-                  className={`c${invert(theme)}`}
+                  className={`c${color}`}
                 >
                   <i className="ri-github-line" />
                 </a>
@@ -146,7 +146,7 @@ function Home({ color, theme, query, dispatch }) {
                   href="https://www.linkedin.com/in/biewwl/"
                   target="_blank"
                   rel="noreferrer"
-                  className={`c${invert(theme)}`}
+                  className={`c${color}`}
                 >
                   <i className="ri-linkedin-line" />
                 </a>
@@ -156,7 +156,7 @@ function Home({ color, theme, query, dispatch }) {
                   href="https://twitter.com/21biewwl"
                   target="_blank"
                   rel="noreferrer"
-                  className={`c${invert(theme)}`}
+                  className={`c${color}`}
                 >
                   <i className="ri-twitter-line" />
                 </a>
@@ -166,7 +166,7 @@ function Home({ color, theme, query, dispatch }) {
                   href="https://www.instagram.com/biewwl/"
                   target="_blank"
                   rel="noreferrer"
-                  className={`c${invert(theme)}`}
+                  className={`c${color}`}
                 >
                   <i className="ri-instagram-line" />
                 </a>

@@ -60,13 +60,13 @@
   font-size: 1.2em;
   font-weight: 100;
   transition: 0.5s;
-  color: white;
+  color: #fff;
 }
 
 .card-left .home-introduction,
 .card-left-dark .home-introduction {
   align-items: flex-start;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   height: 40%;
@@ -87,9 +87,9 @@
 
 .card-left .home-button,
 .card-left-dark .home-button {
-  background-color: white;
+  background-color: #fff;
   border-radius: 0.5em;
-  color: #434261;
+  color: #444;
   font-size: 0.8em;
   margin: 10px 0;
   padding: 10px;
@@ -97,15 +97,15 @@
 }
 
 .card-left-dark .home-button {
-  background-color: rgb(81, 81, 81);
-  color: white;
+  background-color: #515151;
+  color: #fff;
 }
 
 .home .ri-moon-fill,
 .home .ri-sun-fill {
   right: 1.5vw;
   transition: 0.5s;
-  color: white;
+  color: #fff;
 }
 
 .home .card-right,
@@ -132,25 +132,25 @@
 }
 
 .star-home {
-  color: goldenrod;
   font-size: 1.5em;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .home .header-card-right img {
   border-radius: 0.5em;
   width: 40px;
+  transition: .5s;
 }
 
 .search-container h3 {
   font-weight: 100;
-  transition: 0.5s;
+  transition: .5s;
   width: 50%;
 }
 
 .card-right .search-container input,
 .card-right-dark .search-container input {
-  background-color: rgb(238, 238, 238);
+  background-color: #eee;
   border-radius: 25px;
   border: none;
   margin: 40px 0;
@@ -160,8 +160,8 @@
 }
 
 .card-right-dark .search-container input {
-  background-color: rgb(81, 81, 81);
-  color: white;
+  background-color: #515151;
+  color: #fff;
 }
 
 .arrow-search {
@@ -206,7 +206,7 @@
 
 .about-home {
   align-items: center;
-  color: rgb(95, 95, 95);
+  color: #5f5f5f;
   display: flex;
   font-size: 0.9em;
   font-style: italic;
@@ -223,20 +223,4 @@
 
 .home .bottom-content ul a {
   transition: 0.5s;
-}
-
-.home .bottom-content ul .ri-github-line {
-  color: #ff642c;
-}
-
-.home .bottom-content ul .ri-linkedin-line {
-  color: #0e76a8;
-}
-
-.home .bottom-content ul .ri-twitter-line {
-  color: #00acee;
-}
-
-.home .bottom-content ul .ri-instagram-line {
-  color: #c13584;
 }
