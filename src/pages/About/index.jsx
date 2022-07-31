@@ -5,7 +5,7 @@ import invert from "../../helpers/invertTheme";
 import convertColor from "../../helpers/convertColor";
 import Header from "../../components/Header";
 import { Icon } from "@iconify/react";
-import profile from "././images/perfil.png";
+import logo from "././images/logo.png";
 import Certificates from "../../components/Certificates";
 import SkillsList from "../../components/SkillsList/SkillsList";
 import "./styles/About.css";
@@ -42,7 +42,7 @@ function About({ color, theme }) {
               being a developer and I will get better and better!
             </p>
           </section>
-          <img src={profile} alt="biewwl" className={`bg${color}`} />
+          <img src={logo} alt="biewwl" className={`bg${color}`} />
         </article>
         <article>
           <h3

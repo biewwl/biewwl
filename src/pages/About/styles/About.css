@@ -86,7 +86,7 @@
 }
 
 .container-about-me img {
-  border-radius: 1em;
+  border-radius: 50%;
   animation: toLeft 1s;
   width: 300px;
   height: 300px;
