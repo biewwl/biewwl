@@ -1,18 +1,18 @@
-import React, { useEffect } from "react";
-import Header from "../../components/Header";
+import { useEffect, useState } from "react";
 import { connect } from "react-redux";
+import Helmet from "react-helmet";
 import invert from "../../helpers/invertTheme";
+import convertColor from "../../helpers/convertColor";
+import Header from "../../components/Header";
 import { Icon } from "@iconify/react";
-import "./styles/About.css";
-import "./styles/About-mobile.css";
 import profile from "././images/perfil.png";
 import Certificates from "../../components/Certificates";
-import Helmet from "react-helmet";
-import convertColor from "../../helpers/convertColor";
 import SkillsList from "../../components/SkillsList/SkillsList";
+import "./styles/About.css";
+import "./styles/About-mobile.css";
 
 function About({ color, theme }) {
-  const [showCertificates, setShowCertificates] = React.useState(false);
+  const [showCertificates, setShowCertificates] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);

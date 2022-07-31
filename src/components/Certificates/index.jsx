@@ -1,8 +1,8 @@
-import data from "../../helpers/dataCertificates";
-import "./styles/Certificates.css";
 import { connect } from "react-redux";
+import data from "../../helpers/dataCertificates";
 import { Icon } from "@iconify/react";
 import invert from "../../helpers/invertTheme";
+import "./styles/Certificates.css";
 
 function Certificates({ color, theme, visible }) {
   return (

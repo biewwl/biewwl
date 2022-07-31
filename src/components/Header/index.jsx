@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import invert from "../../helpers/invertTheme";
 import ColorsMenu from "./components/ColorsMenu";
 import SocialMenu from "./components/SocialMenu";
-import invert from "../../helpers/invertTheme";
+import { Icon } from "@iconify/react";
 import "./styles/Header.css";
 import "./styles/Header-mobile.css";
-import { Icon } from "@iconify/react";
 
 function Header({ color, theme, selectedPage, dispatch }) {
   const [socialMenu, setSocialMenu] = useState(false);

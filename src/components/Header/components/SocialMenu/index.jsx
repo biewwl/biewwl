@@ -1,4 +1,3 @@
-import React from "react";
 import { connect } from "react-redux";
 import './styles/SocialMenu.css';
 import './styles/SocialMenu-mobile.css';

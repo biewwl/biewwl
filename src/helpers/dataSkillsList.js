@@ -59,6 +59,10 @@ const dataSkillsList = [
     icon: "simple-icons:express",
     name: "Express",
   },
+  {
+    icon: "cib:postman",
+    name: "Postman",
+  },
 ];
 
 export default dataSkillsList;

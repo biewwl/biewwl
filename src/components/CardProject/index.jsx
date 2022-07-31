@@ -1,7 +1,7 @@
-import { Icon } from "@iconify/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import invert from "../../helpers/invertTheme";
+import { Icon } from "@iconify/react";
 import "./styles/CardProject.css";
 import "./styles/CardProject-mobile.css";
 

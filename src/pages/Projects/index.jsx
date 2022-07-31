@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { connect } from "react-redux";
-import "./styles/Projects.css";
-import "./styles/Projects-mobile.css";
-import data from "../../helpers/dataProjects";
+import Helmet from "react-helmet";
 import invert from "../../helpers/invertTheme";
+import convertColor from "../../helpers/convertColor";
+import data from "../../helpers/dataProjects";
 import { goSearch } from "../../redux/actions/searchAction";
 import Header from "../../components/Header";
 import CardProject from "../../components/CardProject";
-import Helmet from "react-helmet";
-import convertColor from "../../helpers/convertColor";
+import "./styles/Projects.css";
+import "./styles/Projects-mobile.css";
 
 function Projects({ theme, color, query, dispatch }) {
   const [querySearch, setQuerySearch] = useState(query);

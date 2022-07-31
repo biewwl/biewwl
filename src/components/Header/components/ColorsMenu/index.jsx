@@ -1,12 +1,11 @@
-import React from "react";
 import { connect } from "react-redux";
 import {
   changeColor,
   changeTheme,
 } from "../../../../redux/actions/themeAction";
+import { Icon } from "@iconify/react";
 import "./styles/ColorsMenu.css";
 import "./styles/ColorsMenu-mobile.css";
-import { Icon } from "@iconify/react";
 
 function ColorsMenu({ dispatch, color, theme }) {
   const changeInvertTheme = () => {

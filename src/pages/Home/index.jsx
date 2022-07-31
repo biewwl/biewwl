@@ -1,17 +1,15 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
+import Helmet from "react-helmet";
 import invert from "../../helpers/invertTheme";
-import "./styles/Home.css";
-import "./styles/Home-mobile.css";
+import convertColor from "../../helpers/convertColor";
 import { changeColor, changeTheme } from "../../redux/actions/themeAction";
 import { goSearch } from "../../redux/actions/searchAction";
 import biewwl from "./images/biewwl.jpg";
 import { Icon } from "@iconify/react";
-import { useState } from "react";
-import { useEffect } from "react";
-import Helmet from "react-helmet";
-import convertColor from "../../helpers/convertColor";
+import "./styles/Home.css";
+import "./styles/Home-mobile.css";
 
 function Home({ color, theme, query, dispatch }) {
   const history = useHistory();

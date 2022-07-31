@@ -1,14 +1,14 @@
+import { useEffect } from "react";
 import data from "../../helpers/dataProjects";
-import Gallery from "./components/Gallery";
 import { connect } from "react-redux";
-import Header from "../../components/Header";
+import Helmet from "react-helmet";
 import invert from "../../helpers/invertTheme";
+import convertColor from "../../helpers/convertColor";
+import Header from "../../components/Header";
+import Gallery from "./components/Gallery";
+import { Link } from "react-router-dom";
 import "./styles/Project.css";
 import "./styles/Project-mobile.css";
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
-import Helmet from "react-helmet";
-import convertColor from "../../helpers/convertColor";
 
 function Project({ match, theme, color }) {
   const {

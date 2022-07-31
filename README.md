@@ -108,14 +108,14 @@
 <p align="left">
   <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-html5-E34F26?&style=for-the-badge&logo=html5&logoColor=white"
+      src="https://img.shields.io/badge/-html5-E34F26?&style=for-the-badge&logo=html5&logoColor=fff"
       alt="html5"
       height="30"
     />
   </a>
     <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-CSS-1572B6?&style=for-the-badge&logo=css3&logoColor=white"
+      src="https://img.shields.io/badge/-CSS-1572B6?&style=for-the-badge&logo=css3&logoColor=fff"
       alt="css3"
       height="30"
     />
@@ -126,98 +126,98 @@
     rel="noreferrer"
   >
     <img
-      src="https://img.shields.io/badge/-JavaScript-F7DF1E?&style=for-the-badge&logo=javascript&logoColor=black"
+      src="https://img.shields.io/badge/-JavaScript-F7DF1E?&style=for-the-badge&logo=javascript&logoColor=000"
       alt="javascript"
       height="30"
     />
   </a>
   <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Bootstrap-7952B3?&style=for-the-badge&logo=bootstrap&logoColor=white"
+      src="https://img.shields.io/badge/-Bootstrap-7952B3?&style=for-the-badge&logo=bootstrap&logoColor=fff"
       alt="bootstrap"
       height="30"
     />
   </a>
   <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Docker-2496ED?&style=for-the-badge&logo=docker&logoColor=white"
+      src="https://img.shields.io/badge/-Docker-2496ED?&style=for-the-badge&logo=docker&logoColor=fff"
       alt="docker"
       height="30"
     />
   </a>
   <a href="https://jestjs.io" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Jest-C21325?&style=for-the-badge&logo=jest&logoColor=white"
+      src="https://img.shields.io/badge/-Jest-C21325?&style=for-the-badge&logo=jest&logoColor=fff"
       alt="jest"
       height="30"
     />
   </a>
     <a href="https://testing-library.com/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Testing%20Library-white?&style=for-the-badge&logo=testinglibrary&logoColor=E33332"
+      src="https://img.shields.io/badge/-Testing%20Library-fff?&style=for-the-badge&logo=testinglibrary&logoColor=E33332"
       alt="testing-library"
       height="30"
     />
   </a>
   <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-MySQL-4479A1?&style=for-the-badge&logo=mysql&logoColor=white"
+      src="https://img.shields.io/badge/-MySQL-4479A1?&style=for-the-badge&logo=mysql&logoColor=fff"
       alt="mysql"
       height="30"
     />
   </a>
   <a href="https://nodejs.org" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Node.js-339933?&style=for-the-badge&logo=nodedotjs&logoColor=white"
+      src="https://img.shields.io/badge/-Node.js-339933?&style=for-the-badge&logo=nodedotjs&logoColor=fff"
       alt="nodejs"
       height="30"
     />
   </a>
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-React.js-grey?&style=for-the-badge&logo=react&logoColor=#61DAFB"
+      src="https://img.shields.io/badge/-React.js-808080?&style=for-the-badge&logo=react&logoColor=61DAFB"
       alt="react"
       height="30"
     />
   </a>
   <a href="https://redux.js.org" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Redux-764ABC?&style=for-the-badge&logo=redux&logoColor=white"
+      src="https://img.shields.io/badge/-Redux-764ABC?&style=for-the-badge&logo=redux&logoColor=fff"
       alt="redux"
       height="30"
     />
   </a>
   <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Linux-black?&style=for-the-badge&logo=linux&logoColor=FCC624"
+      src="https://img.shields.io/badge/-Linux-000?&style=for-the-badge&logo=linux&logoColor=FCC624"
       alt="linux"
       height="30"
     />
   </a>
   <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-GNU%20Bash-4EAA25?&style=for-the-badge&logo=gnubash&logoColor=white"
+      src="https://img.shields.io/badge/-GNU%20Bash-4EAA25?&style=for-the-badge&logo=gnubash&logoColor=fff"
       alt="bash"
       height="30"
     />
   </a>
   <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Git-F05032?&style=for-the-badge&logo=git&logoColor=white"
+      src="https://img.shields.io/badge/-Git-F05032?&style=for-the-badge&logo=git&logoColor=fff"
       alt="git"
       height="30"
     />
   </a>
   <a href="https://mochajs.org/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Mocha-8D6748?&style=for-the-badge&logo=mocha&logoColor=white"
+      src="https://img.shields.io/badge/-Mocha-8D6748?&style=for-the-badge&logo=mocha&logoColor=fff"
       alt="mocha"
       height="30"
     />
   </a>
   <a href="https://www.chaijs.com/" target="_blank" rel="noreferrer">
     <img
-      src="https://img.shields.io/badge/-Chai-A30701?&style=for-the-badge&logo=chai&logoColor=white"
+      src="https://img.shields.io/badge/-Chai-A30701?&style=for-the-badge&logo=chai&logoColor=fff"
       alt="chai"
       height="30"
     />
@@ -226,6 +226,13 @@
     <img
       src="https://img.shields.io/badge/-Express-fff?&style=for-the-badge&logo=express&logoColor=000"
       alt="express"
+      height="30"
+    />
+  </a>
+  <a href="https://www.npmjs.com/package/express" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Postman-FF6C37?&style=for-the-badge&logo=postman&logoColor=fff"
+      alt="postman"
       height="30"
     />
   </a>
