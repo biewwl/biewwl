@@ -67,6 +67,10 @@ const dataSkills = [
     icon: "simple-icons:insomnia",
     name: "Insomnia",
   },
+  {
+    icon: "simple-icons:tailwindcss",
+    name: "Tailwind CSS",
+  },
 ];
 
 export default dataSkills;

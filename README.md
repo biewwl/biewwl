@@ -243,6 +243,13 @@
       height="30"
     />
   </a>
+  <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Tailwind CSS-06B6D4?&style=for-the-badge&logo=tailwindcss&logoColor=000"
+      alt="tailwind css"
+      height="30"
+    />
+  </a>
 </p>
 
 <br/>
