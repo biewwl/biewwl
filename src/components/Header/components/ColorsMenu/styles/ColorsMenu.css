@@ -16,7 +16,7 @@
 }
 
 .colors:checked ~ .colors-menu {
-  height: 315px;
+  height: 325px;
   opacity: 1;
   overflow: visible;
 }

@@ -58,6 +58,16 @@ function ColorsMenu({ dispatch, color, theme }) {
           name="-orange"
           onClick={() => dispatch(changeColor("-orange"))}
         ></li>
+        <li
+          className={`ex-color bg-coffee bb${theme}`}
+          name="-coffee"
+          onClick={() => dispatch(changeColor("-coffee"))}
+        ></li>
+        <li
+          className={`ex-color bg-luxe bb${theme}`}
+          name="-luxe"
+          onClick={() => dispatch(changeColor("-luxe"))}
+        ></li>
         {theme === "-dark" && (
           <li
             className={`ex-color bg bb${theme}`}

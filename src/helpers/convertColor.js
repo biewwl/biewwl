@@ -18,6 +18,10 @@ const convertColor = (color, isTheme = false) => {
       return '#ea5455';
     case '-orange':
       return '#ff7a5f';
+    case '-coffee':
+      return '#83624a';
+    case '-luxe':
+      return '#CDC2AE';
     default:
       return '#fff';
   }
