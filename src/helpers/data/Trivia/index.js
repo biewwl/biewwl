@@ -45,6 +45,7 @@ const Trivia = {
     },
   ],
   development: "individual",
+  done: true,
 };
 
 export default Trivia;

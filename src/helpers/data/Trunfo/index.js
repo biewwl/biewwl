@@ -25,6 +25,7 @@ const Trunfo = {
     },
   ],
   development: "individual",
+  done: true,
 };
 
 export default Trunfo;

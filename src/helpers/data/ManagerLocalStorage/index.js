@@ -16,6 +16,7 @@ const ManagerLocalStorage = {
   skills: ["Javascript"],
   tools: [],
   development: "individual",
+  done: true,
 };
 
 export default ManagerLocalStorage;

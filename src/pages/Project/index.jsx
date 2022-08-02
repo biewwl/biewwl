@@ -7,6 +7,7 @@ import convertColor from "../../helpers/convertColor";
 import Header from "../../components/Header";
 import Gallery from "./components/Gallery";
 import { Link } from "react-router-dom";
+import coverInDev from "../../images/inDev.png";
 import "./styles/Project.css";
 import "./styles/Project-mobile.css";
 
@@ -21,13 +22,24 @@ function Project({ match, theme, color }) {
 
   const dataProject = data.find((e) => e.path === project);
 
+  const {
+    name,
+    description,
+    skills,
+    tools,
+    images,
+    done,
+    development,
+    links: { repository, project: linkProject },
+  } = dataProject;
+
   return (
     <>
       <Header selectedPage="projects" />
       <main className={`project bgC${theme}`}>
         {dataProject ? (
           <>
-            <Helmet title={dataProject.name}>
+            <Helmet title={name}>
               <meta name="theme-color" content={convertColor(color)} />
             </Helmet>
             <section className="project-name">
@@ -35,18 +47,20 @@ function Project({ match, theme, color }) {
                 <Link to="/projects" className={`c${color}`}>
                   Projects /
                 </Link>
-                <h1 className={`c${invert(theme)}`}>{dataProject.name}</h1>
+                <h1 className={`c${invert(theme)}`}>{name}{!done && <span>{" (in development)"}</span>}</h1>
               </div>
-              <span className={`c${color}`}>{dataProject.development}</span>
+              <span className={`c${color}`}>{development}</span>
             </section>
-            <section className={`project-detail bg${color}`}>
-              <Gallery images={dataProject.images} />
+            <section
+              className={`project-detail bg${color}${!done ? " inDev" : ""}`}
+            >
+              <Gallery images={!done ? [coverInDev] : images} />
               <section className={`project-description c${theme}`}>
                 <h2>Description</h2>
-                <p>{dataProject.description}</p>
+                <p>{description}</p>
                 <section className="project-links">
                   <a
-                    href={dataProject.links.repository}
+                    href={repository}
                     target="_blank"
                     rel="noreferrer"
                     className={`c${theme} bb${theme}`}
@@ -54,10 +68,15 @@ function Project({ match, theme, color }) {
                     <span>Repository</span>
                   </a>
                   <a
-                    href={dataProject.links.project}
+                    href={!done ? "" : linkProject}
                     target="_blank"
                     rel="noreferrer"
-                    className={`bgC${theme} c${color} bb${theme}`}
+                    className={`bgC${theme} c${color} bb${theme}${
+                      !done ? " inDev" : ""
+                    }`}
+                    onClick={!done ? (e) => {
+                      e.preventDefault();
+                    } : ''}
                   >
                     <span>Project</span>
                   </a>
@@ -68,7 +87,7 @@ function Project({ match, theme, color }) {
               <section>
                 <h3 className={`c${color}`}>Skills Used</h3>
                 <p>
-                  {dataProject.skills.map((e, i) => (
+                  {skills.map((e, i) => (
                     <span className={`skill c${invert(theme)}`} key={i}>
                       {e}
                     </span>
@@ -76,11 +95,11 @@ function Project({ match, theme, color }) {
                 </p>
               </section>
               <section>
-                {dataProject.tools.length > 0 && (
+                {tools.length > 0 && (
                   <>
                     <h3 className={`c${color}`}>Libraries Used</h3>
                     <p>
-                      {dataProject.tools.map((e, i) => (
+                      {tools.map((e, i) => (
                         <a
                           rel="noreferrer"
                           target="_blank"

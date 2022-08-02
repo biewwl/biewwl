@@ -8,6 +8,7 @@ import { changeColor, changeTheme } from "../../redux/actions/themeAction";
 import { goSearch } from "../../redux/actions/searchAction";
 import logo from "./images/logo.png";
 import { Icon } from "@iconify/react";
+import dataIntroduce from "../../helpers/dataIntroduce";
 import "./styles/Home.css";
 import "./styles/Home-mobile.css";
 
@@ -15,10 +16,12 @@ function Home({ color, theme, query, dispatch }) {
   const history = useHistory();
 
   useEffect(() => {
+    randomIntro();
     window.scrollTo(0, 0);
   }, []);
 
   const [querySearch, setQuerySearch] = useState(query);
+  const [intro, setIntro] = useState("");
 
   const handleQueryChange = ({ target }) => {
     setQuerySearch(target.value);
@@ -50,6 +53,11 @@ function Home({ color, theme, query, dispatch }) {
     }
   };
 
+  const randomIntro = () => {
+    const random = Math.floor(Math.random() * dataIntroduce.length);
+    setIntro(dataIntroduce[random]);
+  };
+
   return (
     <>
       <Helmet title="biewwl">
@@ -76,9 +84,7 @@ function Home({ color, theme, query, dispatch }) {
           </section>
           <section className={`home-introduction`}>
             <span>Welcome!</span>
-            <h2>
-              Follow my projects developed in my trajectory as a WEB developer
-            </h2>
+            <h2>{intro}</h2>
             <Link to="/projects" className="home-button">
               Explore projects
             </Link>

@@ -18,6 +18,7 @@ const GoogleGenerator = {
   skills: ["HTML", "CSS", "Javascript"],
   tools: [],
   development: "individual",
+  done: true,
 };
 
 export default GoogleGenerator;

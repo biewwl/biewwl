@@ -49,6 +49,7 @@ const RecipesApp = {
     },
   ],
   development: "squad",
+  done: true,
 };
 
 export default RecipesApp;

@@ -49,6 +49,7 @@ const FavoriteMusics = {
     },
   ],
   development: "individual",
+  done: true,
 };
 
 export default FavoriteMusics;

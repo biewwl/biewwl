@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import invert from "../../helpers/invertTheme";
 import { Icon } from "@iconify/react";
+import coverInDev from "../../images/inDev.png";
 import "./styles/CardProject.css";
 import "./styles/CardProject-mobile.css";
 
 function CardProject({
-  projectDetails: { images, name, description, path, type },
+  projectDetails: { images, name, description, path, type, done },
   theme,
   color,
 }) {
@@ -24,9 +25,9 @@ function CardProject({
 
   return (
     <section
-      className={
+      className={`${
         type === "Library" ? `card-project bb${color} library` : "card-project"
-      }
+      }${!done ? " inDev" : ""}`}
     >
       {copied && (
         <div className="copied">
@@ -35,10 +36,14 @@ function CardProject({
           </span>
         </div>
       )}
-      <img className="card-image" src={images[0]} alt="" />
+      <img
+        className={`card-image${!done ? " inDev" : ""}`}
+        src={!done ? coverInDev : images[0]}
+        alt=""
+      />
       <section className="card-infos">
         <div className="card-title">
-          <h3 className={`c${invert(theme)}`}>{name}</h3>
+          <h3 className={`c${invert(theme)}`}>{name}{!done && <span>{" (in development)"}</span>}</h3>
         </div>
         <p className={`c2${invert(theme)}`}>{description}</p>
         <div className="buttons-container">
@@ -48,7 +53,7 @@ function CardProject({
             className={`card-button bb${color} c${color}`}
           >
             <span>More details</span>
-            <Icon icon="bi:arrow-right" /> 
+            <Icon icon="bi:arrow-right" />
           </Link>
           <button className={`c${color} share`} onClick={copy}>
             {copied && <Icon icon="line-md:confirm" />}

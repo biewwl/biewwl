@@ -56,7 +56,11 @@
   background-color: #3e3e3e;
 }
 
-:is(.projects, .projects-dark) .card-project .card-image {
+:is(.projects, .projects-dark) .card-project.inDev {
+  opacity: .5;
+}
+
+:is(.projects, .projects-dark) .card-image {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   border: 1px solid #eee;
@@ -64,6 +68,10 @@
   object-fit: cover;
   transition: 0.5s;
   width: 100%;
+}
+
+:is(.projects, .projects-dark) .card-image.inDev {
+  filter: grayscale();
 }
 
 .projects-dark .card-project .card-image {
@@ -94,6 +102,13 @@
   font-weight: 100;
   margin: 10px 0;
   transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-project h3 span {
+  opacity: .5;
+  font-size: .8em;
 }
 
 .card-project p {

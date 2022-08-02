@@ -16,7 +16,6 @@
 }
 
 .project .slider div div {
-  width: 100%;
   display: flex !important;
   align-items: center;
   justify-content: center;

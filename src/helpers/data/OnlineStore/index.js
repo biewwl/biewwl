@@ -46,6 +46,7 @@ const OnlineStore = {
     },
   ],
   development: "individual",
+  done: true,
 };
 
 export default OnlineStore;
