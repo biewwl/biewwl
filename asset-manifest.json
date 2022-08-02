@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/biewwl/static/css/main.efdbcc96.css",
-    "main.js": "/biewwl/static/js/main.8ec79cc3.js",
+    "main.css": "/biewwl/static/css/main.532c9684.css",
+    "main.js": "/biewwl/static/js/main.7f03b641.js",
     "static/media/Login.png": "/biewwl/static/media/Login.5abd9b6b09025da49822.png",
     "static/media/logo.png": "/biewwl/static/media/logo.df81ca1d4938aab0789d.png",
     "static/media/comparative.jpg": "/biewwl/static/media/comparative.32554e67b6a352f91567.jpg",
@@ -33,14 +33,15 @@
     "static/media/edit-profile.png": "/biewwl/static/media/edit-profile.20fe672b1c8c8a377851.png",
     "static/media/history.png": "/biewwl/static/media/history.4110248acbe1d9508666.png",
     "static/media/profile.png": "/biewwl/static/media/profile.04bbaca73b77f47b8113.png",
+    "static/media/inDev.png": "/biewwl/static/media/inDev.1be4f172a45e9ac372a0.png",
     "static/media/Product Sans Regular.ttf": "/biewwl/static/media/Product Sans Regular.d165384076551a756b3c.ttf",
     "static/media/home.png": "/biewwl/static/media/home.2f20696a7869c2c90470.png",
     "index.html": "/biewwl/index.html",
-    "main.efdbcc96.css.map": "/biewwl/static/css/main.efdbcc96.css.map",
-    "main.8ec79cc3.js.map": "/biewwl/static/js/main.8ec79cc3.js.map"
+    "main.532c9684.css.map": "/biewwl/static/css/main.532c9684.css.map",
+    "main.7f03b641.js.map": "/biewwl/static/js/main.7f03b641.js.map"
   },
   "entrypoints": [
-    "static/css/main.efdbcc96.css",
-    "static/js/main.8ec79cc3.js"
+    "static/css/main.532c9684.css",
+    "static/js/main.7f03b641.js"
   ]
 }
