@@ -7,7 +7,7 @@
 </p>
 
 <h1 align="center">Hi, I'm Gabriel Dias</h1>
-<h3 align="center">I'm a Frontend Web Developer from Brazil 🇧🇷</h3>
+<h3 align="center">I'm a Full Stack WEB Developer from Brazil 🇧🇷</h3>
 
 <br/>
 

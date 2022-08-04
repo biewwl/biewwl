@@ -6,7 +6,6 @@ import RecipesApp from "./data/RecipesApp";
 import ManagerLocalStorage from "./data/ManagerLocalStorage";
 import GoogleGenerator from "./data/GoogleGenerator";
 import LandingPages from "./data/LandingPages";
-import igPlus from "./data/IGPlus";
 
 const data = [
   Trivia,
@@ -16,8 +15,7 @@ const data = [
   RecipesApp,
   GoogleGenerator,
   ManagerLocalStorage,
-  LandingPages,
-  igPlus
+  LandingPages
 ];
 
 export default data;
