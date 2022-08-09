@@ -95,6 +95,10 @@
   align-items: center;
 }
 
+:is(.card-left, .card-left-dark) .home-button a {
+  transition: .5s;
+}
+
 .card-left-dark .home-button {
   background-color: #515151;
   color: #fff;
