@@ -63,8 +63,7 @@
   color: #fff;
 }
 
-.card-left .home-introduction,
-.card-left-dark .home-introduction {
+:is(.card-left, .card-left-dark) .home-introduction {
   align-items: flex-start;
   color: #fff;
   display: flex;
@@ -82,11 +81,9 @@
 .home-introduction h2,
 .home-introduction span {
   letter-spacing: 0.05em;
-  transition: 0.5s;
 }
 
-.card-left .home-button,
-.card-left-dark .home-button {
+:is(.card-left, .card-left-dark) .home-button {
   background-color: #fff;
   border-radius: 0.5em;
   color: #444;
@@ -94,6 +91,8 @@
   margin: 10px 0;
   padding: 10px;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
 }
 
 .card-left-dark .home-button {
@@ -131,9 +130,9 @@
   justify-content: space-between;
 }
 
-.star-home {
-  font-size: 1.5em;
-  transition: .5s;
+.home .header-card-right > span {
+  cursor: pointer;
+  font-size: 1.3em;
 }
 
 .home .header-card-right img {

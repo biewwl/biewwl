@@ -5,9 +5,12 @@ import Cards from "./images/Cards.png";
 const Trunfo = {
   path: "trunfo",
   name: "Trunfo",
+  namePt: "Trunfo",
   type: "Site",
   description:
     "This project is a Trunfo card generator, have fun creating your own deck!",
+  descriptionPt:
+    "Este projeto é um gerador de cartas Trunfo, divirta-se criando seu próprio deck!",
   links: {
     repository: "https://github.com/biewwl/project-trunfo",
     project: "https://biewwl.github.io/project-trunfo/",

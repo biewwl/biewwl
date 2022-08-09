@@ -5,9 +5,20 @@ import { Icon } from "@iconify/react";
 import coverInDev from "../../images/inDev.png";
 import "./styles/CardProject.css";
 import "./styles/CardProject-mobile.css";
+import { connect } from "react-redux";
 
 function CardProject({
-  projectDetails: { images, name, description, path, type, done },
+  projectDetails: {
+    images,
+    name,
+    namePt,
+    descriptionPt,
+    description,
+    path,
+    type,
+    done,
+  },
+  language,
   theme,
   color,
 }) {
@@ -31,8 +42,8 @@ function CardProject({
     >
       {copied && (
         <div className="copied">
-          <span className={`bg${theme} bb${color} c${color}`}>
-            Link Copied!
+          <span className={`bgC${theme} bb${color} c${color}`}>
+            {language === "pt" ? "Link Copiado!" : "Link Copied!"}
           </span>
         </div>
       )}
@@ -43,16 +54,27 @@ function CardProject({
       />
       <section className="card-infos">
         <div className="card-title">
-          <h3 className={`c${invert(theme)}`}>{name}{!done && <span>{" (in development)"}</span>}</h3>
+          <h3 className={`c${invert(theme)}`}>
+            {language === "pt" ? namePt : name}
+            {!done && (
+              <span>
+                {language === "pt"
+                  ? " (Em Desenvolvimento)"
+                  : " (In Development)"}
+              </span>
+            )}
+          </h3>
         </div>
-        <p className={`c2${invert(theme)}`}>{description}</p>
+        <p className={`c2${invert(theme)}`}>
+          {language === "pt" ? descriptionPt : description}
+        </p>
         <div className="buttons-container">
           <Link
             rel="noreferrer"
             to={`/projects/${path}`}
             className={`card-button bb${color} c${color}`}
           >
-            <span>More details</span>
+            <span>{language === "pt" ? "Ver Projeto" : "See Project"}</span>
             <Icon icon="bi:arrow-right" />
           </Link>
           <button className={`c${color} share`} onClick={copy}>
@@ -65,4 +87,10 @@ function CardProject({
   );
 }
 
-export default CardProject;
+const mapStateToProps = (state) => ({
+  theme: state.theme.theme,
+  color: state.theme.color,
+  language: state.language.language,
+});
+
+export default connect(mapStateToProps)(CardProject);

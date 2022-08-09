@@ -6,22 +6,31 @@ import invert from "../../helpers/invertTheme";
 import convertColor from "../../helpers/convertColor";
 import { changeColor, changeTheme } from "../../redux/actions/themeAction";
 import { goSearch } from "../../redux/actions/searchAction";
+import changeLanguage from "../../redux/actions/languageAction";
 import logo from "./images/logo.png";
 import { Icon } from "@iconify/react";
 import dataIntroduce from "../../helpers/dataIntroduce";
+import dataIntroducePT from "../../helpers/dataIntroducePT";
 import "./styles/Home.css";
 import "./styles/Home-mobile.css";
 
-function Home({ color, theme, query, dispatch }) {
+function Home({ color, theme, query, language, dispatch }) {
   const history = useHistory();
 
-  useEffect(() => {
-    randomIntro();
-    window.scrollTo(0, 0);
-  }, []);
-
   const [querySearch, setQuerySearch] = useState(query);
-  const [intro, setIntro] = useState("");
+  const [introduce, setIntroduce] = useState([]);
+  const [introNumber, setIntroNumber] = useState(0);
+
+  useEffect(() => {
+    if (language === "pt") {
+      setIntroduce(dataIntroducePT);
+      randomNumber(dataIntroducePT.length);
+    } else {
+      setIntroduce(dataIntroduce);
+      randomNumber(dataIntroduce.length);
+    }
+    window.scrollTo(0, 0);
+  }, [language]);
 
   const handleQueryChange = ({ target }) => {
     setQuerySearch(target.value);
@@ -53,9 +62,16 @@ function Home({ color, theme, query, dispatch }) {
     }
   };
 
-  const randomIntro = () => {
-    const random = Math.floor(Math.random() * dataIntroduce.length);
-    setIntro(dataIntroduce[random]);
+  const randomNumber = (max) => {
+    setIntroNumber(Math.floor(Math.random() * max));
+  };
+
+  const handleLanguage = () => {
+    if (language === "en") {
+      dispatch(changeLanguage("pt"));
+    } else {
+      dispatch(changeLanguage("en"));
+    }
   };
 
   return (
@@ -83,22 +99,39 @@ function Home({ color, theme, query, dispatch }) {
             )}
           </section>
           <section className={`home-introduction`}>
-            <span>Welcome!</span>
-            <h2>{intro}</h2>
-            <Link to="/projects" className="home-button">
-              Explore projects
-            </Link>
+            <span>
+              {language === "en" && "Welcome!"}
+              {language === "pt" && "Bem-vindo(a)!"}
+            </span>
+            <h2>{introduce[introNumber]}</h2>
+            <a
+              href="../../helpers/Currículo João Gabriel Dias Fernandes.pdf"
+              download
+              className="home-button"
+            >
+              <Link to="/projects" className={`c${invert(theme)}`}>
+                {language === "en" && "Explore my Projects"}
+                {language === "pt" && "Explore meus Projetos"}
+              </Link>
+            </a>
           </section>
         </section>
         <section className={`card-right${theme}`}>
           <div className="top-content">
             <section className="header-card-right">
-              <span className={`star-home c${color}`}>✦</span>
+              <span onClick={handleLanguage}>
+                {language === "pt" && <Icon icon="twemoji:flag-brazil" />}
+                {language === "en" && (
+                  <Icon icon="emojione-v1:flag-for-united-states" />
+                )}
+              </span>
               <img src={logo} className={`bgC${color}`} alt="logo" />
             </section>
             <section className="search-container">
               <h3 className={`message c${invert(theme)}`}>
-                Feel free to explore the projects!
+                {language === "pt" &&
+                  "Sinta-se à vontade para explorar meus projetos!"}
+                {language === "en" && "Feel free to explore the projects!"}
               </h3>
               <div htmlFor="search">
                 <input
@@ -124,17 +157,19 @@ function Home({ color, theme, query, dispatch }) {
           <div className="bottom-content">
             <nav>
               <Link to="/about" className={`c${invert(theme)}`}>
-                About
+                {language === "pt" && "Sobre"}
+                {language === "en" && "About"}
               </Link>
               <Link to="/projects" className={`c${invert(theme)}`}>
-                Projects
+                {language === "pt" && "Projetos"}
+                {language === "en" && "Projects"}
               </Link>
             </nav>
             <p className={`about-home`}>
-              Hi! My name is Gabriel Dias. Since I was very young I have always
-              been fascinated by virtual worlds and at the beginning of 2022 I
-              joined a web development school. I learned to love programming and
-              became very good at it...
+              {language === "en" &&
+                "Hi! My name is Gabriel Dias. Since I was very young I have always been fascinated by virtual worlds and at the beginning of 2022 I joined a WEB development school. I learned to love programming and became very good at it..."}
+              {language === "pt" &&
+                "Olá! Meu nome é Gabriel Dias. Desde muito novo, sempre me fui fascinado por mundos virtuais e em 2020 me juntei a uma escola de desenvolvimento WEB. Eu aprendi a amar programação e me tornei muito bom no que faço..."}
             </p>
             <ul>
               <li>
@@ -189,6 +224,7 @@ const mapStateToProps = (state) => ({
   color: state.theme.color,
   theme: state.theme.theme,
   query: state.search.query,
+  language: state.language.language,
 });
 
 export default connect(mapStateToProps)(Home);

@@ -7,9 +7,12 @@ import Settings from "./images/settings.png";
 const Trivia = {
   path: "trivia",
   name: "Trivia",
+  namePt: "Trivia",
   type: "Site",
   description:
     "This project is a trivia game, built completely in React. Have fun answering questions. Also remember to be fast if you want to be the best!",
+  descriptionPt:
+    "Este projeto é um jogo de trivia, feito completamente em React. Divirta-se respondendo perguntas. Seja rápido para ser o melhor!",
   links: {
     repository: "https://github.com/biewwl/project-trivia",
     project: "https://biewwl.github.io/project-trivia/",

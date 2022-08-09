@@ -9,9 +9,12 @@ import Favorites from "./images/favorites.png";
 const FavoriteMusics = {
   path: "favorite-musics",
   name: "Favorite Musics",
+  namePt: "Músicas Favoritas",
   type: "Site",
   description:
     "This project is a music search application, which uses the iTunes API. Search for your favorite songs and add them to your favorites list.",
+  descriptionPt:
+    "Este projeto é uma site de busca de músicas, que usa a API do iTunes. Busque por suas músicas favoritas e adicione-as à sua lista de favoritas.",
   links: {
     repository: "https://github.com/biewwl/project-favorite-musics",
     project: "https://biewwl.github.io/project-favorite-musics/",

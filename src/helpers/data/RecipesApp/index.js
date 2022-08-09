@@ -11,9 +11,12 @@ import FoodsExplore from "./images/FoodsExplore.png";
 const RecipesApp = {
   path: "recipes-app",
   name: "Recipes App",
+  namePt: "Aplicativo de Receitas",
   type: "Site",
   description:
     "This project is a recipe site. Search by recipes, favorites and more!",
+  descriptionPt:
+    "Este projeto é um site de receitas. Busque por receitas, favorite-as e mais!",
   links: {
     repository: "https://github.com/biewwl/project-recipes-app",
     project: "https://biewwl.github.io/project-recipes-app/",

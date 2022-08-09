@@ -11,7 +11,7 @@ import coverInDev from "../../images/inDev.png";
 import "./styles/Project.css";
 import "./styles/Project-mobile.css";
 
-function Project({ match, theme, color }) {
+function Project({ match, theme, color, language }) {
   const {
     params: { project },
   } = match;
@@ -24,7 +24,9 @@ function Project({ match, theme, color }) {
 
   const {
     name,
+    namePt,
     description,
+    descriptionPt,
     skills,
     tools,
     images,
@@ -39,15 +41,24 @@ function Project({ match, theme, color }) {
       <main className={`project bgC${theme}`}>
         {dataProject ? (
           <>
-            <Helmet title={name}>
+            <Helmet title={language === "pt" ? namePt : name}>
               <meta name="theme-color" content={convertColor(color)} />
             </Helmet>
             <section className="project-name">
               <div>
                 <Link to="/projects" className={`c${color}`}>
-                  Projects /
+                  {language === "pt" ? "Projetos /" : "Projects /"}
                 </Link>
-                <h1 className={`c${invert(theme)}`}>{name}{!done && <span>{" (in development)"}</span>}</h1>
+                <h1 className={`c${invert(theme)}`}>
+                  {language === "pt" ? namePt : name}
+                  {!done && (
+                    <span>
+                      {language === "pt"
+                        ? " (em desenvolvimento)"
+                        : " (in development)"}
+                    </span>
+                  )}
+                </h1>
               </div>
               <span className={`c${color}`}>{development}</span>
             </section>
@@ -56,8 +67,8 @@ function Project({ match, theme, color }) {
             >
               <Gallery images={!done ? [coverInDev] : images} />
               <section className={`project-description c${theme}`}>
-                <h2>Description</h2>
-                <p>{description}</p>
+                <h2>{language === "pt" ? "Descrição" : "Description"}</h2>
+                <p>{language === "pt" ? descriptionPt : description}</p>
                 <section className="project-links">
                   <a
                     href={repository}
@@ -65,7 +76,9 @@ function Project({ match, theme, color }) {
                     rel="noreferrer"
                     className={`c${theme} bb${theme}`}
                   >
-                    <span>Repository</span>
+                    <span>
+                      {language === "pt" ? "Repositório" : "Repository"}
+                    </span>
                   </a>
                   <a
                     href={!done ? "" : linkProject}
@@ -74,18 +87,24 @@ function Project({ match, theme, color }) {
                     className={`bgC${theme} c${color} bb${theme}${
                       !done ? " inDev" : ""
                     }`}
-                    onClick={!done ? (e) => {
-                      e.preventDefault();
-                    } : ''}
+                    onClick={
+                      !done
+                        ? (e) => {
+                            e.preventDefault();
+                          }
+                        : ""
+                    }
                   >
-                    <span>Project</span>
+                    <span>{language === "pt" ? "Projeto" : "Project"}</span>
                   </a>
                 </section>
               </section>
             </section>
             <section className="project-infos">
               <section>
-                <h3 className={`c${color}`}>Skills Used</h3>
+                <h3 className={`c${color}`}>
+                  {language === "pt" ? "Habilidades Usadas" : "Skills Used"}
+                </h3>
                 <p>
                   {skills.map((e, i) => (
                     <span className={`skill c${invert(theme)}`} key={i}>
@@ -97,7 +116,9 @@ function Project({ match, theme, color }) {
               <section>
                 {tools.length > 0 && (
                   <>
-                    <h3 className={`c${color}`}>Libraries Used</h3>
+                    <h3 className={`c${color}`}>
+                      {language === "pt" ? "Ferramentas Usadas" : "Tools Used"}
+                    </h3>
                     <p>
                       {tools.map((e, i) => (
                         <a
@@ -127,6 +148,7 @@ function Project({ match, theme, color }) {
 const mapStateToProps = (state) => ({
   color: state.theme.color,
   theme: state.theme.theme,
+  language: state.language.language,
 });
 
 export default connect(mapStateToProps)(Project);

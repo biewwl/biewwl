@@ -8,7 +8,7 @@ import { Icon } from "@iconify/react";
 import "./styles/Header.css";
 import "./styles/Header-mobile.css";
 
-function Header({ color, theme, selectedPage, dispatch }) {
+function Header({ color, theme, selectedPage, language }) {
   const [socialMenu, setSocialMenu] = useState(false);
   const [colorsMenu, setColorsMenu] = useState(false);
 
@@ -44,11 +44,13 @@ function Header({ color, theme, selectedPage, dispatch }) {
             to="/"
             className={`nav-icon c${invert(theme)} ${selected("home", color)}`}
           >
-            Home
+            {language === "pt" ? "Início" : "Home"}
           </Link>
           <Link to="/" className="nav-icon-mobile">
             <Icon icon="line-md:home-simple" className={`c${invert(theme)}`} />
-            <span className={`c${invert(theme)}`}>Home</span>
+            <span className={`c${invert(theme)}`}>
+              {language === "pt" ? "Início" : "Home"}
+            </span>
           </Link>
         </li>
         <li>
@@ -56,18 +58,22 @@ function Header({ color, theme, selectedPage, dispatch }) {
             to="/about"
             className={`nav-icon c${invert(theme)} ${selected("about", color)}`}
           >
-            About
+            {language === "pt" ? "Sobre" : "About"}
           </Link>
           <Link to="/about" className="nav-icon-mobile">
             {selectedPage === "about" ? (
               <>
                 <Icon icon="line-md:account" className={`c${color}`} />
-                <span className={`c${color}`}>About</span>
+                <span className={`c${color}`}>
+                  {language === "pt" ? "Sobre" : "About"}
+                </span>
               </>
             ) : (
               <>
                 <Icon icon="line-md:account" className={`c${invert(theme)}`} />
-                <span className={`c${invert(theme)}`}>About</span>
+                <span className={`c${invert(theme)}`}>
+                  {language === "pt" ? "Sobre" : "About"}
+                </span>
               </>
             )}
           </Link>
@@ -80,13 +86,15 @@ function Header({ color, theme, selectedPage, dispatch }) {
               color
             )}`}
           >
-            Projects
+            {language === "pt" ? "Projetos" : "Projects"}
           </Link>
           <Link to="/projects" className="nav-icon-mobile">
             {selectedPage === "projects" ? (
               <>
                 <Icon icon="line-md:document-code" className={`c${color}`} />
-                <span className={`c${color}`}>Projects</span>
+                <span className={`c${color}`}>
+                  {language === "pt" ? "Projetos" : "Projects"}
+                </span>
               </>
             ) : (
               <>
@@ -94,7 +102,9 @@ function Header({ color, theme, selectedPage, dispatch }) {
                   icon="line-md:document-code"
                   className={`c${invert(theme)}`}
                 />
-                <span className={`c${invert(theme)}`}>Projects</span>
+                <span className={`c${invert(theme)}`}>
+                  {language === "pt" ? "Projetos" : "Projects"}
+                </span>
               </>
             )}
           </Link>
@@ -127,6 +137,7 @@ function Header({ color, theme, selectedPage, dispatch }) {
 const mapStateToProps = (state) => ({
   theme: state.theme.theme,
   color: state.theme.color,
+  language: state.language.language,
 });
 
 export default connect(mapStateToProps)(Header);
