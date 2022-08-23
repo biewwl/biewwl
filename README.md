@@ -250,6 +250,20 @@
       height="30"
     />
   </a>
+  <a href="https://jwt.io/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-JSON Web Tokens-000000?&style=for-the-badge&logo=jsonwebtokens&logoColor=fff"
+      alt="jsonwebtokens"
+      height="30"
+    />
+  </a>
+  <a href="https://sequelize.org/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-Sequelize-52B0E7?&style=for-the-badge&logo=sequelize&logoColor=fff"
+      alt="sequelize"
+      height="30"
+    />
+  </a>
 </p>
 
 <br/>
