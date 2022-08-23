@@ -71,6 +71,14 @@ const dataSkills = [
     icon: "simple-icons:tailwindcss",
     name: "Tailwind CSS",
   },
+  {
+    icon: "simple-icons:jsonwebtokens",
+    name: "JWT",
+  },
+  {
+    icon: "file-icons:sequelize",
+    name: "Sequelize",
+  }
 ];
 
 export default dataSkills;
