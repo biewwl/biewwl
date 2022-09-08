@@ -169,7 +169,7 @@ function Home({ color, theme, query, language, dispatch }) {
               {language === "en" &&
                 "Hi! My name is Gabriel Dias. Since I was very young I have always been fascinated by virtual worlds and at the beginning of 2022 I joined a WEB development school. I learned to love programming and became very good at it..."}
               {language === "pt" &&
-                "Olá! Meu nome é Gabriel Dias. Desde muito novo, sempre me fui fascinado por mundos virtuais e em 2020 me juntei a uma escola de desenvolvimento WEB. Eu aprendi a amar programação e me tornei muito bom no que faço..."}
+                "Olá! Meu nome é Gabriel Dias. Desde muito novo, sempre me fui fascinado por mundos virtuais e em 2022 me juntei a uma escola de desenvolvimento WEB. Eu aprendi a amar programação e me tornei muito bom no que faço..."}
             </p>
             <ul>
               <li>
