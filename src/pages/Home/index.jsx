@@ -9,8 +9,7 @@ import { goSearch } from "../../redux/actions/searchAction";
 import changeLanguage from "../../redux/actions/languageAction";
 import logo from "./images/logo.png";
 import { Icon } from "@iconify/react";
-import dataIntroduce from "../../helpers/dataIntroduce";
-import dataIntroducePT from "../../helpers/dataIntroducePT";
+import {dataIntroduce, dataIntroducePT} from "../../helpers/dataIntroduce";
 import "./styles/Home.css";
 import "./styles/Home-mobile.css";
 
@@ -104,16 +103,14 @@ function Home({ color, theme, query, language, dispatch }) {
               {language === "pt" && "Bem-vindo(a)!"}
             </span>
             <h2>{introduce[introNumber]}</h2>
-            <a
-              href="../../helpers/Currículo João Gabriel Dias Fernandes.pdf"
-              download
+            <span
               className="home-button"
             >
               <Link to="/projects" className={`c${invert(theme)}`}>
                 {language === "en" && "Explore my Projects"}
                 {language === "pt" && "Explore meus Projetos"}
               </Link>
-            </a>
+            </span>
           </section>
         </section>
         <section className={`card-right${theme}`}>

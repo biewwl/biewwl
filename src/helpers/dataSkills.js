@@ -12,6 +12,10 @@ const dataSkills = [
     name: "Javascript",
   },
   {
+    icon: "cib:typescript",
+    name: "TypeScript",
+  },
+  {
     icon: "fe:github-alt",
     name: "Git & Github",
   },
@@ -78,7 +82,7 @@ const dataSkills = [
   {
     icon: "file-icons:sequelize",
     name: "Sequelize",
-  }
+  },
 ];
 
 export default dataSkills;
