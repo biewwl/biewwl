@@ -1,14 +1,14 @@
 const dataSkills = [
   {
-    icon: "ant-design:html5-outlined",
+    icon: "cib:html5",
     name: "Html",
   },
   {
-    icon: "la:css3",
+    icon: "cib:css3",
     name: "Css",
   },
   {
-    icon: "bxl:javascript",
+    icon: "cib:javascript",
     name: "Javascript",
   },
   {
@@ -16,15 +16,19 @@ const dataSkills = [
     name: "TypeScript",
   },
   {
-    icon: "fe:github-alt",
-    name: "Git & Github",
+    icon: "cib:git",
+    name: "Git",
   },
   {
-    icon: "bxl:react",
+    icon: "cib:github",
+    name: "Github",
+  },
+  {
+    icon: "cib:react",
     name: "React.js",
   },
   {
-    icon: "bxl:redux",
+    icon: "cib:redux",
     name: "Redux",
   },
   {
@@ -32,7 +36,7 @@ const dataSkills = [
     name: "Bootstrap",
   },
   {
-    icon: "akar-icons:node-fill",
+    icon: "cib:node-js",
     name: "Node.js",
   },
   {
@@ -44,7 +48,7 @@ const dataSkills = [
     name: "NPM",
   },
   {
-    icon: "fa-brands:docker",
+    icon: "simple-icons:docker",
     name: "Docker",
   },
   {
@@ -56,7 +60,7 @@ const dataSkills = [
     name: "Mocha",
   },
   {
-    icon: "file-icons:chai",
+    icon: "simple-icons:chai",
     name: "Chai",
   },
   {
@@ -80,7 +84,7 @@ const dataSkills = [
     name: "JWT",
   },
   {
-    icon: "file-icons:sequelize",
+    icon: "simple-icons:sequelize",
     name: "Sequelize",
   },
 ];
