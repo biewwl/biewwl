@@ -208,7 +208,7 @@
       height="30"
     />
   </a>
-  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
     <img
       src="https://img.shields.io/badge/-Git-F05032?&style=for-the-badge&logo=git&logoColor=fff"
       alt="git"
