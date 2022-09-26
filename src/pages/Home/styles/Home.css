@@ -35,7 +35,7 @@
   animation: toRight 0.5s;
   background-image: url("../images/light-wallpaper.png");
   background-size: cover;
-  border-radius: 1em;
+  border-radius: 2em;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -80,17 +80,18 @@
 
 .home-introduction h2,
 .home-introduction span {
-  letter-spacing: 0.05em;
+  letter-spacing: .05em;
 }
 
 :is(.card-left, .card-left-dark) .home-button {
   background-color: #fff;
-  border-radius: 0.5em;
+  border-radius: .5em;
   color: #444;
-  font-size: 0.8em;
+  cursor: pointer;
+  font-size: .8em;
   margin: 10px 0;
   padding: 10px;
-  transition: 0.5s;
+  transition: .5s;
   display: flex;
   align-items: center;
 }
@@ -107,16 +108,16 @@
 .home .ri-moon-fill,
 .home .ri-sun-fill {
   right: 1.5vw;
-  transition: 0.5s;
+  transition: .5s;
   color: #fff;
 }
 
 .home .card-right,
 .home .card-right-dark {
-  animation: toTop 0.5s;
+  animation: toTop .5s;
   height: 100%;
   padding: 50px;
-  transition: 0.5s;
+  transition: .5s;
   width: 40%;
 }
 
@@ -140,7 +141,7 @@
 }
 
 .home .header-card-right img {
-  border-radius: 0.5em;
+  border-radius: .5em;
   width: 40px;
   transition: .5s;
 }
@@ -158,7 +159,7 @@
   border: none;
   margin: 40px 0;
   padding: 10px;
-  transition: 0.5s;
+  transition: .5s;
   width: 100%;
 }
 
@@ -170,14 +171,14 @@
 .arrow-search {
   opacity: 0;
   width: 0px;
-  transition: width 0.5s, margin 0.5s;
+  transition: width .5s, margin .5s;
   margin: 0;
 }
 
 .arrow-search-visible {
   width: 15px;
   opacity: 1;
-  transition: width 0.5s, margin 0.5s;
+  transition: width .5s, margin .5s;
   margin: 0 10px;
   cursor: pointer;
 }
@@ -197,25 +198,25 @@
 
 .home .bottom-content nav {
   display: flex;
-  font-size: 0.8em;
+  font-size: .8em;
   justify-content: space-evenly;
   padding: 10px;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .home .bottom-content nav a {
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .about-home {
   align-items: center;
   color: #5f5f5f;
   display: flex;
-  font-size: 0.9em;
+  font-size: .9em;
   font-style: italic;
   font-weight: 100;
   height: 100%;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .home .bottom-content ul {
@@ -225,5 +226,21 @@
 }
 
 .home .bottom-content ul a {
-  transition: 0.5s;
+  transition: .5s;
+}
+
+.ri-github-line {
+  color: #F05032;
+}
+
+.ri-linkedin-line {
+  color: #0A66C2;
+}
+
+.ri-twitter-line {
+  color: #1DA1F2;
+}
+
+.ri-instagram-line {
+  color: #E4405F;
 }

@@ -174,7 +174,6 @@ function Home({ color, theme, query, language, dispatch }) {
                   href="https://github.com/biewwl"
                   target="_blank"
                   rel="noreferrer"
-                  className={`c${color}`}
                 >
                   <i className="ri-github-line" />
                 </a>
@@ -184,7 +183,6 @@ function Home({ color, theme, query, language, dispatch }) {
                   href="https://www.linkedin.com/in/biewwl/"
                   target="_blank"
                   rel="noreferrer"
-                  className={`c${color}`}
                 >
                   <i className="ri-linkedin-line" />
                 </a>
@@ -194,7 +192,6 @@ function Home({ color, theme, query, language, dispatch }) {
                   href="https://twitter.com/21biewwl"
                   target="_blank"
                   rel="noreferrer"
-                  className={`c${color}`}
                 >
                   <i className="ri-twitter-line" />
                 </a>
@@ -204,7 +201,6 @@ function Home({ color, theme, query, language, dispatch }) {
                   href="https://www.instagram.com/biewwl/"
                   target="_blank"
                   rel="noreferrer"
-                  className={`c${color}`}
                 >
                   <i className="ri-instagram-line" />
                 </a>
