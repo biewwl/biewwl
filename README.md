@@ -18,7 +18,7 @@
 - 📚 I’m currently learning **TypeScript, Node.js**
 - 🧑🏻‍💻 All of my projects are
   available at [https://biewwl.github.io/biewwl/](https://biewwl.github.io/biewwl/)
-- ✉️ How to reach me **21biewwl@gmail.com**
+- ✉️ How to reach me **biewwl.js@gmail.com**
 
 <br />
 
