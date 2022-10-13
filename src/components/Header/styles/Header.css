@@ -45,11 +45,11 @@
 }
 
 .nav-icon {
-  font-size: 0.8em;
+  font-size: 0.9em;
   transition: 0.5s;
 }
 
-.nav-icon-mobile {
+.nav-icon svg {
   display: none;
 }
 

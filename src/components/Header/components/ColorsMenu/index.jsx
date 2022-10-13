@@ -6,8 +6,9 @@ import {
 import { Icon } from "@iconify/react";
 import "./styles/ColorsMenu.css";
 import "./styles/ColorsMenu-mobile.css";
+import languageAction from "../../../../redux/actions/languageAction";
 
-function ColorsMenu({ dispatch, color, theme }) {
+function ColorsMenu({ dispatch, color, theme, language }) {
   const changeInvertTheme = () => {
     if (theme === "" && color === "-dark") {
       dispatch(changeTheme("-dark"));
@@ -20,6 +21,11 @@ function ColorsMenu({ dispatch, color, theme }) {
     } else {
       dispatch(changeTheme(""));
     }
+  };
+
+  const changeLanguage = () => {
+    if (language === "pt") dispatch(languageAction("en"));
+    if (language === "en") dispatch(languageAction("pt"));
   };
 
   return (
@@ -94,9 +100,17 @@ function ColorsMenu({ dispatch, color, theme }) {
             <Icon
               icon="line-md:sunny-outline-twotone-loop"
               onClick={changeInvertTheme}
-              className={`theme-icon`}
+              className="theme-icon"
             />
           )}
+        </li>
+        <li className={`language-li bgC${color} bb${theme}`}>
+          <Icon
+            icon={`emojione:flag-for-${
+              language === "pt" ? "united-states" : "brazil"
+            }`}
+            onClick={changeLanguage}
+          />
         </li>
       </ul>
     </>
@@ -106,6 +120,7 @@ function ColorsMenu({ dispatch, color, theme }) {
 const mapStateToProps = (state) => ({
   color: state.theme.color,
   theme: state.theme.theme,
+  language: state.language.language,
 });
 
 export default connect(mapStateToProps)(ColorsMenu);

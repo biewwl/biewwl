@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
   .project .slider {
-    width: 100vw;
+    width: 100%;
   }
 }

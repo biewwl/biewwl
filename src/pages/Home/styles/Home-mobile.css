@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-  @keyframes toBottom {
+  /* @keyframes toBottom {
     0% {
       opacity: 0%;
       transform: translateY(-10px);
@@ -8,16 +8,40 @@
       opacity: 100%;
       transform: translateY(0);
     }
-  }
+  } */
 
   .home {
     flex-direction: column;
-    padding: 0;
-    height: auto;
-    min-height: 100vh;
+    padding: 0 20px 60px;
   }
 
-  .card-left,
+  .home .slogan {
+    align-items: center;
+    gap: 5px;
+    width: auto;
+  }
+
+  .i-am {
+    font-size: 1.1em;
+  }
+
+  .slogan h1 {
+    font-size: 2.2em;
+  }
+  
+  .home .dev {
+    font-size: 1.2em;
+  }
+
+  .home-image {
+    /* border-radius: 50%; */
+    /* height: 200px; */
+    width: 60%;
+    max-width: 250px;
+    pointer-events: none;
+  }
+
+  /* .card-left,
   .card-left-dark {
     width: 100%;
     height: 80vh;
@@ -77,5 +101,5 @@
   .home .bottom-content ul {
     margin-top: 40px;
     padding: 40px 0;
-  }
+  } */
 }

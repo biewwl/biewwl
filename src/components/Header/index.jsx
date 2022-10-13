@@ -12,10 +12,8 @@ function Header({ color, theme, selectedPage, language }) {
   const [socialMenu, setSocialMenu] = useState(false);
   const [colorsMenu, setColorsMenu] = useState(false);
 
-  const selected = (button, color) => {
-    if (button === selectedPage) return `c${color}`;
-    return "";
-  };
+  const getColorSelect = (page) =>
+    selectedPage === page ? `c${color}` : `c${invert(theme)}`;
 
   return (
     <header className={`nav-bar bgC${theme} bbT${color}`}>
@@ -40,73 +38,27 @@ function Header({ color, theme, selectedPage, language }) {
           </label>
         </li>
         <li>
-          <Link
-            to="/"
-            className={`nav-icon c${invert(theme)} ${selected("home", color)}`}
-          >
-            {language === "pt" ? "Início" : "Home"}
-          </Link>
-          <Link to="/" className="nav-icon-mobile">
-            <Icon icon="line-md:home-simple" className={`c${invert(theme)}`} />
-            <span className={`c${invert(theme)}`}>
-              {language === "pt" ? "Início" : "Home"}
-            </span>
+          <Link to="/" className={`nav-icon ${getColorSelect("home")}`}>
+            <Icon icon="line-md:home-simple" />
+            <span>{language === "pt" ? "Início" : "Home"}</span>
           </Link>
         </li>
         <li>
           <Link
             to="/about"
-            className={`nav-icon c${invert(theme)} ${selected("about", color)}`}
+            className={`nav-icon ${getColorSelect("about")}`}
           >
-            {language === "pt" ? "Sobre" : "About"}
-          </Link>
-          <Link to="/about" className="nav-icon-mobile">
-            {selectedPage === "about" ? (
-              <>
-                <Icon icon="line-md:account" className={`c${color}`} />
-                <span className={`c${color}`}>
-                  {language === "pt" ? "Sobre" : "About"}
-                </span>
-              </>
-            ) : (
-              <>
-                <Icon icon="line-md:account" className={`c${invert(theme)}`} />
-                <span className={`c${invert(theme)}`}>
-                  {language === "pt" ? "Sobre" : "About"}
-                </span>
-              </>
-            )}
+            <Icon icon="line-md:account" />
+            <span>{language === "pt" ? "Sobre" : "About"}</span>
           </Link>
         </li>
         <li>
           <Link
             to="/projects"
-            className={`nav-icon c${invert(theme)} ${selected(
-              "projects",
-              color
-            )}`}
+            className={`nav-icon ${getColorSelect("projects")}`}
           >
-            {language === "pt" ? "Projetos" : "Projects"}
-          </Link>
-          <Link to="/projects" className="nav-icon-mobile">
-            {selectedPage === "projects" ? (
-              <>
-                <Icon icon="line-md:document-code" className={`c${color}`} />
-                <span className={`c${color}`}>
-                  {language === "pt" ? "Projetos" : "Projects"}
-                </span>
-              </>
-            ) : (
-              <>
-                <Icon
-                  icon="line-md:document-code"
-                  className={`c${invert(theme)}`}
-                />
-                <span className={`c${invert(theme)}`}>
-                  {language === "pt" ? "Projetos" : "Projects"}
-                </span>
-              </>
-            )}
+            <Icon icon="line-md:document-code" />
+            <span>{language === "pt" ? "Projetos" : "Projects"}</span>
           </Link>
         </li>
         <li>

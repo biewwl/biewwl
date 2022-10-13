@@ -19,24 +19,20 @@
   }
 
   .nav-icon {
-    display: none;
-  }
-
-  .nav-icon-mobile {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .nav-icon-mobile span {
-    transition: 0.5s;
-    font-size: 0.6em;
-    margin-top: 2.5px;
+    font-size: 1em;
   }
 
-  .nav-icon-mobile svg {
-    transition: 0.5s;
+  .nav-icon svg {
+    display: inline-block;
+  }
+  
+  .nav-icon span {
+    font-size: 0.6em;
+    margin-top: 2.5px;
   }
 
   .selected-light {
