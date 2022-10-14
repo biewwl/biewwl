@@ -9,7 +9,7 @@ const landingPages = {
     "Este site contém várias páginas iniciais, feitas de uma maneira responsiva e temáticas.",
   links: {
     repository: "https://github.com/biewwl/landing-pages",
-    project: "",
+    project: "https://biewwl.github.io/landing-pages/",
   },
   images: [],
   skills: ['HTML', 'CSS', 'Javascript', 'React'],

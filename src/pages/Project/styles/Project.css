@@ -63,7 +63,6 @@
 }
 
 .project-detail.inDev img {
-  filter: grayscale();
   padding: 30px;
 }
 

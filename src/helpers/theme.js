@@ -1,4 +1,11 @@
-const convertColor = (color, isTheme = false) => {
+export const invert = (theme) => {
+  if (theme === '') return '-dark';
+  return '';
+}
+
+// Todas as cores são convertidas em preto, exceto a cor -dark que é convertida para branco, o invert, inverte entre dark e light;
+
+export const convertColor = (color, isTheme = false) => {
   switch (color) {
     case '':
       return isTheme ? '#fff' : '#242424';
@@ -26,5 +33,3 @@ const convertColor = (color, isTheme = false) => {
       return '#fff';
   }
 }
-
-export default convertColor;

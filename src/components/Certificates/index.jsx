@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
-import data from "../../helpers/dataCertificates";
+import data from "../../data/Certificates";
 import { Icon } from "@iconify/react";
-import invert from "../../helpers/invertTheme";
+import { invert } from "../../helpers/theme";
 import "./styles/Certificates.css";
 
 function Certificates({ color, theme, visible, language }) {
@@ -24,7 +24,9 @@ function Certificates({ color, theme, visible, language }) {
               target="_blank"
               rel="noreferrer"
             >
-              View <Icon icon="bx:link-external" />
+              {language === 'pt' && "Ver"}
+              {language === 'en' && "View"}
+              <Icon icon="bx:link-external" />
             </a>
           </div>
         ))}

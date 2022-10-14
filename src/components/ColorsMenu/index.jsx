@@ -1,23 +1,20 @@
 import { connect } from "react-redux";
-import {
-  changeColor,
-  changeTheme,
-} from "../../../../redux/actions/themeAction";
+import { changeColor, changeTheme } from "../../redux/actions/themeAction";
+import languageAction from "../../redux/actions/languageAction";
 import { Icon } from "@iconify/react";
 import "./styles/ColorsMenu.css";
 import "./styles/ColorsMenu-mobile.css";
-import languageAction from "../../../../redux/actions/languageAction";
 
 function ColorsMenu({ dispatch, color, theme, language }) {
   const changeInvertTheme = () => {
     if (theme === "" && color === "-dark") {
-      dispatch(changeTheme("-dark"));
+      dispatch(changeTheme("dark"));
       dispatch(changeColor(""));
     } else if (theme === "-dark" && color === "") {
       dispatch(changeTheme(""));
-      dispatch(changeColor("-dark"));
+      dispatch(changeColor("dark"));
     } else if (theme === "") {
-      dispatch(changeTheme("-dark"));
+      dispatch(changeTheme("dark"));
     } else {
       dispatch(changeTheme(""));
     }
@@ -28,64 +25,68 @@ function ColorsMenu({ dispatch, color, theme, language }) {
     if (language === "en") dispatch(languageAction("pt"));
   };
 
+  const setColor = (color) => {
+    dispatch(changeColor(color));
+  };
+
   return (
     <>
       <ul className={`bgC${color} colors-menu bb${theme}`}>
         <li
           className={`ex-color bg-blue bb${theme}`}
-          onClick={() => dispatch(changeColor("-blue"))}
+          onClick={() => setColor("blue")}
         ></li>
         <li
           className={`ex-color bg-green bb${theme}`}
-          onClick={() => dispatch(changeColor("-green"))}
+          onClick={() => setColor("green")}
         ></li>
         <li
           className={`ex-color bg-yellow bb${theme}`}
           name="-yellow"
-          onClick={() => dispatch(changeColor("-yellow"))}
+          onClick={() => setColor("yellow")}
         ></li>
         <li
           className={`ex-color bg-red bb${theme}`}
           name="-red"
-          onClick={() => dispatch(changeColor("-red"))}
+          onClick={() => setColor("red")}
         ></li>
         <li
           className={`ex-color bg-purple bb${theme}`}
           name="-purple"
-          onClick={() => dispatch(changeColor("-purple"))}
+          onClick={() => setColor("purple")}
         ></li>
         <li
           className={`ex-color bg-pink bb${theme}`}
           name="-pink"
-          onClick={() => dispatch(changeColor("-pink"))}
+          onClick={() => setColor("pink")}
         ></li>
         <li
           className={`ex-color bg-orange bb${theme}`}
           name="-orange"
-          onClick={() => dispatch(changeColor("-orange"))}
+          onClick={() => setColor("orange")}
         ></li>
         <li
           className={`ex-color bg-coffee bb${theme}`}
           name="-coffee"
-          onClick={() => dispatch(changeColor("-coffee"))}
+          onClick={() => setColor("coffee")}
         ></li>
         <li
           className={`ex-color bg-luxe bb${theme}`}
           name="-luxe"
-          onClick={() => dispatch(changeColor("-luxe"))}
+          onClick={() => setColor("luxe")}
         ></li>
         {theme === "-dark" && (
           <li
             className={`ex-color bg bb${theme}`}
             name=""
-            onClick={() => dispatch(changeColor(""))}
+            onClick={() => setColor("")}
           ></li>
         )}
         {theme === "" && (
           <li
             className={`ex-color bg-dark bb${theme}`}
             name="-dark"
-            onClick={() => dispatch(changeColor("-dark"))}
+            onClick={() => setColor("dark")}
           ></li>
         )}
         <li className={`theme-li bgC${color} bb${theme}`}>

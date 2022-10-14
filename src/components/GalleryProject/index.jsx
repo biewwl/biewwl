@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import "./styles/Gallery.css";
-import "./styles/Gallery-mobile.css";
+import "./styles/GalleryProject.css";
+import "./styles/GalleryProject-mobile.css";
 
-export default function Gallery({ images }) {
+export default function GalleryProject({ images }) {
   const settings = {
     infinite: true,
     speed: 2000,

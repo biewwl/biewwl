@@ -1,15 +1,14 @@
 import { useEffect } from "react";
-import data from "../../helpers/dataProjects";
+import data from "../../data/Projects";
 import { connect } from "react-redux";
 import Helmet from "react-helmet";
-import invert from "../../helpers/invertTheme";
-import convertColor from "../../helpers/convertColor";
 import Header from "../../components/Header";
-import Gallery from "./components/Gallery";
+import Gallery from "../../components/GalleryProject";
 import { Link } from "react-router-dom";
 import coverInDev from "../../images/inDev.png";
 import "./styles/Project.css";
 import "./styles/Project-mobile.css";
+import { convertColor, invert } from "../../helpers/theme";
 
 function Project({ match, theme, color, language }) {
   const {
@@ -65,7 +64,7 @@ function Project({ match, theme, color, language }) {
             <section
               className={`project-detail bg${color}${!done ? " inDev" : ""}`}
             >
-              <Gallery images={!done ? [coverInDev] : images} />
+              <Gallery images={images.length === 0 ? [coverInDev] : images} />
               <section className={`project-description c${theme}`}>
                 <h2>{language === "pt" ? "Descrição" : "Description"}</h2>
                 <p>{language === "pt" ? descriptionPt : description}</p>
@@ -81,19 +80,10 @@ function Project({ match, theme, color, language }) {
                     </span>
                   </a>
                   <a
-                    href={!done ? "" : linkProject}
+                    href={linkProject}
                     target="_blank"
                     rel="noreferrer"
-                    className={`bgC${theme} c${color} bb${theme}${
-                      !done ? " inDev" : ""
-                    }`}
-                    onClick={
-                      !done
-                        ? (e) => {
-                            e.preventDefault();
-                          }
-                        : ""
-                    }
+                    className={`bgC${theme} c${color} bb${theme}$`}
                   >
                     <span>{language === "pt" ? "Projeto" : "Project"}</span>
                   </a>

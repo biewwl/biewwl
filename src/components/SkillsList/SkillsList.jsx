@@ -1,9 +1,9 @@
 import { Icon } from "@iconify/react";
 import { connect } from "react-redux";
-import dataSkills from "../../helpers/dataSkills";
-import invert from "../../helpers/invertTheme";
+import dataSkills from "../../data/Skills";
 import './styles/SkillsList.css';
 import './styles/SkillsList-mobile.css'
+import { invert } from "../../helpers/theme";
 
 function SkillsList({ color, theme }) {
   return (

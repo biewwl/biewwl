@@ -2,11 +2,10 @@ import { Helmet } from "react-helmet";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header";
-import convertColor from "../../helpers/convertColor";
-import invert from "../../helpers/invertTheme";
 import biewwl from "./images/biewwl.png";
 import "./styles/Home.css";
 import "./styles/Home-mobile.css";
+import { convertColor, invert } from "../../helpers/theme";
 
 function Home({ color, theme, language }) {
   return (

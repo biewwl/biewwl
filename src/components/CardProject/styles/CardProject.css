@@ -70,10 +70,6 @@
   width: 100%;
 }
 
-:is(.projects, .projects-dark) .card-image.inDev {
-  filter: grayscale();
-}
-
 .projects-dark .card-project .card-image {
   border: 1px solid #3b3b3b;
 }

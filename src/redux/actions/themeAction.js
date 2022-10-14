@@ -1,15 +1,16 @@
-function changeColor(color) {
+export const changeColor = (color) => {
+  const payload = color === "" ? "" : `-${color}`;
+  console.log(color);
   return {
-    type: 'CHANGE_COLOR',
-    payload: color,
-  }
-}
+    type: "CHANGE_COLOR",
+    payload,
+  };
+};
 
-function changeTheme(theme) {
+export const changeTheme = (theme) => {
+  const payload = theme === "" ? "" : `-${theme}`;
   return {
-    type: 'CHANGE_THEME',
-    payload: theme,
-  }
-}
-
-export  { changeColor, changeTheme };
+    type: "CHANGE_THEME",
+    payload,
+  };
+};
