@@ -10,6 +10,30 @@
     }
   } */
 
+  @keyframes write-mobile {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 168.52px;
+    }
+  }
+  
+  @keyframes maskWrite-mobile {
+    0% {
+      width: 0;
+      left: 0;
+    }
+    50% {
+      width: 168.52px;
+      right: 0;
+    }
+    100% {
+      width: 0;
+      right: 0;
+    }
+  }
+
   .home {
     flex-direction: column;
     padding: 0 20px 60px;
@@ -26,7 +50,12 @@
   }
 
   .slogan h1 {
-    font-size: 2.2em;
+    font-size: 2em;
+    animation: write-mobile 1s;
+  }
+
+  .slogan h1::before {
+    animation: maskWrite-mobile 1.6s;
   }
   
   .home .dev {

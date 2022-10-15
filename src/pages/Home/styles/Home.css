@@ -9,8 +9,31 @@
   }
 } */
 
+@keyframes write {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 338px;
+  }
+}
+
+@keyframes maskWrite {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 338px;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 0;
+  }
+}
+
 @keyframes toLeft {
-  
   0% {
     opacity: 0%;
     transform: translateX(50px);
@@ -21,9 +44,7 @@
   }
 }
 
-
 @keyframes toRight {
-  
   0% {
     opacity: 0%;
     transform: translateX(-50px);
@@ -55,7 +76,9 @@
   width: 50%;
 }
 
-:is(.home) .i-am, h1, .dev {
+:is(.home) .i-am,
+h1,
+.dev {
   font-weight: 100;
   pointer-events: none;
   transition: 0.5s;
@@ -67,6 +90,22 @@
 
 .slogan h1 {
   font-size: 4em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: none;
+  position: relative;
+  animation: write 0.8s;
+}
+
+.slogan h1::before {
+  content: "";
+  background-color: rgb(234, 234, 234);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: maskWrite 1.6s;
 }
 
 .home .dev {
