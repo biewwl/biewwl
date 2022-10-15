@@ -1,4 +1,5 @@
 /* @keyframes toTop {
+  
   0% {
     transform: translateY(100px);
   }
@@ -9,6 +10,7 @@
 } */
 
 @keyframes toLeft {
+  
   0% {
     opacity: 0%;
     transform: translateX(50px);
@@ -21,6 +23,7 @@
 
 
 @keyframes toRight {
+  
   0% {
     opacity: 0%;
     transform: translateX(-50px);
@@ -36,20 +39,20 @@
   align-items: center;
   display: flex;
   height: 100vh;
+  justify-content: space-evenly;
   min-height: 530px;
   padding: 20px;
   transition: 0.5s;
   width: 100vw;
-  justify-content: space-evenly;
 }
 
 .home .slogan {
+  align-items: flex-start;
+  animation: toRight 1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   width: 50%;
-  animation: toRight 1s;
 }
 
 :is(.home) .i-am, h1, .dev {
@@ -72,19 +75,19 @@
 }
 
 .home-image {
-  border-radius: 80% 20% 43% 57% / 51% 25% 75% 49% ;
-  width: 300px;
+  animation: toLeft 1s;
+  border-radius: 80% 20% 43% 57% / 51% 25% 75% 49%;
   pointer-events: none;
   transition: 0.5s;
-  animation: toLeft 1s;
+  width: 300px;
 }
 
 .home .explore-button {
-  padding: 5px 10px;
   border-radius: 25px;
-  margin-block-start: 10px;
   border-width: 2px;
   font-size: 0.9em;
+  margin-block-start: 10px;
+  padding: 5px 10px;
   transition: 0.5s;
 }
 
@@ -107,18 +110,18 @@
 }
 
 .home-logo-theme {
-  padding: 30px 20px;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
+  padding: 30px 20px;
 }
 
 .card-left h1,
 .card-left-dark h1 {
+  color: #fff;
   font-size: 1.2em;
   font-weight: 100;
   transition: 0.5s;
-  color: #fff;
 }
 
 :is(.card-left, .card-left-dark) .home-introduction {
@@ -142,16 +145,16 @@
 }
 
 :is(.card-left, .card-left-dark) .home-button {
+  align-items: center;
   background-color: #fff;
   border-radius: .5em;
   color: #444;
   cursor: pointer;
+  display: flex;
   font-size: .8em;
   margin: 10px 0;
   padding: 10px;
   transition: .5s;
-  display: flex;
-  align-items: center;
 }
 
 :is(.card-left, .card-left-dark) .home-button a {
@@ -165,9 +168,9 @@
 
 .home .ri-moon-fill,
 .home .ri-sun-fill {
+  color: #fff;
   right: 1.5vw;
   transition: .5s;
-  color: #fff;
 }
 
 .home .card-right,
@@ -200,8 +203,8 @@
 
 .home .header-card-right img {
   border-radius: .5em;
-  width: 40px;
   transition: .5s;
+  width: 40px;
 }
 
 .search-container h3 {
@@ -227,18 +230,18 @@
 }
 
 .arrow-search {
-  opacity: 0;
-  width: 0px;
-  transition: width .5s, margin .5s;
   margin: 0;
+  opacity: 0;
+  transition: width .5s, margin .5s;
+  width: 0px;
 }
 
 .arrow-search-visible {
-  width: 15px;
+  cursor: pointer;
+  margin: 0 10px;
   opacity: 1;
   transition: width .5s, margin .5s;
-  margin: 0 10px;
-  cursor: pointer;
+  width: 15px;
 }
 
 .card-right .search-container div,
