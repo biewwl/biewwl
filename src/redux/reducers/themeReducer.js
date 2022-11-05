@@ -1,17 +1,15 @@
 import lS from 'manager-local-storage';
 
+const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+console.log(prefersColorScheme.matches ? '-dark' : '');
+
 const INITIAL_STATE = {
   color: '-blue',
-  theme: '',
+  theme: prefersColorScheme.matches ? '-dark' : '',
 };
 
-const initialState = () => {
-  const theme = lS('g', 'biewwl_theme');
-  if (theme) return {
-    ...theme,
-  };
-  return INITIAL_STATE;
-};
+const initialState = lS('g', 'biewwl_theme') ?? INITIAL_STATE;
 
 const CHANGE_COLOR = 'CHANGE_COLOR';
 const CHANGE_THEME = 'CHANGE_THEME';
@@ -25,7 +23,7 @@ const changeTheme = (theme, color) => {
   return newTheme;
 };
 
-function theme(prevState = initialState(), action) {
+function theme(prevState = initialState, action) {
   switch (action.type) {
     case CHANGE_COLOR:
       return {

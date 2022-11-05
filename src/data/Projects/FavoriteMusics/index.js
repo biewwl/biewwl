@@ -53,6 +53,7 @@ const FavoriteMusics = {
   ],
   development: "individual",
   done: true,
+  emphasis: 3,
 };
 
 export default FavoriteMusics;

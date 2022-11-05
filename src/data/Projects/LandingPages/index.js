@@ -16,6 +16,7 @@ const landingPages = {
   tools: [],
   development: "individual",
   done: false,
+  emphasis: 3,
 };
 
 export default landingPages;

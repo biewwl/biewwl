@@ -49,6 +49,7 @@ const Trivia = {
   ],
   development: "individual",
   done: true,
+  emphasis: 2,
 };
 
 export default Trivia;

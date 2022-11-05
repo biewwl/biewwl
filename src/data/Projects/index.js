@@ -18,6 +18,10 @@ const data = [
   ManagerLocalStorage,
   Yourgram,
   LandingPages,
-];
+].sort((a, b) => {
+  if (a.emphasis < b.emphasis) return -1;
+  if (a.development && !b.development) return -1;
+  return 1
+});
 
 export default data;

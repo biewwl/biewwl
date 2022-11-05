@@ -49,6 +49,7 @@ const Yourgram = {
   ],
   development: "duo",
   done: false,
+  emphasis: 1,
 };
 
 export default Yourgram;

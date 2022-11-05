@@ -20,8 +20,17 @@ function CardProject({ projectDetails, language, theme, color }) {
     }, 3000);
   };
 
-  const { images, name, namePt, descriptionPt, description, path, type, done } =
-    projectDetails;
+  const {
+    images,
+    name,
+    namePt,
+    descriptionPt,
+    description,
+    path,
+    type,
+    done,
+    emphasis,
+  } = projectDetails;
 
   return (
     <>
@@ -39,6 +48,11 @@ function CardProject({ projectDetails, language, theme, color }) {
             : "card-project"
         }${!done ? " inDev" : ""}`}
       >
+        {emphasis === 1 && (
+          <span className={`bgC${color} c${theme} star-project`}>
+            <Icon icon="bi:heart-fill" />
+          </span>
+        )}
         <img
           className={`card-image${!done ? " inDev" : ""}`}
           src={images.length === 0 ? coverNotImage : images[0]}

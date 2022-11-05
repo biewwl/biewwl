@@ -22,6 +22,7 @@ const GoogleGenerator = {
   tools: [],
   development: "individual",
   done: true,
+  emphasis: 3,
 };
 
 export default GoogleGenerator;

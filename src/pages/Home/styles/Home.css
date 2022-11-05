@@ -97,7 +97,7 @@ h1,
   animation: write 0.8s;
 }
 
-.slogan h1::before {
+.home .slogan h1::before {
   content: "";
   background-color: rgb(234, 234, 234);
   width: 0;
@@ -106,6 +106,10 @@ h1,
   top: 0;
   right: 0;
   animation: maskWrite 1.6s;
+}
+
+.home.bgC-dark .slogan h1::before {
+  background-color: rgb(101, 101, 101);
 }
 
 .home .dev {

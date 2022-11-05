@@ -20,6 +20,7 @@ const ManagerLocalStorage = {
   tools: [],
   development: "individual",
   done: true,
+  emphasis: 2,
 };
 
 export default ManagerLocalStorage;

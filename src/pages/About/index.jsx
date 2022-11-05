@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import Helmet from "react-helmet";
 import Header from "../../components/Header";
 import { Icon } from "@iconify/react";
-import logo from "././images/logo.png";
+import biewwl from "././images/biewwl.jpg";
 import Certificates from "../../components/Certificates";
 import SkillsList from "../../components/SkillsList/SkillsList";
 import { convertColor, invert } from "../../helpers/theme";
@@ -40,7 +40,7 @@ function About({ color, theme, language }) {
               {introduce[language]}
             </p>
           </section>
-          <img src={logo} alt="biewwl" className={`bg${color}`} />
+          <img src={biewwl} alt="biewwl" className={`bg${color}`} />
         </article>
         <article>
           <h3
