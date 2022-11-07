@@ -87,6 +87,10 @@ const dataSkills = [
     icon: "simple-icons:sequelize",
     name: "Sequelize",
   },
+  {
+    icon: "simple-icons:mongodb",
+    name: "MongoDB",
+  },
 ];
 
 export default dataSkills;
