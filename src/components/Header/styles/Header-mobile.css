@@ -65,11 +65,11 @@
     transition: 0.5s;
   }
 
-  ._li_nav_icon_.selected.-dark::before {
+  ._li_nav_icon_.selected::before {
     display: none;
   }
   
-  ._li_nav_icon_.selected.-dark::after {
+  ._li_nav_icon_.selected a::before {
     display: none;
   }
 
