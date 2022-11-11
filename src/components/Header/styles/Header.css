@@ -81,45 +81,56 @@
 }
 
 ._li_nav_icon_ ._detail_selected_top {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   position: absolute;
   right: 0px;
-  top: -10px;
+  top: -15px;
   z-index: 5000;
   border-bottom-right-radius: 50%;
   transition: 0.5s;
 }
 
 ._li_nav_icon_ ._detail_selected_bottom {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   position: absolute;
   right: 0px;
-  bottom: -10px;
+  bottom: -15px;
   z-index: 5000;
   border-top-right-radius: 50%;
   transition: 0.5s;
 }
 
-._li_nav_icon_.selected.-dark::before {
+._li_nav_icon_.selected::before {
   content: '';
-  background-color: var(--dark);
   width: 10px;
   height: 10px;
   position: absolute;
   top: -10px;
   z-index: 4000;
+  background-color: var(--light);
+  transition: 0.5s;
 }
 
-._li_nav_icon_.selected.-dark::after {
+._li_nav_icon_.selected a::before {
   content: '';
-  background-color: var(--dark);
   width: 10px;
   height: 10px;
   position: absolute;
   bottom: -10px;
+  right: 0;
   z-index: 4000;
+  background-color: var(--light);
+  transition: 0.5s;
+}
+
+._li_nav_icon_.selected.-dark::before {
+  background-color: var(--dark);
+}
+
+._li_nav_icon_.selected.-dark a::before {
+  background-color: var(--dark);
 }
 
 ._li_nav_icon_:hover .nav-icon span {
