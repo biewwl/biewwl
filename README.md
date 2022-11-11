@@ -173,6 +173,13 @@
       height="30"
     />
   </a>
+  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/badge/-MongoDB-47A248?&style=for-the-badge&logo=mongodb&logoColor=fff"
+      alt="mongodb"
+      height="30"
+    />
+  </a>
   <a href="https://nodejs.org" target="_blank" rel="noreferrer">
     <img
       src="https://img.shields.io/badge/-Node.js-339933?&style=for-the-badge&logo=nodedotjs&logoColor=fff"
