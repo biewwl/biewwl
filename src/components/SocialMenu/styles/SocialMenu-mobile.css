@@ -1,11 +1,19 @@
 @media screen and (max-width: 768px) {
-
   .social-label {
     position: static;
   }
 
   .social-menu {
     bottom: 60px;
+    flex-direction: column;
+    height: 0;
+    width: 50px;
+    left: auto;
   }
 
+  .social:checked ~ .social-menu {
+    height: 236px;
+    width: 50px;
+    opacity: 1;
+  }
 }

@@ -1,19 +1,29 @@
 @media screen and (max-width: 768px) {
-
   .colors-menu {
     bottom: 60px;
     top: auto;
+    flex-direction: column;
+    width: 50px;
+    height: 0;
+    left: auto;
+  }
+
+  .colors:checked ~ .colors-menu {
+    height: 325px;
+    width: 50px;
+    opacity: 1;
+    overflow: visible;
   }
 
   .theme-li {
     top: -50px;
     bottom: auto;
+    right: auto;
   }
 
   .language-li {
     top: -100px;
     bottom: auto;
-    /* border-radius: 0.5em; */
+    right: auto;
   }
-  
 }

@@ -1,22 +1,21 @@
 .social-menu {
   align-items: center;
   border-radius: 0.5em;
-  bottom: 50px;
+  left: 60px;
   cursor: auto;
   display: flex;
-  flex-direction: column;
-  height: 0;
+  height: 50px;
   justify-content: space-evenly;
   list-style: none;
   opacity: 0;
   overflow: hidden;
   position: absolute;
   transition: 0.2s;
-  width: 50px;
+  width: 0;
 }
 
 .social:checked ~ .social-menu {
-  height: 236px;
+  width: 236px;
   opacity: 1;
 }
 

@@ -1,4 +1,9 @@
 @media screen and (max-width: 768px) {
+
+  .about {
+    padding: 0 0 60px;
+  }
+
   .container-about-me {
     flex-direction: column-reverse;
     justify-content: center;
