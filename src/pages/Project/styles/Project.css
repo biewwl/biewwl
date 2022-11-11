@@ -47,7 +47,7 @@
 }
 
 .project {
-  padding: 80px 20px 80px 70px;
+  padding: 40px 30px 80px 80px;
   transition: .5s;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .project-name {
-  padding: 40px 10px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
