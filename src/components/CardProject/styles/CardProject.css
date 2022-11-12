@@ -43,7 +43,7 @@
 :is(.projects, .projects-dark) .card-project {
   animation: toTop 0.5s;
   background-color: #eee;
-  border-radius: 1em;
+  border-radius: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,8 +72,8 @@
 }
 
 :is(.projects, .projects-dark) .card-image {
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
   border: 1px solid #eee;
   height: 50%;
   object-fit: cover;
