@@ -10,6 +10,7 @@ const Yourgram = {
   path: "yourgram",
   name: "Yourgram",
   namePt: "Yourgram",
+  urlREADME: "https://raw.githubusercontent.com/biewwl/yourgram/master/README.md",
   type: "Site",
   description:
     "This project is the Front End part of a social site! Easy integration with a Back End.",

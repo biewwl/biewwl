@@ -9,6 +9,7 @@ import coverInDev from "../../images/inDev.png";
 import "./styles/Project.css";
 import "./styles/Project-mobile.css";
 import { convertColor, invert } from "../../helpers/theme";
+import Readme from "../../components/Readme";
 
 function Project({ match, theme, color, language }) {
   const {
@@ -24,6 +25,7 @@ function Project({ match, theme, color, language }) {
   const {
     name,
     namePt,
+    urlREADME,
     description,
     descriptionPt,
     skills,
@@ -48,7 +50,7 @@ function Project({ match, theme, color, language }) {
                 <Link to="/projects" className={`c${color}`}>
                   {language === "pt" ? "Projetos /" : "Projects /"}
                 </Link>
-                <h1 className={`c${invert(theme)}`}>
+                <h1 className={`_h1_project c${invert(theme)}`}>
                   {language === "pt" ? namePt : name}
                   {!done && (
                     <span>
@@ -90,6 +92,7 @@ function Project({ match, theme, color, language }) {
                 </section>
               </section>
             </section>
+            {urlREADME && <Readme urlREADME={urlREADME} />}
             <section className="project-infos">
               <section>
                 <h3 className={`c${color}`}>

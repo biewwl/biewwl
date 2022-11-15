@@ -39,6 +39,10 @@ Light
   background-color: #fff;
 }
 
+.bgC2 {
+  background-color: #f1f1f1;
+}
+
 .c {
   color: var(--light);
 }
@@ -69,6 +73,10 @@ Dark
 
 .bgC-dark {
   background-color: var(--dark);
+}
+
+.bgC2-dark {
+  background-color: #3e3e3e;
 }
 
 .c-dark {

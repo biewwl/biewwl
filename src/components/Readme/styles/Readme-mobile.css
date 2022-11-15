@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+
+  ._readme img {
+    height: 90px;
+    width: 90px;
+  }
+
+  ._readme h1 {
+    font-size: 1.5em;
+  }
+
+  ._readme h3 {
+    font-size: 1.2em;
+  }
+
+  ._readme h4 {
+    font-size: 1.1em;
+  }
+
+  ._readme p {
+    font-size: 0.9em;
+  }
+
+  ._readme ul {
+    font-size: 0.9em;
+  }
+
+  ._readme_tag {
+    font-size: 0.6em;
+  }
+}
