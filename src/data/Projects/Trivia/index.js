@@ -3,11 +3,13 @@ import Login from "./images/login.png";
 import Game from "./images/game.png";
 import Ranking from "./images/ranking.png";
 import Settings from "./images/settings.png";
+import THUMBNAIL from "./images/THUMBNAIL.png";
 
 const Trivia = {
   path: "trivia",
   name: "Trivia",
   namePt: "Trivia",
+  cover: THUMBNAIL,
   type: "Site",
   description:
     "This project is a trivia game, built completely in React. Have fun answering questions. Also remember to be fast if you want to be the best!",
@@ -17,13 +19,7 @@ const Trivia = {
     repository: "https://github.com/biewwl/project-trivia",
     project: "https://biewwl.github.io/project-trivia/",
   },
-  images: [
-    Login,
-    Settings,
-    Game,
-    Correct,
-    Ranking,
-  ],
+  images: [Login, Settings, Game, Correct, Ranking],
   skills: ["HTML", "CSS", "Javascript", "React", "Hooks", "API", "Context API"],
   tools: [
     {

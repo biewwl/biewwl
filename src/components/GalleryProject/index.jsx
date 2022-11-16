@@ -12,7 +12,7 @@ export default function GalleryProject({ images }) {
     autoplaySpeed: 3000,
     autoplay: true,
     pauseOnHover: false,
-    dots: true,
+    dots: false,
     arrows: false,
   };
 

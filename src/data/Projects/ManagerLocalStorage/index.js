@@ -6,6 +6,7 @@ const ManagerLocalStorage = {
   path: "manager-local-storage",
   name: "localStorage Manager",
   namePt: "Gerenciador de LocalStorage",
+  cover: With,
   type: "Library",
   description:
     "This library, I developed to help those who use localStorage a lot. It automates and simplifies many processes involved!",

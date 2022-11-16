@@ -62,10 +62,6 @@
   border-radius: 0.5em;
 }
 
-.project-detail.inDev img {
-  padding: 30px;
-}
-
 .project-name {
   padding-bottom: 40px;
   display: flex;

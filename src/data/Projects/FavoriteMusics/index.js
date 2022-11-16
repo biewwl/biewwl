@@ -10,6 +10,7 @@ const FavoriteMusics = {
   path: "favorite-musics",
   name: "Favorite Musics",
   namePt: "Músicas Favoritas",
+  cover: Search,
   type: "Site",
   description:
     "This project is a music search application, which uses the iTunes API. Search for your favorite songs and add them to your favorites list.",

@@ -7,6 +7,7 @@ const OnlineStore = {
   path: "online-store",
   name: "Online Store",
   namePt: "Loja Online",
+  cover: Product,
   type: "Site",
   description:
     "This project is a simulation of an online store, built on the basis of the Mercado Livre API. Search for what you want and add it to your cart!",

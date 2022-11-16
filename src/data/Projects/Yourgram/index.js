@@ -1,8 +1,7 @@
 import Login from "./images/Login.png";
 import Home from "./images/Home.png";
 import Post from "./images/Post.png";
-import Notify from "./images/Notify.png";
-import UserProfile from "./images/UserProfile.png";
+import Following from "./images/Following.png";
 import Profile from "./images/Profile.png";
 
 
@@ -10,6 +9,7 @@ const Yourgram = {
   path: "yourgram",
   name: "Yourgram",
   namePt: "Yourgram",
+  cover: Home,
   urlREADME: "https://raw.githubusercontent.com/biewwl/yourgram/master/README.md",
   type: "Site",
   description:
@@ -20,7 +20,7 @@ const Yourgram = {
     repository: "https://github.com/biewwl/yourgram",
     project: "https://biewwl.github.io/yourgram/",
   },
-  images: [Login, Home, Post, Notify, UserProfile, Profile],
+  images: [Login, Home, Post, Following, Profile],
   skills: ["HTML", "CSS", "Javascript", "React", "Hooks", "Redux"],
   tools: [
     {
@@ -46,6 +46,10 @@ const Yourgram = {
     {
       name: "manager-local-storage",
       link: "https://www.npmjs.com/package/manager-local-storage",
+    },
+    {
+      name: "joi",
+      link: "https://www.npmjs.com/package/joi",
     },
   ],
   development: "duo",

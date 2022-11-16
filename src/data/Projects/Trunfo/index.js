@@ -6,6 +6,7 @@ const Trunfo = {
   path: "trunfo",
   name: "Trunfo",
   namePt: "Trunfo",
+  cover: Cards,
   type: "Site",
   description:
     "This project is a Trunfo card generator, have fun creating your own deck!",

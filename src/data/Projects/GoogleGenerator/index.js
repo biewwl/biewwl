@@ -5,6 +5,7 @@ const GoogleGenerator = {
   path: "google-generator",
   name: "Google Generator",
   namePt: "Gerador do Google",
+  cover: Home,
   type: "Site",
   description:
     "This project is an identical copy of the Google search site, where you can forge fictional search history.",

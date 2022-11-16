@@ -12,6 +12,7 @@ const RecipesApp = {
   path: "recipes-app",
   name: "Recipes App",
   namePt: "Aplicativo de Receitas",
+  cover: Foods,
   type: "Site",
   description:
     "This project is a recipe site. Search by recipes, favorites and more!",
