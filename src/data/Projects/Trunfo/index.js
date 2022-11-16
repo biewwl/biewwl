@@ -1,12 +1,13 @@
 import Home from "./images/Home.png";
 import Home2 from "./images/Home2.png";
 import Cards from "./images/Cards.png";
+import THUMBNAIL from "./images/THUMBNAIL.png";
 
 const Trunfo = {
   path: "trunfo",
   name: "Trunfo",
   namePt: "Trunfo",
-  cover: Cards,
+  cover: THUMBNAIL,
   type: "Site",
   description:
     "This project is a Trunfo card generator, have fun creating your own deck!",
