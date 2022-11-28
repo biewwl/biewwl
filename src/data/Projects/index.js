@@ -7,6 +7,7 @@ import ManagerLocalStorage from "./ManagerLocalStorage";
 import GoogleGenerator from "./GoogleGenerator";
 import LandingPages from "./LandingPages";
 import Yourgram from "./Yourgram";
+import FifaCards from "./FIFA cards";
 
 const data = [
   Trivia,
@@ -18,6 +19,7 @@ const data = [
   ManagerLocalStorage,
   Yourgram,
   LandingPages,
+  FifaCards
 ].sort((a, b) => {
   if (a.emphasis < b.emphasis) return -1;
   if (a.development && !b.development) return -1;
