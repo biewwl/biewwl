@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/biewwl/static/css/main.f1b6c930.css",
-    "main.js": "/biewwl/static/js/main.62ce945b.js",
+    "main.js": "/biewwl/static/js/main.277924d9.js",
     "static/media/Login.png": "/biewwl/static/media/Login.1818406f6bf5e31dcd1b.png",
     "static/media/comparative.jpg": "/biewwl/static/media/comparative.32554e67b6a352f91567.jpg",
     "static/media/ranking.png": "/biewwl/static/media/ranking.ec80c7f597ce9426eb89.png",
@@ -23,19 +23,17 @@
     "static/media/game.png": "/biewwl/static/media/game.545cc36c1f9643eb8bd1.png",
     "static/media/Home.png": "/biewwl/static/media/Home.edeefd0fef7b21841afb.png",
     "static/media/Explore.png": "/biewwl/static/media/Explore.256d23a2d767a36f695c.png",
+    "static/media/Product.png": "/biewwl/static/media/Product.7faeb7dac1fc47d43943.png",
     "static/media/inDev.png": "/biewwl/static/media/inDev.8ffe008f1e02461d2fe8.png",
-    "static/media/THUMBNAIL.png": "/biewwl/static/media/THUMBNAIL.5b7dbea7b7c70c9f6925.png",
     "static/media/Profile.png": "/biewwl/static/media/Profile.cde96f594659b8f4fc1c.png",
+    "static/media/Cart.png": "/biewwl/static/media/Cart.3822c2e541df44dff311.png",
     "static/media/Post.png": "/biewwl/static/media/Post.774e56da95112073bf6d.png",
-    "static/media/Product.png": "/biewwl/static/media/Product.3c5897c33aee48a3444a.png",
     "static/media/biewwl.jpg": "/biewwl/static/media/biewwl.c86fc981e67fd48846cf.jpg",
     "static/media/Following.png": "/biewwl/static/media/Following.1b9de4665536f944225d.png",
     "static/media/biewwl.png": "/biewwl/static/media/biewwl.b1f26867b0ed38d0a84f.png",
     "static/media/Home2.png": "/biewwl/static/media/Home2.53bd69b276aea6e75e24.png",
     "static/media/search.png": "/biewwl/static/media/search.3c739bcfc76aee97677c.png",
-    "static/media/Cart.png": "/biewwl/static/media/Cart.6130a30b48ca7961a153.png",
     "static/media/favorites.png": "/biewwl/static/media/favorites.f5a9200de9ae09688f39.png",
-    "static/media/Attributes.png": "/biewwl/static/media/Attributes.372bfecde07a6a9b3bc7.png",
     "static/media/with.jpg": "/biewwl/static/media/with.29f866a2c9e9450627b8.jpg",
     "static/media/album.png": "/biewwl/static/media/album.cae3933b4966d3603e3d.png",
     "static/media/edit-profile.png": "/biewwl/static/media/edit-profile.20fe672b1c8c8a377851.png",
@@ -45,10 +43,10 @@
     "static/media/home.png": "/biewwl/static/media/home.2f20696a7869c2c90470.png",
     "index.html": "/biewwl/index.html",
     "main.f1b6c930.css.map": "/biewwl/static/css/main.f1b6c930.css.map",
-    "main.62ce945b.js.map": "/biewwl/static/js/main.62ce945b.js.map"
+    "main.277924d9.js.map": "/biewwl/static/js/main.277924d9.js.map"
   },
   "entrypoints": [
     "static/css/main.f1b6c930.css",
-    "static/js/main.62ce945b.js"
+    "static/js/main.277924d9.js"
   ]
 }
