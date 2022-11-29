@@ -5,13 +5,12 @@ import Album from "./images/album.png";
 import Profile from "./images/profile.png";
 import EditProfile from "./images/edit-profile.png";
 import Favorites from "./images/favorites.png";
-import THUMBNAIL from "./images/THUMBNAIL.png";
 
 const FavoriteMusics = {
   path: "favorite-musics",
   name: "Favorite Musics",
   namePt: "Músicas Favoritas",
-  cover: THUMBNAIL,
+  cover: Search,
   type: "Site",
   description:
     "This project is a music search application, which uses the iTunes API. Search for your favorite songs and add them to your favorites list.",

@@ -1,12 +1,11 @@
 import Home from "./images/home.png";
 import History from "./images/history.png";
-import THUMBNAIL from "./images/THUMBNAIL.png";
 
 const GoogleGenerator = {
   path: "google-generator",
   name: "Google Generator",
   namePt: "Gerador do Google",
-  cover: THUMBNAIL,
+  cover: Home,
   type: "Site",
   description:
     "This project is an identical copy of the Google search site, where you can forge fictional search history.",

@@ -3,13 +3,12 @@ import Login from "./images/login.png";
 import Game from "./images/game.png";
 import Ranking from "./images/ranking.png";
 import Settings from "./images/settings.png";
-import THUMBNAIL from "./images/THUMBNAIL.png";
 
 const Trivia = {
   path: "trivia",
   name: "Trivia",
   namePt: "Trivia",
-  cover: THUMBNAIL,
+  cover: Correct,
   type: "Site",
   description:
     "This project is a trivia game, built completely in React. Have fun answering questions. Also remember to be fast if you want to be the best!",

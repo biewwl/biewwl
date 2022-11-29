@@ -7,13 +7,12 @@ import Favorite from "./images/Favorite.png";
 import Explore from "./images/Explore.png";
 import Cards from "./images/Cards.png";
 import FoodsExplore from "./images/FoodsExplore.png";
-import THUMBNAIL from "./images/THUMBNAIL.png";
 
 const RecipesApp = {
   path: "recipes-app",
   name: "Recipes App",
   namePt: "Aplicativo de Receitas",
-  cover: THUMBNAIL,
+  cover: Foods,
   type: "Site",
   description:
     "This project is a recipe site. Search by recipes, favorites and more!",
