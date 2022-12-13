@@ -11,6 +11,12 @@ const data = [
     image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/54812955",
     link: "https://www.credential.net/35515fa2-a74a-4326-889b-01f5acc5460d#gs.6ltdst",
   },
+  {
+    title: 'Back End Development',
+    titlePt: 'Desenvolvimento Back End',
+    image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/63455510",
+    link: "https://www.credential.net/fa2ef0a1-5979-4c87-9a51-708910b17a82",
+  },
 ];
 
 export default data;

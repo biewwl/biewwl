@@ -2,10 +2,10 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import "./colors/colors.css";
-import "./App.css";
 import About from "./pages/About";
 import Project from "./pages/Project";
+import "./App.css";
+import "./colors/colors.css";
 
 function App() {
   return (
