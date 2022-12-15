@@ -13,21 +13,23 @@ function Certificates({ color, theme, visible, language }) {
         }`}
       >
         {data.map((certificate, index) => (
-          <div key={index} className="certificate-card">
+          <div key={index} className={`certificate-card c${invert(theme)}`}>
             <img src={certificate.image} alt={certificate.title} />
-            <h4 className={`c${invert(theme)}`}>{
-              language === "pt" ? certificate.titlePt : certificate.title
-            }</h4>
-            <a
-              href={certificate.link}
-              className={`bgC${color} c${theme}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {language === 'pt' && "Ver"}
-              {language === 'en' && "View"}
-              <Icon icon="bx:link-external" />
-            </a>
+            <div className={`certificate-content ${theme}`}>
+              <h4 className={`c${invert(theme)}`}>
+                {language === "pt" ? certificate.titlePt : certificate.title}
+              </h4>
+              <a
+                href={certificate.link}
+                className={`bgC${color} c${invert(theme)}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {language === "pt" && "Ver"}
+                {language === "en" && "View"}
+                <Icon icon="bx:link-external" />
+              </a>
+            </div>
           </div>
         ))}
       </section>
