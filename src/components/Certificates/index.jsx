@@ -21,7 +21,7 @@ function Certificates({ color, theme, visible, language }) {
               </h4>
               <a
                 href={certificate.link}
-                className={`bgC${color} c${invert(theme)}`}
+                className={`bgC${color} c`}
                 target="_blank"
                 rel="noreferrer"
               >

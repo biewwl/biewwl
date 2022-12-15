@@ -89,7 +89,7 @@ function ColorsMenu({ dispatch, color, theme, language }) {
             onClick={() => setColor("dark")}
           ></li>
         )}
-        <li className={`theme-li bgC${color} c${theme}`}>
+        <li className={`theme-li bgC${color} c${theme} bb${theme}`}>
           {theme === "" && (
             <Icon
               icon="line-md:moon-twotone"

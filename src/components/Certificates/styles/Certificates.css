@@ -72,7 +72,6 @@
 
 .certificates-container .certificate-content.-dark {
   background-color: rgba(0, 0, 0, 0.667);
-
 }
 
 .certificates-container .certificate-content {
@@ -87,7 +86,7 @@
   height: 100%;
   opacity: 0;
   transition: 0.5s;
-  /* border-radius: 0.5em; */
+  cursor: default;
   padding: 10px;
 }
 
@@ -95,14 +94,10 @@
   opacity: 1;
 }
 
-
 .certificates-container .certificate-card h4 {
   font-weight: 100;
   padding: 20px 0;
-  /* text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap; */
-  /* width: 80%; */
+  cursor: default;
   transition: 0.5s;
 }
 
