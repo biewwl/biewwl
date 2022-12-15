@@ -99,6 +99,7 @@
   padding: 20px 0;
   cursor: default;
   transition: 0.5s;
+  text-align: center;
 }
 
 .certificates-container .certificate-card a {
