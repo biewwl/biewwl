@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/biewwl/static/css/main.88f872c2.css",
+    "main.css": "/biewwl/static/css/main.c1c376bb.css",
     "main.js": "/biewwl/static/js/main.598ebaa9.js",
     "static/media/Login.png": "/biewwl/static/media/Login.1818406f6bf5e31dcd1b.png",
     "static/media/comparative.jpg": "/biewwl/static/media/comparative.32554e67b6a352f91567.jpg",
@@ -43,11 +43,11 @@
     "static/media/Product Sans Regular.ttf": "/biewwl/static/media/Product Sans Regular.d165384076551a756b3c.ttf",
     "static/media/home.png": "/biewwl/static/media/home.2f20696a7869c2c90470.png",
     "index.html": "/biewwl/index.html",
-    "main.88f872c2.css.map": "/biewwl/static/css/main.88f872c2.css.map",
+    "main.c1c376bb.css.map": "/biewwl/static/css/main.c1c376bb.css.map",
     "main.598ebaa9.js.map": "/biewwl/static/js/main.598ebaa9.js.map"
   },
   "entrypoints": [
-    "static/css/main.88f872c2.css",
+    "static/css/main.c1c376bb.css",
     "static/js/main.598ebaa9.js"
   ]
 }
