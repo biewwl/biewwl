@@ -2,8 +2,6 @@ import lS from 'manager-local-storage';
 
 const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-console.log(prefersColorScheme.matches ? '-dark' : '');
-
 const INITIAL_STATE = {
   color: '-blue',
   theme: prefersColorScheme.matches ? '-dark' : '',

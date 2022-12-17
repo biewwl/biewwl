@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { connect } from "react-redux";
 import Helmet from "react-helmet";
 import Header from "../../components/Header";
@@ -12,15 +12,10 @@ import "./styles/About.css";
 import "./styles/About-mobile.css";
 
 function About({ color, theme, language }) {
-  const [showCertificates, setShowCertificates] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const toggleCertificates = () => {
-    setShowCertificates(!showCertificates);
-  };
 
   return (
     <>
@@ -42,20 +37,16 @@ function About({ color, theme, language }) {
           </section>
           <img src={biewwl} alt="biewwl" className={`bg${color}`} />
         </article>
-        <article>
+        <article className={`certificates-area`}>
           <h3
-            className={`bgC${color} c${theme} certificates-h3${
-              showCertificates ? " show" : ""
-            }`}
-            onClick={toggleCertificates}
+            className={`c${color} certificates-h3`}
           >
-            <div>
+            <span>
               <span>{language === "pt" ? "Certificados" : "Certificates"}</span>
               <Icon icon="teenyicons:certificate-outline" />
-            </div>
-            <Icon icon={`fe:arrow-${showCertificates ? "up" : "down"}`} />
+            </span>
           </h3>
-          <Certificates visible={showCertificates} />
+          <Certificates />
         </article>
         <SkillsList />
       </main>

@@ -4,16 +4,14 @@ import { Icon } from "@iconify/react";
 import { invert } from "../../helpers/theme";
 import "./styles/Certificates.css";
 
-function Certificates({ color, theme, visible, language }) {
+function Certificates({ color, theme, language }) {
   return (
     <>
       <section
-        className={`certificates-container bgC${color} ${
-          visible ? " show" : ""
-        }`}
+        className={`certificates-container`}
       >
         {data.map((certificate, index) => (
-          <div key={index} className={`certificate-card c${invert(theme)}`}>
+          <div key={index} className={`certificate-card c${invert(theme)} bb${color}`}>
             <img src={certificate.image} alt={certificate.title} />
             <div className={`certificate-content ${theme}`}>
               <h4 className={`c${invert(theme)}`}>

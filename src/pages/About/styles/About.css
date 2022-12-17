@@ -95,3 +95,10 @@
   filter: grayscale();
   pointer-events: none;
 }
+
+.certificates-area {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
