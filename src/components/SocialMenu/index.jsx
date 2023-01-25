@@ -30,7 +30,7 @@ function SocialMenu({ color, theme }) {
       </li>
       <li>
         <a
-          href="https://www.instagram.com/biewwl/"
+          href="https://www.instagram.com/21gabri/"
           target="_blank"
           rel="noreferrer"
         >
