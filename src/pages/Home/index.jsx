@@ -10,7 +10,7 @@ import { convertColor, invert } from "../../helpers/theme";
 function Home({ color, theme, language }) {
   return (
     <>
-      <Helmet title={language === "pt" ? "Sobre" : "About"}>
+      <Helmet title={language === "pt" ? "Início" : "Home"}>
         <meta name="theme-color" content={convertColor(color)} />
       </Helmet>
       <Header selectedPage="home" />

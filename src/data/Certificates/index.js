@@ -17,6 +17,12 @@ const data = [
     image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/63455510",
     link: "https://www.credential.net/fa2ef0a1-5979-4c87-9a51-708910b17a82",
   },
+  {
+    title: 'Computer Science',
+    titlePt: 'Ciência da Computação',
+    image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69622056",
+    link: "https://www.credential.net/3e5453a6-5ff1-459b-81ec-287ac21f3e7e#gs.si2hz1",
+  },
 ];
 
 export default data;

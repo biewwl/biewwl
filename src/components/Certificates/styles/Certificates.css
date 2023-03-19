@@ -53,15 +53,16 @@
 
 .certificates-container .certificate-card img {
   width: 100%;
+  height: 100%;
   /* border-radius: 0.5em; */
 }
 
 .certificates-container .certificate-content.-dark {
-  background-color: rgba(0, 0, 0, 0.667);
+  background-color: #000000aa;
 }
 
 .certificates-container .certificate-content {
-  background-color: rgba(254, 254, 254, 0.512);
+  background-color: #fefefe83;
   backdrop-filter: blur(2px);
   position: absolute;
   display: flex;

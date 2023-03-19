@@ -2,16 +2,15 @@ import { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import Helmet from "react-helmet";
-import invert from "../../helpers/invertTheme";
-import convertColor from "../../helpers/convertColor";
-import { changeColor, changeTheme } from "../../redux/actions/themeAction";
 import { goSearch } from "../../redux/actions/searchAction";
 import changeLanguage from "../../redux/actions/languageAction";
 import logo from "./images/logo.png";
 import { Icon } from "@iconify/react";
-import {dataIntroduce, dataIntroducePT} from "../../helpers/dataIntroduce";
-import "./styles/Home.css";
-import "./styles/Home-mobile.css";
+import { introduce as dataIntroduce } from "../../data/Introduce";
+import { changeColor, changeTheme } from "../../redux/actions/themeAction";
+import { convertColor, invert } from "../../helpers/theme";
+import "./styles/Home-v1.css";
+import "./styles/Home-mobile-v1.css";
 
 function Home({ color, theme, query, language, dispatch }) {
   const history = useHistory();
@@ -21,13 +20,9 @@ function Home({ color, theme, query, language, dispatch }) {
   const [introNumber, setIntroNumber] = useState(0);
 
   useEffect(() => {
-    if (language === "pt") {
-      setIntroduce(dataIntroducePT);
-      randomNumber(dataIntroducePT.length);
-    } else {
-      setIntroduce(dataIntroduce);
-      randomNumber(dataIntroduce.length);
-    }
+    const introduceText = dataIntroduce[language];
+    setIntroduce(introduceText);
+    randomNumber(introduceText.length);
     window.scrollTo(0, 0);
   }, [language]);
 
@@ -103,9 +98,7 @@ function Home({ color, theme, query, language, dispatch }) {
               {language === "pt" && "Bem-vindo(a)!"}
             </span>
             <h2>{introduce[introNumber]}</h2>
-            <span
-              className="home-button"
-            >
+            <span className="home-button">
               <Link to="/projects" className={`c${invert(theme)}`}>
                 {language === "en" && "Explore my Projects"}
                 {language === "pt" && "Explore meus Projetos"}
