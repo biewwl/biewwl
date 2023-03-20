@@ -71,39 +71,40 @@
 <br/>
 
 <h3 align="left">🔗 Connect with me:</h3>
-  <a href="https://twitter.com/21biewwl" target="blank">
-    <img
-      align="center"
-      src="https://img.shields.io/badge/-biewwl-1DA1F2?logo=Twitter&logoColor=white&style=flat"
-      alt="21biewwl"
-      height="20"
-    />
-  </a>
-  <a href="https://linkedin.com/in/biewwl" target="blank">
-    <img
-      align="center"
-      src="https://img.shields.io/badge/-biewwl-0A66C2?logo=Linkedin&logoColor=white&style=flat"
-      alt="biewwl"
-      height="20"
-    />
-  </a>
-  <a href="https://instagram.com/biewwl" target="blank"
-    ><img
-      align="center"
-      src="https://img.shields.io/badge/-biewwl-E4405F?logo=Instagram&logoColor=white&style=flat"
-      alt="biewwl"
-      height="20"
-    />
-  </a>
-  <a href="mailto:biewwl.js@gmail.com" target="blank"
-    ><img
-      align="center"
-      src="https://img.shields.io/badge/-biewwl.js@gmail.com-EA4335?logo=Gmail&logoColor=white&style=flat"
-      alt="biewwl"
-      height="20"
-    />
-  </a
+<a href="https://twitter.com/21biewwl" target="blank">
+  <img
+    align="center"
+    src="https://img.shields.io/badge/-biewwl-1DA1F2?logo=Twitter&logoColor=white&style=flat"
+    alt="21biewwl"
+    height="20"
+  />
+</a>
+<a href="https://linkedin.com/in/biewwl" target="blank">
+  <img
+    align="center"
+    src="https://img.shields.io/badge/-biewwl-0A66C2?logo=Linkedin&logoColor=white&style=flat"
+    alt="biewwl"
+    height="20"
+  />
+</a>
+<a href="https://instagram.com/biewwl" target="blank"
+  ><img
+    align="center"
+    src="https://img.shields.io/badge/-biewwl-E4405F?logo=Instagram&logoColor=white&style=flat"
+    alt="biewwl"
+    height="20"
+  />
+</a>
+<a href="mailto:biewwl.js@gmail.com" target="blank"
+  ><img
+    align="center"
+    src="https://img.shields.io/badge/-biewwl.js@gmail.com-EA4335?logo=Gmail&logoColor=white&style=flat"
+    alt="biewwl"
+    height="20"
+  />
+</a>
 
+<br/>
 <br/>
 
 <h3 align="left">🔧 My Toolbox:</h3>
