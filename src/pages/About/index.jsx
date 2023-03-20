@@ -37,9 +37,9 @@ function About({ color, theme, language }) {
           </section>
           <img src={pictureAbout} alt="biewwl" className={`bg${color}`} />
         </article>
-        <article className={`certificates-area`}>
+        <article className={`certificates-area bgC${color}`}>
           <h3
-            className={`c${color} certificates-h3`}
+            className={`c${theme} certificates-h3`}
           >
             <span>
               <span>{language === "pt" ? "Certificados" : "Certificates"}</span>
