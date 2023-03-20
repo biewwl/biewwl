@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://i.ibb.co/0Q1WRG1/CC-20220615-111945.png"
+    src="https://i.ibb.co/fCdDwxg/profile-modified.png"
     height="150"
     width="150"
   />
@@ -71,36 +71,38 @@
 <br/>
 
 <h3 align="left">🔗 Connect with me:</h3>
-<p align="left">
   <a href="https://twitter.com/21biewwl" target="blank">
     <img
       align="center"
-      src="https://img.shields.io/badge/Twitter-@21biewwl-1DA1F2?&style=for-the-badge&logo=twitter&logoColor=white"
+      src="https://img.shields.io/badge/-biewwl-1DA1F2?logo=Twitter&logoColor=white&style=flat"
       alt="21biewwl"
-      height="30"
+      height="20"
     />
   </a>
-</p>
-<p align="left">
   <a href="https://linkedin.com/in/biewwl" target="blank">
     <img
       align="center"
-      src="https://img.shields.io/badge/Linkedin-@biewwl-0A66C2?&style=for-the-badge&logo=linkedin&logoColor=white"
+      src="https://img.shields.io/badge/-biewwl-0A66C2?logo=Linkedin&logoColor=white&style=flat"
       alt="biewwl"
-      height="30"
+      height="20"
     />
   </a>
-</p>
-<p align="left">
   <a href="https://instagram.com/biewwl" target="blank"
     ><img
       align="center"
-      src="https://img.shields.io/badge/Instagram-@biewwl-E4405F?&style=for-the-badge&logo=instagram&logoColor=white"
+      src="https://img.shields.io/badge/-biewwl-E4405F?logo=Instagram&logoColor=white&style=flat"
       alt="biewwl"
-      height="30"
+      height="20"
     />
   </a>
-</p>
+  <a href="mailto:biewwl.js@gmail.com" target="blank"
+    ><img
+      align="center"
+      src="https://img.shields.io/badge/-biewwl.js@gmail.com-EA4335?logo=Gmail&logoColor=white&style=flat"
+      alt="biewwl"
+      height="20"
+    />
+  </a
 
 <br/>
 
@@ -283,9 +285,14 @@
 <br/>
 
 <h3 align="left">📈 My GitHub stats:</h3>
-<p align="center">&nbsp;
+<p align="left">&nbsp;
   <img
     align="center"
-    src="https://github-readme-stats.vercel.app/api?username=biewwl&show_icons=true&theme=dracula&hide_border=true&locale=en"
+    src="https://github-readme-stats.vercel.app/api?username=biewwl&show_icons=true&theme=apprentice&hide_border=true&locale=en"
     alt="biewwl" />
 </p>
+
+<br/>
+
+<h3 align="left">👁️ Visits:</h3>
+<img src="https://visitcount.itsvg.in/api?id=biewwl&label=Profile%20Views&color=12&icon=6&pretty=true" />
