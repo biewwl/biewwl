@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/biewwl/static/css/main.19080a9d.css",
-    "main.js": "/biewwl/static/js/main.8830ef82.js",
+    "main.css": "/biewwl/static/css/main.95218db2.css",
+    "main.js": "/biewwl/static/js/main.aa848b12.js",
     "static/media/Login.png": "/biewwl/static/media/Login.1818406f6bf5e31dcd1b.png",
     "static/media/comparative.jpg": "/biewwl/static/media/comparative.32554e67b6a352f91567.jpg",
     "static/media/ranking.png": "/biewwl/static/media/ranking.ec80c7f597ce9426eb89.png",
@@ -15,7 +15,6 @@
     "static/media/settings.png": "/biewwl/static/media/settings.69a7e01b719d540c53de.png",
     "static/media/Progress.png": "/biewwl/static/media/Progress.f1c5c72e5bfbda3afe40.png",
     "static/media/Cards.png": "/biewwl/static/media/Cards.de4e7cf4140f21a50281.png",
-    "static/media/picture_about.jpg": "/biewwl/static/media/picture_about.48ec3e111e457feb1444.jpg",
     "static/media/FoodsExplore.png": "/biewwl/static/media/FoodsExplore.d30d69981a5c4866c3dc.png",
     "static/media/Favorite.png": "/biewwl/static/media/Favorite.3368ad5ef187c1e4eb97.png",
     "static/media/Done.png": "/biewwl/static/media/Done.0b9f578a1381e9eb302b.png",
@@ -24,10 +23,10 @@
     "static/media/game.png": "/biewwl/static/media/game.545cc36c1f9643eb8bd1.png",
     "static/media/Home.png": "/biewwl/static/media/Home.edeefd0fef7b21841afb.png",
     "static/media/Explore.png": "/biewwl/static/media/Explore.256d23a2d767a36f695c.png",
-    "static/media/cursor.png": "/biewwl/static/media/cursor.1c29ecff53fc56a59643.png",
     "static/media/Product.png": "/biewwl/static/media/Product.7faeb7dac1fc47d43943.png",
     "static/media/inDev.png": "/biewwl/static/media/inDev.8ffe008f1e02461d2fe8.png",
     "static/media/Profile.png": "/biewwl/static/media/Profile.cde96f594659b8f4fc1c.png",
+    "static/media/picture_about.jpg": "/biewwl/static/media/picture_about.693e743445839df15d01.jpg",
     "static/media/Cart.png": "/biewwl/static/media/Cart.3822c2e541df44dff311.png",
     "static/media/Post.png": "/biewwl/static/media/Post.774e56da95112073bf6d.png",
     "static/media/Following.png": "/biewwl/static/media/Following.1b9de4665536f944225d.png",
@@ -43,11 +42,11 @@
     "static/media/Product Sans Regular.ttf": "/biewwl/static/media/Product Sans Regular.d165384076551a756b3c.ttf",
     "static/media/home.png": "/biewwl/static/media/home.2f20696a7869c2c90470.png",
     "index.html": "/biewwl/index.html",
-    "main.19080a9d.css.map": "/biewwl/static/css/main.19080a9d.css.map",
-    "main.8830ef82.js.map": "/biewwl/static/js/main.8830ef82.js.map"
+    "main.95218db2.css.map": "/biewwl/static/css/main.95218db2.css.map",
+    "main.aa848b12.js.map": "/biewwl/static/js/main.aa848b12.js.map"
   },
   "entrypoints": [
-    "static/css/main.19080a9d.css",
-    "static/js/main.8830ef82.js"
+    "static/css/main.95218db2.css",
+    "static/js/main.aa848b12.js"
   ]
 }
