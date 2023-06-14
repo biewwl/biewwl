@@ -87,10 +87,10 @@
     height="20"
   />
 </a>
-<a href="https://instagram.com/biewwl" target="blank"
+<a href="https://instagram.com/biewwl.js" target="blank"
   ><img
     align="center"
-    src="https://img.shields.io/badge/-biewwl-E4405F?logo=Instagram&logoColor=white&style=flat"
+    src="https://img.shields.io/badge/-biewwl.js-E4405F?logo=Instagram&logoColor=white&style=flat"
     alt="biewwl"
     height="20"
   />
