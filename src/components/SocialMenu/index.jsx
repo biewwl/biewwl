@@ -21,7 +21,7 @@ function SocialMenu({ color, theme }) {
       </li>
       <li>
         <a
-          href="https://twitter.com/21biewwl"
+          href="https://twitter.com/biewwl"
           target="_blank"
           rel="noreferrer"
         >
@@ -30,7 +30,7 @@ function SocialMenu({ color, theme }) {
       </li>
       <li>
         <a
-          href="https://www.instagram.com/biewwl/"
+          href="https://www.instagram.com/biewwl.js/"
           target="_blank"
           rel="noreferrer"
         >

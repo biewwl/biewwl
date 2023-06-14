@@ -22,11 +22,6 @@ input:focus {
   outline: none;
 }
 
-.App {
-  overflow-x: hidden;
-  cursor: url(./images/cursor.png), auto;
-}
-
 body::-webkit-scrollbar {
   display: none;
 }
