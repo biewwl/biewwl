@@ -71,11 +71,11 @@
 <br/>
 
 <h3 align="left">🔗 Connect with me:</h3>
-<a href="https://twitter.com/imbieldias" target="blank">
+<a href="https://twitter.com/biewwl" target="blank">
   <img
     align="center"
-    src="https://img.shields.io/badge/-imbieldias-1DA1F2?logo=Twitter&logoColor=white&style=flat"
-    alt="imbieldias"
+    src="https://img.shields.io/badge/-biewwl-1DA1F2?logo=Twitter&logoColor=white&style=flat"
+    alt="biewwl"
     height="20"
   />
 </a>
