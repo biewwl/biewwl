@@ -1,0 +1,12 @@
+{
+  "frontend": true,
+  "backend": false,
+  "design": false,
+  "figma": "",
+  "images": [
+    "https://raw.githubusercontent.com/biewwl/biewwl/master/src/project-images/About.png",
+    "https://raw.githubusercontent.com/biewwl/biewwl/master/src/project-images/Home.png",
+    "https://raw.githubusercontent.com/biewwl/biewwl/master/src/project-images/Projects.png",
+    "https://raw.githubusercontent.com/biewwl/biewwl/master/src/project-images/Project.png"
+  ]
+}
