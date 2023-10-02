@@ -292,8 +292,3 @@
     src="https://github-readme-stats.vercel.app/api?username=biewwl&show_icons=true&theme=apprentice&hide_border=true&locale=en"
     alt="biewwl" />
 </p>
-
-<br/>
-
-<h3 align="left">👁️ Visits:</h3>
-<img src="https://visitcount.itsvg.in/api?id=biewwl&label=Profile%20Views&color=12&icon=6&pretty=true" />
