@@ -11,7 +11,7 @@
 
 <br/>
 
-<p><em>Parachuted here? Well, I'm a Frontend Programmer passionate about WEB development! Although I started my programming studies in 2022, I GUARANTEE you that you will be amazed at the level of development I have achieved in this short time! The goal is to learn more and more... Besides programming I like to spend my time watching series with my friends and playing games.</em></p>
+<p><em>Parachuted here? Well, I'm a Full Stack Programmer passionate about WEB development! Although I started my programming studies in 2022, I GUARANTEE you that you will be amazed at the level of development I have achieved in this short time! The goal is to learn more and more... Besides programming I like to spend my time watching series with my friends and playing games.</em></p>
 
 <br/>
 
